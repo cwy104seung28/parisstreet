@@ -11,3 +11,50 @@
 		<li class="profile"><img src="./img/member.svg"></li>
 	</ul>
 </div>
+<div class="member-area">
+		<div class="profile-area">
+			<div class="close"><img src="./img/close.svg"></div>
+			<div class="photo"><img src="./img/photo.png"></div>
+			<div class="info-area">
+				<div class="name">gooddesign6656</div>
+				<div class="edit"><img src="./img/edit.svg"><span>編輯帳戶資訊</span>
+				</div>
+			</div>
+		</div>
+		<ul class="setting-area">
+			<li>
+				<div class="title-area">
+					<img src="./img/notice.svg" alt="">
+					<div class="title">通知</div>
+				</div>
+				<a href="javascript:;"><img src="./img/go.svg"></a>
+			</li>
+			<li>
+				<div class="title-area">
+					<img src="./img/add.svg" alt="">
+					<div class="title">加入收藏</div>
+				</div>
+				<a href="javascript:;"><img src="./img/go.svg"></a>
+			</li>
+			<li>
+				<div class="title-area">
+					<img src="./img/setting.svg" alt="">
+					<div class="title">設定</div>
+				</div>
+				<a href="javascript:;"><img src="./img/go.svg"></a>
+			</li>
+			<li>
+				<div class="title-area">
+					<img src="./img/caption.svg" alt="">
+					<div class="title">說明</div>
+				</div>
+				<a href="javascript:;"><img src="./img/go.svg"></a>
+			</li>
+
+		</ul>
+		<div class="logout">
+			<a href="javascript:;">
+				<div class="title">登出</div>
+			</a>
+		</div>
+	</div>

@@ -6,18 +6,7 @@
 </head>
 
 <body class="is-white shop">
-    <div class="topmenu is-show">
-        <div class="text-area">
-            <div class="en">PARIS STREET</div>
-            <div class="ch">巴黎街精品代購</div>
-        </div>
-        <ul class="list-area">
-            <li>女士</li>
-            <li>男士</li>
-            <li>類別<img src="./img/arrow.svg"></li>
-            <li class="profile"><img src="./img/member.svg"></li>
-        </ul>
-    </div>
+    <?php include 'topmenu.php'; ?>
     <div class="shop-detail">
         <div class="top-area">
             <div class="category">
@@ -80,11 +69,55 @@
                         <br>
                         此產品於法國、西班牙、義大利或美國製造
                     </div>
-                    <div class="other">退換貨須知  ・  常見問題  ・  聯絡我們</div>
+                    <div class="other">退換貨須知 ・ 常見問題 ・ 聯絡我們</div>
                 </div>
             </div>
             <div class="other-product">
                 <div class="title">其他相關產品</div>
+                <ul class="product">
+                    <li>
+                        <div class="pic"><img src="./img/other-1.jpg"></div>
+                        <div class="info">
+                            <div>
+                                <div class="name">LV・COUSSIN BB</div>
+                                <div class="price">NT$ 128,000</div>
+                            </div>
+                            <div class="add">
+                                <img src="./img/add-black.svg">
+                                <div class="text">加入珍藏</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pic"><img src="./img/other-2.jpg"></div>
+                        <div class="info">
+                            <div>
+                                <div class="name">LV・EASY POUCH ON STRAP</div>
+                                <div class="price">NT$ 54,500</div>
+                            </div>
+                            <div class="add">
+                                <img src="./img/add-black.svg">
+                                <div class="text">加入珍藏</div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="pic"><img src="./img/other-3.jpg"></div>
+
+                        <div class="info">
+                            <div>
+                                <div class="name">LV・BUCI</div>
+                                <div class="price">NT$ 69,500</div>
+                            </div>
+                            <div class="add">
+                                <img src="./img/add-black.svg">
+                                <div class="text">加入珍藏</div>
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -115,6 +148,7 @@
 
 </html>
 <script>
+    $(".topmenu").addClass("is-show");
     var $carousel = $('.shop-carousel').flickity({
         // "prevNextButtons": false,
         "pageDots": false,
@@ -126,16 +160,6 @@
         // "arrowShape": "",
         // "watchCSS": true,
     })
-    // $(window).on("scroll", function() {
-    //     var _scrollTop = $(this).scrollTop();
-
-    //     if (_scrollTop >= 100) {
-    //         $(".topmenu").addClass("is-show")
-    //     } else {
-    //         $(".topmenu").removeClass("is-show")
-    //     }
-    // }).trigger("scroll");
-
     $(".profile").click(function() {
         $(".member-area").addClass("is-show");
         $("html").addClass("is-locked");
