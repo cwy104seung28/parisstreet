@@ -66,9 +66,18 @@
 		<div class="content top-rank">
 			<div class="title">本日熱銷Top 10</div>
 			<ul class="carousel" data-flickity>
-				<li class="carousel-cell"><img src="./img/top1.png"></li>
-				<li class="carousel-cell"><img src="./img/top2.png"></li>
-				<li class="carousel-cell"><img src="./img/top3.png"></li>
+				<li class="carousel-cell">
+					<div class="rank">1</div>
+					<img src="./img/top1.png">
+				</li>
+				<li class="carousel-cell">
+					<div class="rank">2</div>
+					<img src="./img/top2.png">
+				</li>
+				<li class="carousel-cell">
+					<div class="rank">3</div>
+					<img src="./img/top3.png">
+				</li>
 			</ul>
 		</div>
 		<div class="content">
@@ -79,6 +88,54 @@
 				<li class="carousel-cell"><img src="./img/idol3.png"></li>
 			</ul>
 		</div>
+	</div>
+	<div class="member-area">
+		<div class="profile-area">
+			<div class="close"><img src="./img/close.svg"></div>
+			<div class="photo"><img src="./img/photo.png"></div>
+			<div class="info-area">
+				<div class="name">gooddesign6656</div>
+				<div class="edit"><img src="./img/edit.svg"><span>編輯帳戶資訊</span>
+				</div>
+			</div>
+		</div>
+		<ul class="setting-area">
+			<li>
+				<div class="title-area">
+					<img src="./img/notice.svg" alt="">
+					<div class="title">通知</div>
+				</div>
+				<a href="javascript:;"><img src="./img/go.svg"></a>
+			</li>
+			<li>
+				<div class="title-area">
+					<img src="./img/add.svg" alt="">
+					<div class="title">加入收藏</div>
+				</div>
+				<a href="javascript:;"><img src="./img/go.svg"></a>
+			</li>
+			<li>
+				<div class="title-area">
+					<img src="./img/setting.svg" alt="">
+					<div class="title">設定</div>
+				</div>
+				<a href="javascript:;"><img src="./img/go.svg"></a>
+			</li>
+			<li>
+				<div class="title-area">
+					<img src="./img/caption.svg" alt="">
+					<div class="title">說明</div>
+				</div>
+				<a href="javascript:;"><img src="./img/go.svg"></a>
+			</li>
+
+		</ul>
+		<div class="logout">
+			<a href="javascript:;">
+				<div class="title">登出</div>
+			</a>
+		</div>
+
 	</div>
 	<div class="fix-mobile">
 		<ul class="list-area">
@@ -109,7 +166,7 @@
 	var $carousel = $('.carousel').flickity({
 		"prevNextButtons": false,
 		"pageDots": false,
-		"wrapAround": false,
+		"wrapAround": true,
 		"autoPlay": false,
 		"cellAlign": "left",
 		"imagesLoaded": true,
@@ -117,4 +174,22 @@
 		"arrowShape": "",
 		// "watchCSS": true,
 	})
+	$(window).on("scroll", function() {
+		var _scrollTop = $(this).scrollTop();
+
+		if (_scrollTop >= 100) {
+			$(".topmenu").addClass("is-show")
+		} else {
+			$(".topmenu").removeClass("is-show")
+		}
+	}).trigger("scroll");
+
+	$(".profile").click(function() {
+		$(".member-area").addClass("is-show");
+		$("html").addClass("is-locked");
+	});
+	$(".member-area .close").click(function() {
+		$(".member-area").removeClass("is-show");
+		$("html").removeClass("is-locked");
+	});
 </script>
