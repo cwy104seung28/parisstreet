@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="b" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" width="19.25" height="19.43" viewBox="0 0 19.25 19.43">
+  <defs>
+    <style>
+      .d {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 1.41px;
+      }
+    </style>
+  </defs>
+  <g id="c" data-name="文字">
+    <g>
+      <circle class="d" cx="9.04" cy="9.04" r="8.33"/>
+      <line class="d" x1="14.83" y1="15.02" x2="18.75" y2="18.94"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,468 @@
+@mixin mr($marginR) {
+  margin-right: $marginR;
+  &:last-child {margin-right: 0;}
+}
+
+@mixin mb($marginB) {
+  margin-bottom: $marginB;
+  &:last-child {margin-bottom: 0;}
+}
+
+@mixin image-2x() {
+  img:nth-child(1) {display: inline;}
+  img:nth-child(2) {display: none;}
+  @media (-webkit-min-device-pixel-ratio: 2),(min-resolution: 2dppx) {
+    img:nth-child(1) {display: none;}
+    img:nth-child(2) {display: inline;}
+  }
+}
+
+@mixin all-retina-sprites($map, $map2x) {
+  @media (-webkit-min-device-pixel-ratio: 2),(min-resolution: 2dppx) {
+    $base-class: sprite-map-name($map);
+    .#{$base-class}-all-retina-sprites {
+      background-image: sprite-url($map2x);
+      @include background-size(ceil(image-width(sprite-path($map2x)) / 2) auto);
+    }
+    @each $sprite in sprite-names($map) {
+      .#{$base-class}-#{$sprite} {
+        @extend .#{$base-class}-all-retina-sprites;
+        $position: sprite-position($map2x, $sprite);
+        background-position: nth($position, 1) nth($position, 2) / 2;
+      }
+    }
+  }
+}
+
+@mixin disableSelect() {
+  div, a, img{
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+}
+
+.css_mover{
+  cursor: pointer;
+  img:nth-child(1){display:inline; }
+  img:nth-child(2){display:none; }
+  &.current img:nth-child(1){display:none; }
+  &.current img:nth-child(2){display:inline; }
+}
+.css_active , .css_mover:hover{
+  img:nth-child(1){display:none; }
+  img:nth-child(2){display:inline; }
+  &.current img:nth-child(1){display:none; }
+  &.current img:nth-child(2){display:inline; }
+}
+
+.image-2x{
+  @include image-2x;
+}
+
+.show-for-en{
+  &:not(:lang(en)){
+    display: none !important;
+  }
+}
+.hide-for-en{
+  &:lang(en){
+    display: none !important;
+  }
+}
+
+
+@mixin basic-hover() {
+  cursor: pointer;
+  transition: all .3s;
+  &:hover{opacity: .6;}
+}
+@mixin basic-show-init($y: 50px) {
+  transform: translateY($y);
+  opacity: 0;
+  transition: all 1s;
+}
+@mixin basic-show-finish($delay: 0s) {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 1s $delay;
+}
+.ryder-show{
+  @include basic-show-init;
+  &.is-show{
+    @include basic-show-finish;
+  }
+}
+
+
+@mixin imgfit($type: 'cover') {
+  width: 100%;
+  height: 100%;
+  @if $type != 'cover' {
+    object-fit: #{$type};
+  } @else {
+    object-fit: cover;
+  }
+}
+
+
+@mixin m-content($c: $brown) {
+  --color: #{$c};
+  font-family: $en-family;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 1.8;
+  color: var(--color);
+}
+
+
+@mixin blink-hover() {
+  cursor: pointer;
+  &:hover{
+    animation: blinkHover 0.5s both;
+  }
+}
+
+@keyframes blinkHover{
+  0%{
+    opacity: 0;
+  }
+  10%{
+    opacity: 1;
+  }
+  20%{
+    opacity: 0;
+  }
+  30%{
+    opacity: 1;
+  }
+  40%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+@mixin m-more() {
+  z-index: 9;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  a:after{
+    content: '';
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    bottom: -60px;
+    left: -60px;
+    @include breakpoint(medium down) {
+      top: -20px;
+      right: -20px;
+      bottom: -20px;
+      left: -20px;
+    }
+  }
+  &:hover{
+    .box .deco{
+      transform: translate(-50%, -50%) rotate(200deg);
+    }
+  }
+  .box{
+    .bg{}
+    .deco{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all .5s;
+      img{max-width: initial;}
+    }
+    @include breakpoint(medium down) {
+      img{width: 72px;}
+    }
+  }
+  .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    img{max-width: initial;}
+    @include breakpoint(medium down) {
+      img{width: 44px;}
+    }
+  }
+}
+
+
+@mixin m-process-article() {
+  z-index: 1;
+  position: relative;
+  max-width: 480px;
+  @include breakpoint(xlarge only){
+    max-width: 410px;
+  }
+  @include breakpoint(medium down) {
+    max-width: 165px;
+  }
+  .box{
+    position: absolute;
+    top: -55px;
+    left: -50px;
+    pointer-events: none;
+    width: 100%;
+    img{max-width: initial;}
+    @include breakpoint(xlarge only){
+      zoom: .8;
+    }
+    @include breakpoint(medium down) {
+      top: -15px;
+      left: -10px;
+    }
+  }
+  .title-area{
+    @include breakpoint(xlarge only){
+      zoom: .75;
+    }
+    .num{
+      font-family: $en-family;
+      font-weight: 900;
+      font-size: 79px;
+      color: #fff;
+      @include breakpoint(medium down) {
+        font-size: 26px;
+      }
+    }
+    .title{
+      font-family: $en-family;
+      font-weight: 700;
+      font-size: 25px;
+      letter-spacing: 3px;
+      line-height: 1.3;
+      color: #fff;
+      position: relative;
+      top: -10px;
+      margin-left: 20px;
+      @include breakpoint(medium down) {
+        font-size: 14px;
+        letter-spacing: 2px;
+        top: -2px;
+        margin-left: 10px;
+      }
+    }
+  }
+  .content{
+    font-family: $en-family;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    color: #fff;
+    text-align: justify;
+    margin-top: 5px;
+    @include breakpoint(xlarge only){
+      font-size: 14px;
+    }
+    @include breakpoint(medium down) {
+      font-size: 12px;
+      letter-spacing: 0;
+    }
+  }
+}
+
+@mixin m-index-content($c: #fff) {
+  --color: #{$c};
+  font-family: $en-family;
+  font-weight: 300;
+  font-size: 17px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  color: var(--color);
+  @include breakpoint(xlarge down){
+    font-size: 14px;
+  }
+  @include breakpoint(medium down) {
+    font-size: 12px;
+  }
+}
+
+@mixin m-flag-v($s) {
+  clip-path: polygon(0 0, calc(100% - #{$s}) 0, 100% #{$s},  100% calc(100% - #{$s}), calc(100% - #{$s}) 100%, 0 100%);
+  @include breakpoint(medium down) {
+    clip-path: polygon(#{$s} 0, calc(100% - #{$s}) 0, 100% #{$s}, 100% 100%, 0 100%, 0 #{$s})
+  }
+  .deco{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -1px;
+    display: flex;
+  }
+}
+
+@mixin m-flag-h($s) {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - #{$s}), calc(100% - #{$s}) 100%, #{$s} 100%, 0 calc(100% - #{$s}));
+  .deco{
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+}
+
+@mixin m-video-dot() {
+  position: relative;
+  &:after {
+    content: "";
+    display: block;
+    background: url(../images/filter_video.png) 0 0 repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    @include breakpoint(medium down){
+      content: none;
+    }
+  }
+}
+
+@mixin m-ryder-mask() {
+  position: relative;
+  .deco{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../images/ryder-mask-deco.png) 0 0/100% 100% no-repeat;
+    pointer-events: none;
+    @include breakpoint(medium down) {
+      background: url(../images/ryder-mask-deco-mobile.png) 0 0/100% 100% no-repeat;
+    }
+    @include breakpoint(medium down){
+      top: 7px;
+    }
+  }
+  .video-area{
+    @include m-video;
+    @include m-video-dot;
+    height: 820px;
+    mask: url(../images/ryder-mask.svg) 0 0/100% 100% no-repeat;
+    @include breakpoint(xlarge only){
+      height: 699px;
+    }
+    @include breakpoint(medium down) {
+      mask: url(../images/ryder-mask-mobile.svg) 0 0/100% 100% no-repeat;
+      height: 94vw;
+    }
+    img{@include imgfit;}
+  }
+}
+
+@mixin m-process-pic() {
+  @include m-video;
+  @include m-video-dot;
+  display: inline-flex;
+  @include breakpoint(xlarge only){
+    img{zoom: .8;}
+  }
+}
+
+@mixin m-video() {
+  position: relative;
+  img{@include imgfit;}
+  video{
+    @include imgfit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .5s;
+    &.is-show{
+      opacity: 1;
+    }
+  }
+}
+
+@mixin m-arrow-flash() {
+  cursor: pointer;
+  &:hover{
+    svg{
+      polygon{
+        &:nth-child(2){
+          animation: arrowprev 1s infinite;
+        }
+        &:nth-child(1){
+          animation: arrowprev 1s .5s infinite;
+        }
+      }
+    }
+  }
+  @keyframes arrowprev{
+    0%, 49.9%{
+      fill: #1a1a1a;
+    }
+    50%, 100%{
+      fill: transparent;
+    }
+  }
+}
+
+@mixin m-arrow-flash-white() {
+  cursor: pointer;
+  &:hover{
+    svg{
+      polygon{
+        &:nth-child(2){
+          animation: arrowprev-white 1s infinite;
+        }
+        &:nth-child(1){
+          animation: arrowprev-white 1s .5s infinite;
+        }
+      }
+    }
+  }
+  @keyframes arrowprev-white{
+    0%, 49.9%{
+      fill: #fff;
+    }
+    50%, 100%{
+      fill: transparent;
+    }
+  }
+}
+
+
+
+
+
+
+
+/*
+
+        　　　  %%%%%%%%,
+    　　　　　,%%/\%%%%/\%%
+    　　　　,%%%\c　""　J/%%%
+    %.　　　%%%%/　o　o　\%%%
+    `%%.　　%%%%　　 　　|%%%
+    　`%%　　`%%%%(__Y__)%%'
+    　//　　　;%%%%`\-/%%%'
+    ((　　　　/ `%%%%%%%'
+    　\\　　.'　　　　|
+    　\\　　/　　　\　|　|
+    　　\\/　　　　)　|　|
+    　　　\　　　　/　|　|__
+    　　　(___________)))))))         public.scss end
+
+*/
