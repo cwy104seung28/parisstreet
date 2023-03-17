@@ -66,6 +66,7 @@ body {
                 margin-bottom: 7px;
                 color: #FFFFFF;
                 white-space: nowrap;
+                font-weight: 700;
             }
 
             .ch {
@@ -80,10 +81,10 @@ body {
         &.is-show {
             background-color: #000;
 
-            .list-area {
-                opacity: 1;
-                pointer-events: all;
-            }
+            // .list-area {
+            //     opacity: 1;
+            //     pointer-events: all;
+            // }
         }
 
         .list-area {
@@ -91,9 +92,9 @@ body {
             display: flex;
             justify-content: right;
             align-items: center;
-            opacity: 0;
-            pointer-events: none;
-            transition: 0.3s ease-in-out;
+            // opacity: 0;
+            // pointer-events: none;
+            // transition: 0.3s ease-in-out;
 
             li {
                 font-size: 12px;
@@ -109,6 +110,32 @@ body {
 
                 &:last-child {
                     margin-right: 0;
+                }
+
+            }
+
+            .class {
+                position: relative;
+
+                .class-list {
+                    position: absolute;
+                    left: -17px;
+                    bottom: -197px;
+
+                    opacity: 0;
+                    pointer-events: none;
+                    transition: 0.5s ease-in-out;
+
+                    &.is-show {
+                        opacity: 1;
+                        pointer-events: all;
+                    }
+
+                    li {
+                        background-color: #000;
+                        padding: 10px 5px;
+                        margin: 0;
+                    }
                 }
             }
         }
@@ -192,8 +219,9 @@ body {
             margin-bottom: 18px;
 
             .title {
+                font-family: $ch-family;
                 font-size: 18px;
-                letter-spacing: 2px;
+                letter-spacing: 3px;
                 color: #FFFFFF;
                 font-weight: 600;
                 margin-bottom: 10px;
@@ -213,7 +241,7 @@ body {
                     margin-right: 7px;
                     position: relative;
 
-                    @for $i from 1 through 3 {
+                    @for $i from 1 through 10 {
                         &:nth-child(#{$i}) {
                             z-index: 1-$i;
                         }
@@ -227,13 +255,47 @@ body {
                         height: 23.5vw;
                     }
                 }
+
+                a {
+                    position: relative;
+                    display: block;
+                }
+
+                .new {
+                    position: absolute;
+                    writing-mode: vertical-lr;
+                    padding: 9px 8px 9px 6px;
+                    background-color: #000;
+                    color: #FFFFFF;
+                    top: 0;
+                    right: 10px;
+                    white-space: nowrap;
+                    font-size: 12px;
+                    zoom: 0.8;
+                    letter-spacing: 3px;
+                }
             }
 
             &.top-rank {
                 li {
+                    margin-right: -10px;
+
+                    @for $i from 1 through 10 {
+                        @if $i>=10 {
+                            &:nth-child(#{$i}) {
+                                .rank {
+                                    margin-right: -60px;
+                                }
+                            }
+                        }
+
+                    }
+
+                }
+
+                a {
                     display: flex;
                     align-items: baseline;
-                    margin-right: -10px;
                 }
 
                 .rank {
@@ -250,7 +312,7 @@ body {
                     margin-right: -20px;
                     position: relative;
                     z-index: 1;
-                    bottom: 1px;
+                    bottom: 2px;
                 }
             }
         }
@@ -410,6 +472,7 @@ body {
                 // justify-content: center;
                 align-items: center;
                 position: relative;
+                justify-content: end;
 
                 img {
                     margin-bottom: 10px;

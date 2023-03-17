@@ -34,58 +34,249 @@
 		<div class="content">
 			<div class="title">熱門品牌</div>
 			<ul class="carousel" data-flickity>
-				<li class="carousel-cell"><img src="./img/brand1.png"></li>
-				<li class="carousel-cell"><img src="./img/brand2.png"></li>
-				<li class="carousel-cell"><img src="./img/brand3.png"></li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<img src="./img/brand1.png">
+						<div class="new">新品上架</div>
+					</a>
+				</li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<img src="./img/brand2.png">
+					</a>
+				</li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<img src="./img/brand3.png">
+					</a>
+				</li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<img src="./img/brand4.png">
+					</a>
+				</li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<img src="./img/brand5.png">
+					</a>
+				</li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<img src="./img/brand6.png">
+					</a>
+				</li>
 			</ul>
 		</div>
 		<div class="content">
 			<div class="title">瀏覽紀錄</div>
 			<ul class="carousel" data-flickity>
-				<li class="carousel-cell"><img src="./img/browse1.png"></li>
-				<li class="carousel-cell"><img src="./img/browse2.png"></li>
-				<li class="carousel-cell"><img src="./img/browse3.png"></li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<img src="./img/browse1.png">
+					</a>
+				</li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<img src="./img/browse2.png">
+					</a>
+				</li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<img src="./img/browse3.png">
+					</a>
+				</li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<img src="./img/browse1.png">
+					</a>
+				</li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<img src="./img/browse2.png">
+					</a>
+				</li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<img src="./img/browse3.png">
+					</a>
+				</li>
 			</ul>
 		</div>
 		<div class="content">
 			<div class="title">新品上架</div>
 			<ul class="carousel" data-flickity>
-				<li class="carousel-cell"><img src="./img/new1.png"></li>
-				<li class="carousel-cell"><img src="./img/new2.png"></li>
-				<li class="carousel-cell"><img src="./img/new3.png"></li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<img src="./img/new1.png">
+						<div class="new">新品上架</div>
+					</a>
+				</li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<img src="./img/new2.png">
+						<div class="new">新品上架</div>
+					</a>
+				</li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<img src="./img/new3.png">
+					</a>
+				</li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<img src="./img/new1.png">
+					</a>
+				</li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<img src="./img/new2.png">
+					</a>
+				</li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<img src="./img/new3.png">
+					</a>
+				</li>
 			</ul>
 		</div>
 		<div class="content">
 			<div class="title">情人節送禮推薦</div>
 			<ul class="carousel" data-flickity>
-				<li class="carousel-cell"><img src="./img/valentine1.png"></li>
-				<li class="carousel-cell"><img src="./img/valentine2.png"></li>
-				<li class="carousel-cell"><img src="./img/valentine3.png"></li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<img src="./img/valentine1.png">
+						<div class="new">新品上架</div>
+					</a>
+				</li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<img src="./img/valentine2.png">
+					</a>
+				</li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<img src="./img/valentine3.png">
+					</a>
+				</li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<img src="./img/valentine1.png">
+					</a>
+				</li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<img src="./img/valentine2.png">
+					</a>
+				</li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<img src="./img/valentine3.png">
+					</a>
+				</li>
 			</ul>
 		</div>
 		<div class="content top-rank">
 			<div class="title">本日熱銷Top 10</div>
 			<ul class="carousel" data-flickity>
 				<li class="carousel-cell">
-					<div class="rank">1</div>
-					<img src="./img/top1.png">
+					<a href="./shop_detail.php">
+						<div class="rank">1</div>
+						<img src="./img/top1.png">
+						<div class="new">新品上架</div>
+					</a>
 				</li>
 				<li class="carousel-cell">
-					<div class="rank">2</div>
-					<img src="./img/top2.png">
+					<a href="./shop_detail.php">
+						<div class="rank">2</div>
+						<img src="./img/top2.png">
+					</a>
+
 				</li>
 				<li class="carousel-cell">
-					<div class="rank">3</div>
-					<img src="./img/top3.png">
+					<a href="./shop_detail.php">
+						<div class="rank">3</div>
+						<img src="./img/top3.png">
+					</a>
+				</li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<div class="rank">4</div>
+						<img src="./img/top1.png">
+					</a>
+				</li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<div class="rank">5</div>
+						<img src="./img/top2.png">
+					</a>
+
+				</li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<div class="rank">6</div>
+						<img src="./img/top3.png">
+					</a>
+				</li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<div class="rank">7</div>
+						<img src="./img/top1.png">
+					</a>
+				</li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<div class="rank">8</div>
+						<img src="./img/top2.png">
+					</a>
+
+				</li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<div class="rank">9</div>
+						<img src="./img/top3.png">
+					</a>
+				</li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<div class="rank">10</div>
+						<img src="./img/top3.png">
+					</a>
 				</li>
 			</ul>
 		</div>
 		<div class="content">
 			<div class="title">名人實著款</div>
 			<ul class="carousel" data-flickity>
-				<li class="carousel-cell"><img src="./img/idol1.png"></li>
-				<li class="carousel-cell"><img src="./img/idol2.png"></li>
-				<li class="carousel-cell"><img src="./img/idol3.png"></li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<img src="./img/idol1.png">
+					</a>
+				</li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<img src="./img/idol2.png">
+					</a>
+				</li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<img src="./img/idol3.png">
+					</a>
+				</li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<img src="./img/idol1.png">
+					</a>
+				</li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<img src="./img/idol2.png">
+					</a>
+				</li>
+				<li class="carousel-cell">
+					<a href="./shop_detail.php">
+						<img src="./img/idol3.png">
+					</a>
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -135,13 +326,4 @@
 			$(".topmenu").removeClass("is-show")
 		}
 	}).trigger("scroll");
-
-	$(".profile").click(function() {
-		$(".member-area").addClass("is-show");
-		$("html").addClass("is-locked");
-	});
-	$(".member-area .close").click(function() {
-		$(".member-area").removeClass("is-show");
-		$("html").removeClass("is-locked");
-	});
 </script>

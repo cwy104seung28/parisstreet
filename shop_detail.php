@@ -160,12 +160,12 @@
         // "arrowShape": "",
         // "watchCSS": true,
     })
-    $(".profile").click(function() {
-        $(".member-area").addClass("is-show");
-        $("html").addClass("is-locked");
-    });
-    $(".member-area .close").click(function() {
-        $(".member-area").removeClass("is-show");
-        $("html").removeClass("is-locked");
-    });
+    // $(".profile").click(function() {
+    //     $(".member-area").addClass("is-show");
+    //     $("html").addClass("is-locked");
+    // });
+    // $(".member-area .close").click(function() {
+    //     $(".member-area").removeClass("is-show");
+    //     $("html").removeClass("is-locked");
+    // });
 </script>
