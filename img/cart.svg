@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="b" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" width="21.38" height="18.41" viewBox="0 0 21.38 18.41">
+<svg id="b" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" width="44.74" height="38.53" viewBox="0 0 44.74 38.53">
   <defs>
     <style>
-      .d {
-        stroke-linecap: round;
-      }
-
       .d, .e {
         fill: none;
         stroke: #fff;
         stroke-linejoin: round;
-        stroke-width: 1.41px;
+        stroke-width: 2.94px;
+      }
+
+      .e {
+        stroke-linecap: round;
       }
     </style>
   </defs>
-  <g id="c" data-name="文字">
+  <g id="c" data-name="bar">
     <g>
-      <path class="d" d="M.7,.7h3.44c.23,0,.43,.15,.48,.37l3.5,13.27h9.59"/>
-      <circle class="e" cx="8.4" cy="16.02" r="1.68"/>
-      <circle class="e" cx="17.71" cy="16.02" r="1.68"/>
-      <polygon class="e" points="5.31 3.67 20.68 3.67 18.74 11.67 7.42 11.67 5.31 3.67"/>
-      <line class="e" x1="10.53" y1="3.67" x2="11.26" y2="11.67"/>
+      <path class="e" d="M1.47,1.47h7.2c.48,0,.89,.32,1.01,.78l7.32,27.76h20.06"/>
+      <circle class="d" cx="17.58" cy="33.54" r="3.52"/>
+      <circle class="d" cx="37.06" cy="33.54" r="3.52"/>
+      <polygon class="d" points="11.11 7.69 43.27 7.69 39.21 24.43 15.52 24.43 11.11 7.69"/>
+      <line class="d" x1="22.04" y1="7.69" x2="23.57" y2="24.43"/>
       <g>
-        <line class="e" x1="10.45" y1="3.67" x2="11.18" y2="11.67"/>
-        <line class="e" x1="15.53" y1="3.67" x2="14.8" y2="11.67"/>
+        <line class="d" x1="21.88" y1="7.69" x2="23.4" y2="24.43"/>
+        <line class="d" x1="32.51" y1="7.69" x2="30.98" y2="24.43"/>
       </g>
-      <line class="e" x1="6.36" y1="7.67" x2="19.71" y2="7.67"/>
+      <line class="d" x1="13.32" y1="16.06" x2="41.24" y2="16.06"/>
     </g>
   </g>
 </svg>

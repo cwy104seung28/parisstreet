@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="b" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" width="21.38" height="18.41" viewBox="0 0 21.38 18.41">
+  <defs>
+    <style>
+      .d {
+        stroke-linecap: round;
+      }
+
+      .d, .e {
+        fill: none;
+        stroke: #fff;
+        stroke-linejoin: round;
+        stroke-width: 1.41px;
+      }
+    </style>
+  </defs>
+  <g id="c" data-name="文字">
+    <g>
+      <path class="d" d="M.7,.7h3.44c.23,0,.43,.15,.48,.37l3.5,13.27h9.59"/>
+      <circle class="e" cx="8.4" cy="16.02" r="1.68"/>
+      <circle class="e" cx="17.71" cy="16.02" r="1.68"/>
+      <polygon class="e" points="5.31 3.67 20.68 3.67 18.74 11.67 7.42 11.67 5.31 3.67"/>
+      <line class="e" x1="10.53" y1="3.67" x2="11.26" y2="11.67"/>
+      <g>
+        <line class="e" x1="10.45" y1="3.67" x2="11.18" y2="11.67"/>
+        <line class="e" x1="15.53" y1="3.67" x2="14.8" y2="11.67"/>
+      </g>
+      <line class="e" x1="6.36" y1="7.67" x2="19.71" y2="7.67"/>
+    </g>
+  </g>
+</svg>

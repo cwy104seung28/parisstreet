@@ -15,18 +15,33 @@
 			<span class="en">PAINTED DOTS ・ INFINITY DOTS ・ METAL DOTS ・</span>
 			男士系列...
 		</div>
+		<ul class="other-list show-for-large">
+			<li>
+				<img src="./img/add.svg" alt="">
+				<div class="text">加入珍藏</div>
+			</li>
+			<li>
+				<img src="./img/buy.svg" alt="">
+				<div class="text">立即選購</div>
+			</li>
+			<li>
+				<img src="./img/list.svg" alt="">
+				<div class="text">相關文章</div>
+			</li>
+		</ul>
 	</div>
-	<ul class="other-list">
+
+	<ul class="other-list hide-for-large">
 		<li>
-			<img src="./img/add.svg" alt="">
+			<img src="./img/add-mobile.svg" alt="">
 			<div class="text">加入珍藏</div>
 		</li>
 		<li>
-			<img src="./img/buy.svg" alt="">
+			<img src="./img/buy-mobile.svg" alt="">
 			<div class="text">立即選購</div>
 		</li>
 		<li>
-			<img src="./img/list.svg" alt="">
+			<img src="./img/list-mobile.svg" alt="">
 			<div class="text">相關文章</div>
 		</li>
 	</ul>
@@ -35,33 +50,33 @@
 			<div class="title">熱門品牌</div>
 			<ul class="carousel" data-flickity>
 				<li class="carousel-cell">
-					<a href="./shop_detail.php">
+					<a href="./brand.php">
 						<img src="./img/brand1.png">
 						<div class="new">新品上架</div>
 					</a>
 				</li>
 				<li class="carousel-cell">
-					<a href="./shop_detail.php">
+					<a href="./brand.php">
 						<img src="./img/brand2.png">
 					</a>
 				</li>
 				<li class="carousel-cell">
-					<a href="./shop_detail.php">
+					<a href="./brand.php">
 						<img src="./img/brand3.png">
 					</a>
 				</li>
 				<li class="carousel-cell">
-					<a href="./shop_detail.php">
+					<a href="./brand.php">
 						<img src="./img/brand4.png">
 					</a>
 				</li>
 				<li class="carousel-cell">
-					<a href="./shop_detail.php">
+					<a href="./brand.php">
 						<img src="./img/brand5.png">
 					</a>
 				</li>
 				<li class="carousel-cell">
-					<a href="./shop_detail.php">
+					<a href="./brand.php">
 						<img src="./img/brand6.png">
 					</a>
 				</li>
@@ -280,26 +295,7 @@
 			</ul>
 		</div>
 	</div>
-	<div class="fix-mobile">
-		<ul class="list-area">
-			<li>
-				<img src="./img/home.svg" alt="">
-				<div class="text">首頁</div>
-			</li>
-			<li>
-				<img src="./img/collection.svg" alt="">
-				<div class="text">加入珍藏</div>
-			</li>
-			<li>
-				<img src="./img/search.svg" alt="">
-				<div class="text">搜尋</div>
-			</li>
-			<li>
-				<img src="./img/cart.svg" alt="">
-				<div class="text">購物車</div>
-			</li>
-		</ul>
-	</div>
+	<?php include 'fix_mobile.php'; ?>
 </body>
 
 <?php include 'script.php'; ?>

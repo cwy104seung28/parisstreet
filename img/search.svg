@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="b" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" width="19.25" height="19.43" viewBox="0 0 19.25 19.43">
+<svg id="b" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" width="40.29" height="40.67" viewBox="0 0 40.29 40.67">
   <defs>
     <style>
       .d {
         fill: none;
         stroke: #fff;
         stroke-miterlimit: 10;
-        stroke-width: 1.41px;
+        stroke-width: 2.94px;
       }
     </style>
   </defs>
-  <g id="c" data-name="文字">
+  <g id="c" data-name="bar">
     <g>
-      <circle class="d" cx="9.04" cy="9.04" r="8.33"/>
-      <line class="d" x1="14.83" y1="15.02" x2="18.75" y2="18.94"/>
+      <circle class="d" cx="18.91" cy="18.91" r="17.44"/>
+      <line class="d" x1="31.03" y1="31.43" x2="39.25" y2="39.63"/>
     </g>
   </g>
 </svg>
