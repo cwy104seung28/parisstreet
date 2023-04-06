@@ -32,7 +32,7 @@
 	</div>
 
 	<ul class="other-list hide-for-large">
-		<li>
+		<li style="opacity: 0; pointer-events: none;">
 			<img src="./img/add-mobile.svg" alt="">
 			<div class="text">加入珍藏</div>
 		</li>
@@ -88,31 +88,55 @@
 				<li class="carousel-cell">
 					<a href="./shop_detail.php">
 						<img src="./img/browse1.png">
+						<div class="text-area">
+							<div class="en">LV</div>
+							<div class="en small">BOULOGNE</div>
+						</div>
 					</a>
 				</li>
 				<li class="carousel-cell">
 					<a href="./shop_detail.php">
 						<img src="./img/browse2.png">
+						<div class="text-area">
+							<div class="en">CHANEL</div>
+							<div class="ch">迷你相機包</div>
+						</div>
 					</a>
 				</li>
 				<li class="carousel-cell">
 					<a href="./shop_detail.php">
 						<img src="./img/browse3.png">
+						<div class="text-area">
+							<div class="en">CHANEL</div>
+							<div class="ch">小型後背包</div>
+						</div>
 					</a>
 				</li>
 				<li class="carousel-cell">
 					<a href="./shop_detail.php">
 						<img src="./img/browse1.png">
+						<div class="text-area">
+							<div class="en">LV</div>
+							<div class="en small">BOULOGNE</div>
+						</div>
 					</a>
 				</li>
 				<li class="carousel-cell">
 					<a href="./shop_detail.php">
 						<img src="./img/browse2.png">
+						<div class="text-area">
+							<div class="en">CHANEL</div>
+							<div class="ch">迷你相機包</div>
+						</div>
 					</a>
 				</li>
 				<li class="carousel-cell">
 					<a href="./shop_detail.php">
 						<img src="./img/browse3.png">
+						<div class="text-area">
+							<div class="en">CHANEL</div>
+							<div class="ch">迷你相機包</div>
+						</div>
 					</a>
 				</li>
 			</ul>
@@ -123,33 +147,57 @@
 				<li class="carousel-cell">
 					<a href="./shop_detail.php">
 						<img src="./img/new1.png">
+						<div class="text-area">
+							<div class="en">LV</div>
+							<div class="en small">BOULOGNE</div>
+						</div>
 						<div class="new">新品上架</div>
 					</a>
 				</li>
 				<li class="carousel-cell">
 					<a href="./shop_detail.php">
 						<img src="./img/new2.png">
+						<div class="text-area">
+							<div class="en">CHANEL</div>
+							<div class="ch">迷你相機包</div>
+						</div>
 						<div class="new">新品上架</div>
 					</a>
 				</li>
 				<li class="carousel-cell">
 					<a href="./shop_detail.php">
 						<img src="./img/new3.png">
+						<div class="text-area">
+							<div class="en">CHANEL</div>
+							<div class="ch">小型後背包</div>
+						</div>
 					</a>
 				</li>
 				<li class="carousel-cell">
 					<a href="./shop_detail.php">
 						<img src="./img/new1.png">
+						<div class="text-area">
+							<div class="en">LV</div>
+							<div class="en small">BOULOGNE</div>
+						</div>
 					</a>
 				</li>
 				<li class="carousel-cell">
 					<a href="./shop_detail.php">
 						<img src="./img/new2.png">
+						<div class="text-area">
+							<div class="en">CHANEL</div>
+							<div class="ch">迷你相機包</div>
+						</div>
 					</a>
 				</li>
 				<li class="carousel-cell">
 					<a href="./shop_detail.php">
 						<img src="./img/new3.png">
+						<div class="text-area">
+							<div class="en">CHANEL</div>
+							<div class="ch">小型後背包</div>
+						</div>
 					</a>
 				</li>
 			</ul>
@@ -160,32 +208,56 @@
 				<li class="carousel-cell">
 					<a href="./shop_detail.php">
 						<img src="./img/valentine1.png">
+						<div class="text-area">
+							<div class="en">LV</div>
+							<div class="en small">BOULOGNE</div>
+						</div>
 						<div class="new">新品上架</div>
 					</a>
 				</li>
 				<li class="carousel-cell">
 					<a href="./shop_detail.php">
 						<img src="./img/valentine2.png">
+						<div class="text-area">
+							<div class="en">CHANEL</div>
+							<div class="ch">迷你相機包</div>
+						</div>
 					</a>
 				</li>
 				<li class="carousel-cell">
 					<a href="./shop_detail.php">
 						<img src="./img/valentine3.png">
+						<div class="text-area">
+							<div class="en">CHANEL</div>
+							<div class="ch">小型後背包</div>
+						</div>
 					</a>
 				</li>
 				<li class="carousel-cell">
 					<a href="./shop_detail.php">
 						<img src="./img/valentine1.png">
+						<div class="text-area">
+							<div class="en">LV</div>
+							<div class="en small">BOULOGNE</div>
+						</div>
 					</a>
 				</li>
 				<li class="carousel-cell">
 					<a href="./shop_detail.php">
 						<img src="./img/valentine2.png">
+						<div class="text-area">
+							<div class="en">CHANEL</div>
+							<div class="ch">迷你相機包</div>
+						</div>
 					</a>
 				</li>
 				<li class="carousel-cell">
 					<a href="./shop_detail.php">
 						<img src="./img/valentine3.png">
+						<div class="text-area">
+							<div class="en">CHANEL</div>
+							<div class="ch">小型後背包</div>
+						</div>
 					</a>
 				</li>
 			</ul>
@@ -265,31 +337,55 @@
 				<li class="carousel-cell">
 					<a href="./shop_detail.php">
 						<img src="./img/idol1.png">
+						<div class="text-area">
+							<div class="en">LV</div>
+							<div class="en small">BOULOGNE</div>
+						</div>
 					</a>
 				</li>
 				<li class="carousel-cell">
 					<a href="./shop_detail.php">
 						<img src="./img/idol2.png">
+						<div class="text-area">
+							<div class="en">CHANEL</div>
+							<div class="ch">迷你相機包</div>
+						</div>
 					</a>
 				</li>
 				<li class="carousel-cell">
 					<a href="./shop_detail.php">
 						<img src="./img/idol3.png">
+						<div class="text-area">
+							<div class="en">CHANEL</div>
+							<div class="ch">小型後背包</div>
+						</div>
 					</a>
 				</li>
 				<li class="carousel-cell">
 					<a href="./shop_detail.php">
 						<img src="./img/idol1.png">
+						<div class="text-area">
+							<div class="en">LV</div>
+							<div class="en small">BOULOGNE</div>
+						</div>
 					</a>
 				</li>
 				<li class="carousel-cell">
 					<a href="./shop_detail.php">
 						<img src="./img/idol2.png">
+						<div class="text-area">
+							<div class="en">CHANEL</div>
+							<div class="ch">迷你相機包</div>
+						</div>
 					</a>
 				</li>
 				<li class="carousel-cell">
 					<a href="./shop_detail.php">
 						<img src="./img/idol3.png">
+						<div class="text-area">
+							<div class="en">CHANEL</div>
+							<div class="ch">小型後背包</div>
+						</div>
 					</a>
 				</li>
 			</ul>

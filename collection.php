@@ -7,14 +7,14 @@
 
 <body>
     <?php include 'topmenu.php'; ?>
-    <div class="inquiry-container">
+    <div class="collection-container">
         <div class="top-area is-white">
             <div class="category">
-                <a class="now" href="javacript:;">詢價車</a>
+                <a class="now" href="javacript:;">我的珍藏</a>
             </div>
         </div>
-        <div class="inquiry-area">
-            <ul class="inquiry-list">
+        <div class="collection-area">
+            <ul class="collection-list">
                 <li>
                     <div class="pic-area"><img src="./img/bag-1.png"></div>
                     <div class="article-area">
@@ -22,6 +22,7 @@
                         <div class="content">小型後背包</div>
                     </div>
                     <div class="close"><img src="./img/no-bg-close.svg"></div>
+                    <div class="add"><img src="./img/cart-mobile.svg">加入詢價車</div>
                 </li>
                 <li>
                     <div class="pic-area"><img src="./img/bag-3.png"></div>
@@ -30,6 +31,7 @@
                         <div class="content">22包</div>
                     </div>
                     <div class="close"><img src="./img/no-bg-close.svg"></div>
+                    <div class="add"><img src="./img/cart-mobile.svg">加入詢價車</div>
                 </li>
                 <li>
                     <div class="pic-area"><img src="./img/bag-2.png"></div>
@@ -38,6 +40,7 @@
                         <div class="content">迷你相機包</div>
                     </div>
                     <div class="close"><img src="./img/no-bg-close.svg"></div>
+                    <div class="add"><img src="./img/cart-mobile.svg">加入詢價車</div>
                 </li>
             </ul>
         </div>

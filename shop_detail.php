@@ -10,7 +10,7 @@
     <div class="shop-detail">
         <div class="top-area">
             <div class="category">
-                <a href="">女士</a>
+                <!-- <a href="">女士</a>
                 <img class="show-for-large" src="./img/next.svg">
                 <img class="hide-for-large" src="./img/next-mobile.svg">
                 <a class="en" href="">LV</a>
@@ -19,7 +19,8 @@
                 <a href="">手提包系列</a>
                 <img class="show-for-large" src="./img/next.svg">
                 <img class="hide-for-large" src="./img/next-mobile.svg">
-                <a class="en now" href="">BOULOGNE</a>
+                <a class="en now" href="">BOULOGNE</a> -->
+                <div class="en">LV．BOULOGNE</div>
             </div>
             <div class="add">
                 <img src="./img/add-black.svg" alt="">
@@ -28,16 +29,25 @@
         </div>
         <div class="shop-content">
             <div class="area-1">
-                <ul class="shop-carousel">
-                    <li><img src="./img/shop.jpg"></li>
-                    <li><img src="./img/shop.jpg"></li>
-                    <li><img src="./img/shop.jpg"></li>
-                </ul>
+                <div class="pic-area">
+                    <ul class="shop-carousel">
+                        <li><img src="./img/shop.jpg"></li>
+                        <li><img src="./img/shop.jpg"></li>
+                        <li><img src="./img/shop.jpg"></li>
+
+                    </ul>
+                    <div class="view"><img src="./img/view.svg">:12356</div>
+                </div>
+
+
                 <div class="info">
-                    <div class="title en">BOULOGNE</div>
+                    <!-- <div class="title en">BOULOGNE</div> -->
                     <div class="content">這款百搭多變的Boulogne包款以經典Monogram帆布製作，配備可拆式肩帶，可作斜背、長肩背或短肩背攜帶，拆下後肩帶更可變成小型鏈帶包款或手提包，適合用於較正式的場合。</div>
                     <div class="other">
-                        <div class="price">NT$ 74,500</div>
+                        <div class="time">
+                            團購人數：23 人<br>
+                            時程：2023/03/23 - 2023/04/08
+                        </div>
                         <div class="add-cart">
                             <svg id="b" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" width="109.45" height="33.6" viewBox="0 0 109.45 33.6">
                                 <g id="c" data-name="文字">
@@ -89,7 +99,7 @@
                         <div class="info">
                             <div>
                                 <div class="name">LV・COUSSIN BB</div>
-                                <div class="price">NT$ 128,000</div>
+                                <!-- <div class="price">NT$ 128,000</div> -->
                             </div>
                             <div class="add">
                                 <img src="./img/add-black.svg">
@@ -102,7 +112,7 @@
                         <div class="info">
                             <div>
                                 <div class="name">LV・EASY POUCH ON STRAP</div>
-                                <div class="price">NT$ 54,500</div>
+                                <!-- <div class="price">NT$ 54,500</div> -->
                             </div>
                             <div class="add">
                                 <img src="./img/add-black.svg">
@@ -117,7 +127,7 @@
                         <div class="info">
                             <div>
                                 <div class="name">LV・BUCI</div>
-                                <div class="price">NT$ 69,500</div>
+                                <!-- <div class="price">NT$ 69,500</div> -->
                             </div>
                             <div class="add">
                                 <img src="./img/add-black.svg">
@@ -130,6 +140,7 @@
             </div>
         </div>
     </div>
+    <div class="discount">85 折</div>
 
     <?php include 'fix_mobile.php'; ?>
 </body>

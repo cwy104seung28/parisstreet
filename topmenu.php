@@ -71,20 +71,28 @@
 	</div>
 	<ul class="setting-area">
 		<li>
-			<div class="title-area">
-				<img class="show-for-large" src="./img/notice.svg">
-				<img class="hide-for-large" src="./img/notice-mobile.svg">
-				<div class="title">通知</div>
-			</div>
-			<a href="javascript:;"><img src="./img/go.svg"></a>
+			<a href="javascript:;">
+				<div class="setting">
+					<div class="title-area">
+						<img class="show-for-large" src="./img/notice.svg">
+						<img class="hide-for-large" src="./img/notice-mobile.svg">
+						<div class="title">通知</div>
+					</div>
+					<div><img src="./img/go.svg"></div>
+				</div>
+			</a>
 		</li>
 		<li>
-			<div class="title-area">
-				<img class="show-for-large" src="./img/add.svg">
-				<img class="hide-for-large" src="./img/add-mobile.svg">
-				<div class="title">我的珍藏</div>
-			</div>
-			<a href="javascript:;"><img src="./img/go.svg"></a>
+			<a href="collection.php">
+				<div class="setting">
+					<div class="title-area">
+						<img class="show-for-large" src="./img/add.svg">
+						<img class="hide-for-large" src="./img/add-mobile.svg">
+						<div class="title">我的珍藏</div>
+					</div>
+					<div><img src="./img/go.svg"></div>
+				</div>
+			</a>
 		</li>
 		<!-- <li>
 			<div class="title-area">
@@ -124,7 +132,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
 
 <script>
-	
 	$(".list-area .class").click(function() {
 		$(".class-list").toggleClass("is-show");
 	});
