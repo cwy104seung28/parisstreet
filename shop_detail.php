@@ -23,7 +23,7 @@
                 <div class="en">LV．BOULOGNE</div>
             </div>
             <div class="add">
-                <img src="./img/add-black.svg" alt="">
+                <img src="./img/heart-black.svg" alt="">
                 <div class="text">加入珍藏</div>
             </div>
         </div>
@@ -102,7 +102,7 @@
                                 <!-- <div class="price">NT$ 128,000</div> -->
                             </div>
                             <div class="add">
-                                <img src="./img/add-black.svg">
+                                <img src="./img/heart-black.svg">
                                 <div class="text">加入珍藏</div>
                             </div>
                         </div>
@@ -115,7 +115,7 @@
                                 <!-- <div class="price">NT$ 54,500</div> -->
                             </div>
                             <div class="add">
-                                <img src="./img/add-black.svg">
+                                <img src="./img/heart-black.svg">
                                 <div class="text">加入珍藏</div>
                             </div>
                         </div>
@@ -130,7 +130,7 @@
                                 <!-- <div class="price">NT$ 69,500</div> -->
                             </div>
                             <div class="add">
-                                <img src="./img/add-black.svg">
+                                <img src="./img/heart-black.svg">
                                 <div class="text">加入珍藏</div>
                             </div>
                         </div>

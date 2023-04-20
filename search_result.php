@@ -7,14 +7,46 @@
 
 <body>
     <?php include 'topmenu.php'; ?>
-    <div class="species-container">
+    <div class="result-container">
         <div class="top-area is-white">
-            <div class="category result">
-                <img src="./img/search-mobile.svg">：<div class="en">CHANEL</div><div class="result-text">共 <span class="num">43</span> 個結果 </div>
+            <div class="result-area flex-container align-middle">
+                <img src="./img/search-mobile.svg">
+                <div class="ch result-text"><span class="en">LV</span></div>
+                <div class="ch">搜尋結果</div>
+            </div>
+            <div class="select-area flex-container align-middle">
+                <img src="./img/select.svg">
+                <select name="" id="" class="cart-select">
+                    <option value="">系列</option>
+                    <option value="">LV</option>
+                    <option value="">CHANEL</option>
+                    <option value="">GUCCI</option>
+                    <option value="">YSL</option>
+                    <option value="">Hermes</option>
+                    <option value="">Dior</option>
+                </select>
+                <select name="" id="" class="cart-select">
+                    <option value="">類別</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                </select>
+                <select name="" id="" class="cart-select">
+                    <option value="">材質</option>
+                    <option value="">A</option>
+                    <option value="">B</option>
+                    <option value="">C</option>
+                </select>
+                <select name="" id="" class="cart-select">
+                    <option value="">顏色</option>
+                    <option value="">棕色</option>
+                    <option value="">卡其色</option>
+                    <option value="">黑色</option>
+                </select>
             </div>
         </div>
-        <div class="species-area">
-            <ul class="species species-1 show" data-page="1">
+        <div class="result-area">
+            <ul class="result result-1 show" data-page="1">
                 <li>
                     <a href="./shop_detail.php">
                         <img src="./img/bag-1.png" alt="">
@@ -97,7 +129,7 @@
                     </a>
                 </li>
             </ul>
-            <!-- <ul class="species species-2" data-page="2">
+            <!-- <ul class="result result-2" data-page="2">
                 <li>
                     <a href="./shop_detail.php">
                         <img src="./img/bag-2.png" alt="">
@@ -180,7 +212,7 @@
                     </a>
                 </li>
             </ul>
-            <ul class="species species-3" data-page="3">
+            <ul class="result result-3" data-page="3">
                 <li>
                     <a href="./shop_detail.php">
                         <img src="./img/bag-1.png" alt="">
@@ -263,7 +295,7 @@
                     </a>
                 </li>
             </ul>
-            <ul class="species species-4" data-page="4">
+            <ul class="result result-4" data-page="4">
                 <li>
                     <a href="./shop_detail.php">
                         <img src="./img/bag-2.png" alt="">
@@ -346,7 +378,7 @@
                     </a>
                 </li>
             </ul>
-            <ul class="species species-5" data-page="5">
+            <ul class="result result-5" data-page="5">
                 <li>
                     <a href="./shop_detail.php">
                         <img src="./img/bag-1.png" alt="">
@@ -488,65 +520,5 @@
         }
     }).trigger("scroll");
 
-    // var page = $('.page .current').attr('data-num');
-    // console.log(page);
-
-    // $(".page li").click(function() {
-    //     var num = $(this).attr('data-num');
-    //     $(".page li").removeClass('current');
-    //     $(this).addClass('current');
-    //     $(".species").removeClass('show');
-    //     $(`.species-${num}`).addClass('show');
-
-    //     if ($('.page li:first-child').hasClass('current') == 1) {
-    //         $('.next-arrow').removeClass('not-show');
-    //         $('.prev-arrow').addClass('not-show');
-    //     } else if ($('.page li:last-child').hasClass('current') == 1) {
-    //         $('.next-arrow').addClass('not-show');
-    //         $('.prev-arrow').removeClass('not-show');
-    //     } else {
-    //         $('.next-arrow').removeClass('not-show');
-    //         $('.prev-arrow').removeClass('not-show');
-    //     }
-
-    //     prevArrow();
-    //     nextArrow();
-
-    // });
-
-    // function prevArrow() {
-    //     $(".prev-arrow").click(function() {
-    //         page = $('.page .current').attr('data-num');
-    //         console.log(page);
-
-    //         if (page == 1) {
-    //             page = 1;
-    //         } else {
-    //             page= page-1;
-    //         }
-    //         $('.page li').removeClass('current')
-    //         $(`.page .li-${page}`).addClass('current')
-
-    //         $(".species").removeClass('show');
-    //         $(`.species-${page}`).addClass('show');
-    //     });
-    // }
-
-    // function nextArrow() {
-    //     $(".next-arrow").click(function() {
-    //         page = $('.page .current').attr('data-num');
-    //         console.log(page);
-
-    //         if (page == 5) {
-    //             page = 5;
-    //         } else {
-    //             page = page+1;
-    //         }
-    //         $('.page li').removeClass('current')
-    //         $(`.page .li-${page}`).addClass('current')
-
-    //         $(".species").removeClass('show');
-    //         $(`.species-${page}`).addClass('show');
-    //     });
-    // }
+    $('.cart-select').niceSelect();
 </script>

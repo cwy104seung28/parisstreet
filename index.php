@@ -1,3 +1,6 @@
+<?php
+$now = 'home';
+?>
 <!DOCTYPE html>
 <html>
 
@@ -7,77 +10,127 @@
 
 <body>
 	<?php include 'topmenu.php'; ?>
+	<div class="ads-container is-show">
+		<div class="ads-area">
+			<div class="content">
+				<a href="javacript:;" target="_blank">
+					<img src="./img/ads-pic.jpg" alt="">
+				</a>
+			</div>
+			<div class="close">
+				<img src="./img/ads-close.svg" alt="">
+			</div>
+		</div>
+	</div>
 	<div class="banner-area">
-		<div class="banner-text">
-			<span class="en">LOUIS VUITTON&emsp;X</span>&emsp;草間彌生
-		</div>
-		<div class="other-text">
-			<span class="en">PAINTED DOTS ・ INFINITY DOTS ・ METAL DOTS ・</span>
-			男士系列...
-		</div>
-		<ul class="other-list show-for-large">
-			<li>
-				<img src="./img/add.svg" alt="">
-				<div class="text">加入珍藏</div>
+		<ul class="banner-carousel">
+			<li class="carousel-cell">
+				<a href="./banner_detail.php">
+					<img src="./img/banner-mobile.png" alt="">
+				</a>
 			</li>
-			<li>
-				<img src="./img/buy.svg" alt="">
-				<div class="text">立即選購</div>
-			</li>
-			<li>
-				<img src="./img/list.svg" alt="">
-				<div class="text">相關文章</div>
+			<li class="carousel-cell">
+				<a href="./banner_detail.php">
+					<img src="./img/banner-2-mobile.png" alt="">
+				</a>
 			</li>
 		</ul>
-	</div>
+		<div class="listWrap">
+			<div class="banner-text flex-container align-center">
+				<span class="en">LOUIS VUITTON&emsp;X</span>&emsp;草間彌生
+			</div>
+			<div class="other-text">
+				<span class="en">PAINTED DOTS ・ INFINITY DOTS ・ METAL DOTS ・</span>
+				男士系列...
+			</div>
+			<ul class="other-list show-for-large">
+				<li>
+					<img src="./img/add.svg" alt="">
+					<div class="text">加入珍藏</div>
+				</li>
+				<li>
+					<img src="./img/buy.svg" alt="">
+					<div class="text">立即選購</div>
+				</li>
+				<li>
+					<img src="./img/list.svg" alt="">
+					<div class="text">相關文章</div>
+				</li>
+			</ul>
 
-	<ul class="other-list hide-for-large">
-		<li style="opacity: 0; pointer-events: none;">
-			<img src="./img/add-mobile.svg" alt="">
-			<div class="text">加入珍藏</div>
-		</li>
-		<li>
-			<img src="./img/buy-mobile.svg" alt="">
-			<div class="text">立即選購</div>
-		</li>
-		<li>
-			<img src="./img/list-mobile.svg" alt="">
-			<div class="text">相關文章</div>
-		</li>
-	</ul>
+			<ul class="other-list hide-for-large">
+				<li style="opacity: 0; pointer-events: none;">
+					<img src="./img/add-mobile.svg" alt="">
+					<div class="text">加入珍藏</div>
+				</li>
+				<li>
+					<img src="./img/buy-mobile.svg" alt="">
+					<div class="text">立即選購</div>
+				</li>
+				<li>
+					<img src="./img/list-mobile.svg" alt="">
+					<div class="text">相關文章</div>
+				</li>
+			</ul>
+		</div>
+	</div>
 	<div class="content-area">
-		<div class="content">
+		<div class="content circle">
 			<div class="title">熱門品牌</div>
 			<ul class="carousel" data-flickity>
 				<li class="carousel-cell">
 					<a href="./brand.php">
-						<img src="./img/brand1.png">
-						<div class="new">新品上架</div>
+						<img src="./img/brand-new-1.jpg">
+						<div class="text-area">
+							<div class="en small">LOUIS<br>VUITTON</div>
+						</div>
+						<!-- <img src="./img/brand1.png"> -->
+						<!-- <div class="new">新品上架</div> -->
 					</a>
 				</li>
 				<li class="carousel-cell">
 					<a href="./brand.php">
-						<img src="./img/brand2.png">
+						<img src="./img/brand-new-2.jpg">
+						<div class="text-area">
+							<div class="en small">CHANEL</div>
+						</div>
+						<!-- <img src="./img/brand2.png"> -->
 					</a>
 				</li>
 				<li class="carousel-cell">
 					<a href="./brand.php">
-						<img src="./img/brand3.png">
+						<img src="./img/brand-new-3.jpg">
+						<div class="text-area">
+							<div class="en small">GUCCI</div>
+						</div>
+						<!-- <img src="./img/brand3.png"> -->
 					</a>
 				</li>
 				<li class="carousel-cell">
 					<a href="./brand.php">
-						<img src="./img/brand4.png">
+						<img src="./img/brand-new-4.jpg">
+						<div class="text-area">
+							<div class="en small">BURBERRY</div>
+						</div>
+						<!-- <img src="./img/brand4.png"> -->
 					</a>
 				</li>
 				<li class="carousel-cell">
 					<a href="./brand.php">
-						<img src="./img/brand5.png">
+						<img src="./img/brand-new-1.jpg">
+						<div class="text-area">
+							<div class="en small">LOUIS VUITTON</div>
+						</div>
+						<!-- <img src="./img/brand5.png"> -->
 					</a>
 				</li>
 				<li class="carousel-cell">
 					<a href="./brand.php">
-						<img src="./img/brand6.png">
+						<img src="./img/brand-new-2.jpg">
+						<div class="text-area">
+							<div class="en">CHANEL</div>
+						</div>
+						<!-- <img src="./img/brand6.png"> -->
 					</a>
 				</li>
 			</ul>
@@ -409,6 +462,17 @@
 		"arrowShape": "",
 		// "watchCSS": true,
 	})
+	var $bannerCarousel = $('.banner-carousel').flickity({
+		"prevNextButtons": false,
+		"pageDots": true,
+		"wrapAround": true,
+		"autoPlay": false,
+		"cellAlign": "center",
+		"imagesLoaded": true,
+		// "adaptiveHeight": true,
+		"arrowShape": "",
+		// "watchCSS": true,
+	})
 	$(window).on("scroll", function() {
 		var _scrollTop = $(this).scrollTop();
 
@@ -418,4 +482,9 @@
 			$(".topmenu").removeClass("is-show")
 		}
 	}).trigger("scroll");
+	$(".ads-container").fadeIn(300);
+	$(".ads-container .close").on("click", function() {
+		$(".ads-container").fadeOut(300);
+		$(".ads-container").removeClass("is-show");
+	});
 </script>

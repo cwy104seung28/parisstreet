@@ -40,6 +40,12 @@
             </div>
         </div>
         <div class="species-area">
+            <ul class="pageWrap">
+                <li class="current">全部</li>
+                <li>後背包</li>
+                <li>手提包</li>
+                <li>皮夾</li>
+            </ul>
             <ul class="species species-1 show" data-page="1">
                 <li>
                     <a href="./shop_detail.php">

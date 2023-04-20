@@ -14,32 +14,61 @@
             </div>
         </div>
         <div class="inquiry-area">
-            <ul class="inquiry-list">
-                <li>
-                    <div class="pic-area"><img src="./img/bag-1.png"></div>
-                    <div class="article-area">
-                        <div class="title">CHANEL</div>
-                        <div class="content">小型後背包</div>
+            <form action="">
+                <div class="inquiry-list">
+                    <div class="inquiry">
+                        <label for="check1">
+                            <div class="check-area">
+                                <input type="checkbox" id="check1">
+                                <span class="checkmark"></span>
+                            </div>
+
+                            <div class="pic-area"><img src="./img/bag-1.png"></div>
+                            <div class="article-area">
+                                <div class="title">CHANEL</div>
+                                <div class="content">小型後背包</div>
+                            </div>
+                        </label>
+                        <div class="close"><img src="./img/no-bg-close.svg"></div>
+                        <div class="add"><img src="./img/heart.svg">加入珍藏</div>
+
                     </div>
-                    <div class="close"><img src="./img/no-bg-close.svg"></div>
-                </li>
-                <li>
-                    <div class="pic-area"><img src="./img/bag-3.png"></div>
-                    <div class="article-area">
-                        <div class="title">CHANEL</div>
-                        <div class="content">22包</div>
+                    <div class="inquiry">
+                        <label for="check2">
+                            <div class="check-area">
+                                <input type="checkbox" name="check2" id="check2">
+                                <span class="checkmark"></span>
+                            </div>
+
+                            <div class="pic-area"><img src="./img/bag-3.png"></div>
+                            <div class="article-area">
+                                <div class="title">CHANEL</div>
+                                <div class="content">22包</div>
+                            </div>
+                        </label>
+                        <div class="close"><img src="./img/no-bg-close.svg"></div>
+                        <div class="add"><img src="./img/heart.svg">加入珍藏</div>
+
                     </div>
-                    <div class="close"><img src="./img/no-bg-close.svg"></div>
-                </li>
-                <li>
-                    <div class="pic-area"><img src="./img/bag-2.png"></div>
-                    <div class="article-area">
-                        <div class="title">CHANEL</div>
-                        <div class="content">迷你相機包</div>
+                    <div class="inquiry">
+                        <label for="check3">
+                            <div class="check-area">
+                                <input type="checkbox" name="check3" id="check3">
+                                <span class="checkmark"></span>
+                            </div>
+                            <div class="pic-area"><img src="./img/bag-2.png"></div>
+                            <div class="article-area">
+                                <div class="title">CHANEL</div>
+                                <div class="content">迷你相機包</div>
+                            </div>
+                        </label>
+                        <div class="close"><img src="./img/no-bg-close.svg"></div>
+                        <div class="add"><img src="./img/heart.svg">加入珍藏</div>
+
                     </div>
-                    <div class="close"><img src="./img/no-bg-close.svg"></div>
-                </li>
-            </ul>
+                </div>
+            </form>
+
         </div>
         <div class="ask-area">
             <svg id="b" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" width="72.46" height="33.6" viewBox="0 0 72.46 33.6">

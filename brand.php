@@ -8,7 +8,7 @@
 <body>
     <?php include 'topmenu.php'; ?>
     <div class="brand-container">
-        <div class="top-area is-white">
+        <!-- <div class="top-area is-white">
             <div class="category">
                 <a href="./index.php">熱門品牌</a>
                 <div class="next hide-for-large">
@@ -21,44 +21,55 @@
                 <img class="show-for-large" src="./img/next.svg">
                 <a class="en now" href="./brand.php">CHANEL</a>
             </div>
-        </div>
+        </div> -->
         <div class="brand-area">
+            <div class="title">
+                經典系列
+            </div>
             <ul class="brand">
                 <li>
                     <a href="./species.php">
                         <img src="./img/bag.png" alt="">
                         <div class="cover"></div>
-                        <div class="text">皮包</div>
+                        <div class="text">SPEEDY</div>
                     </a>
                 </li>
                 <li>
                     <a href="./species.php">
                         <img src="./img/shoes.png" alt="">
                         <div class="cover"></div>
-                        <div class="text">鞋款</div>
+                        <div class="text">老花</div>
                     </a>
                 </li>
                 <li>
                     <a href="./species.php">
                         <img src="./img/accessories.png" alt="">
                         <div class="cover"></div>
-                        <div class="text">飾品配件</div>
+                        <div class="text">MONOGRAM</div>
                     </a>
                 </li>
                 <li>
                     <a href="./species.php">
                         <img src="./img/makeup.png" alt="">
                         <div class="cover"></div>
-                        <div class="text">彩妝</div>
+                        <div class="text">ARCHLIGHT</div>
                     </a>
                 </li>
                 <li>
                     <a href="./species.php">
                         <img src="./img/perfume.png" alt="">
                         <div class="cover"></div>
-                        <div class="text">香水</div>
+                        <div class="text">草間彌生</div>
                     </a>
                 </li>
+                <li>
+                    <a href="./species.php">
+                        <img src="./img/perfume.png" alt="">
+                        <div class="cover"></div>
+                        <div class="text">NAUTICAL</div>
+                    </a>
+                </li>
+                <!-- <li><img src="./img/none.png"></li>
                 <li><img src="./img/none.png"></li>
                 <li><img src="./img/none.png"></li>
                 <li><img src="./img/none.png"></li>
@@ -67,8 +78,45 @@
                 <li><img src="./img/none.png"></li>
                 <li><img src="./img/none.png"></li>
                 <li><img src="./img/none.png"></li>
-                <li><img src="./img/none.png"></li>
-                <li><img src="./img/none.png"></li>
+                <li><img src="./img/none.png"></li> -->
+            </ul>
+
+        </div>
+        <div class="cat-area">
+            <div class="title">
+                類別分類
+            </div>
+            <ul class="catWrap">
+                <li>
+                    <a href="./species.php">
+                        皮包
+                    </a>
+                </li>
+                <li>
+                    <a href="./species.php">
+                        鞋款
+                    </a>
+                </li>
+                <li>
+                    <a href="./species.php">
+                        飾品配件
+                    </a>
+                </li>
+                <li>
+                    <a href="./species.php">
+                        彩妝
+                    </a>
+                </li>
+                <li>
+                    <a href="./species.php">
+                        香水
+                    </a>
+                </li>
+                <li>
+                    <a href="./species.php">
+                        其他
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

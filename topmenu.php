@@ -1,6 +1,9 @@
 <div id="preload" style="z-index: 100; position: fixed; top: 0; right: 0; bottom: 0; left: 0; background-color: #000;"></div>
 <div class="topmenu">
 	<div class="left-area">
+		<div class="hamburger-area">
+		<img src="./img/hamburger.svg" alt="">
+		</div>
 		<div class="text-area">
 			<a href="./index.php">
 				<div class="en">PARIS STREET</div>
@@ -14,12 +17,12 @@
 			<li><a href="javascript:;">珍藏</a></li>
 			<li class="class">類別<img src="./img/arrow.svg">
 				<ul class="class-list">
-					<li>最新上架</li>
-					<li>手提包</li>
-					<li>化妝包</li>
-					<li>後背包</li>
-					<li>旅行包</li>
-					<li>配件</li>
+					<li>皮包</li>
+					<li>鞋款</li>
+					<li>飾品配件</li>
+					<li>彩妝</li>
+					<li>香水</li>
+					<li>其他</li>
 				</ul>
 			</li>
 			<!-- <li class="profile"><img src="./img/member.svg"></li> -->
@@ -36,17 +39,38 @@
 			<li>男士</li> -->
 			<!-- <li class="class">類別<img src="./img/arrow-mobile.svg">
 				<ul class="class-list">
-					<li>最新上架</li>
-					<li>手提包</li>
-					<li>化妝包</li>
-					<li>後背包</li>
-					<li>旅行包</li>
-					<li>配件</li>
+					<li>皮包</li>
+					<li>鞋款</li>
+					<li>飾品配件</li>
+					<li>彩妝</li>
+					<li>香水</li>
+					<li>其他</li>
 				</ul>
 			</li> -->
 			<li class="profile"><img src="./img/member-mobile.svg"></li>
 		</ul>
 	</div>
+</div>
+<div class="login-area">
+	<div class="loginWrap">
+		<div class="title">登入會員</div>
+		<div class="login">
+			<img src="./img/line.svg">
+			連結至LINE登入會員
+			<img src="./img/small-arrow.svg">
+		</div>
+	</div>
+	<ul class="social-area">
+		<li>
+			<img src="./img/fb.svg" alt="">
+		</li>
+		<li>
+			<img src="./img/ig.svg" alt="">
+		</li>
+		<li>
+			<img src="./img/line.svg" alt="">
+		</li>
+	</ul>
 </div>
 <div class="member-area">
 	<div class="profile-area">
@@ -87,7 +111,7 @@
 				<div class="setting">
 					<div class="title-area">
 						<img class="show-for-large" src="./img/add.svg">
-						<img class="hide-for-large" src="./img/add-mobile.svg">
+						<img class="hide-for-large" src="./img/heart.svg">
 						<div class="title">我的珍藏</div>
 					</div>
 					<div><img src="./img/go.svg"></div>
@@ -129,6 +153,90 @@
 		</a>
 	</div>
 </div>
+<div class="class-container step-1">
+	<ul class="class">
+		<li>
+			<a href="javascript:;">
+				皮包
+				<img src="./img/small-arrow.svg" alt="">
+			</a>
+		</li>
+		<li>
+			<a href="javascript:;">
+				鞋款
+				<img src="./img/small-arrow.svg" alt="">
+			</a>
+		</li>
+		<li>
+			<a href="javascript:;">
+				香水
+				<img src="./img/small-arrow.svg" alt="">
+			</a>
+		</li>
+		<li>
+			<a href="javascript:;">
+				飾品配件
+				<img src="./img/small-arrow.svg" alt="">
+			</a>
+		</li>
+		<li>
+			<a href="javascript:;">
+				彩妝
+				<img src="./img/small-arrow.svg" alt="">
+			</a>
+		</li>
+		<li>
+			<a href="javascript:;">
+				其他
+				<img src="./img/small-arrow.svg" alt="">
+			</a>
+		</li>
+	</ul>
+</div>
+<div class="class-container step-2">
+	<ul class="class">
+		<li>
+			<a href="javascript:;">
+				女士
+				<img src="./img/small-arrow.svg" alt="">
+			</a>
+		</li>
+		<li>
+			<a href="javascript:;">
+				男士
+				<img src="./img/small-arrow.svg" alt="">
+			</a>
+		</li>
+	</ul>
+</div>
+<div class="class-container step-3">
+	<ul class="class">
+		<li>
+			<a href="species.php">
+				手提包
+				<img src="./img/small-arrow.svg" alt="">
+			</a>
+		</li>
+		<li>
+			<a href="species.php">
+				後揹包
+				<img src="./img/small-arrow.svg" alt="">
+			</a>
+		</li>
+		<li>
+			<a href="species.php">
+				皮夾
+				<img src="./img/small-arrow.svg" alt="">
+			</a>
+		</li>
+		<li>
+			<a href="species.php">
+				旅行袋
+				<img src="./img/small-arrow.svg" alt="">
+			</a>
+		</li>
+	</ul>
+</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
 
 <script>
@@ -142,5 +250,16 @@
 	$(".member-area .close").click(function() {
 		$(".member-area").removeClass("is-show");
 		$("html").removeClass("is-locked");
+	});
+
+	$(".hamburger-area").click(function() {
+		$(".step-1").toggleClass("is-show");
+		$("html").toggleClass("is-locked");
+	});
+	$(".step-1 li").click(function() {
+		$(".step-2").addClass("is-show");
+	});
+	$(".step-2 li").click(function() {
+		$(".step-3").addClass("is-show");
 	});
 </script>
