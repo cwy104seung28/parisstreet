@@ -1,8 +1,8 @@
-<div id="preload" style="z-index: 100; position: fixed; top: 0; right: 0; bottom: 0; left: 0; background-color: #000;"></div>
+<div id="preload" style="z-index: 101; position: fixed; top: 0; right: 0; bottom: 0; left: 0; background-color: #000;"></div>
 <div class="topmenu">
 	<div class="left-area">
 		<div class="hamburger-area">
-		<img src="./img/hamburger.svg" alt="">
+			<img src="./img/hamburger.svg" alt="">
 		</div>
 		<div class="text-area">
 			<a href="./index.php">
@@ -78,15 +78,28 @@
 			<img class="show-for-large" src="./img/close.svg">
 			<img class="hide-for-large" src="./img/close-mobile.svg">
 		</div>
-		<div class="photo"><img src="./img/photo.png"></div>
-		<div class="info-area">
-			<div class="name">gooddesign6656</div>
-			<div class="edit">
-				<img class="show-for-large" src="./img/edit.svg">
-				<img class="hide-for-large" src="./img/edit-mobile.svg">
-				<span>編輯帳戶資訊</span>
+		<div class="flex-container">
+			<div class="photo"><img src="./img/photo.png"></div>
+			<div class="info-area">
+				<div class="name">gooddesign6656</div>
+				<div class="edit">
+					<img class="show-for-large" src="./img/edit.svg">
+					<img class="hide-for-large" src="./img/edit-mobile.svg">
+					<span>編輯帳戶資訊</span>
+				</div>
 			</div>
 		</div>
+		<ul class="social-area show-for-large">
+			<li>
+				<img src="./img/fb.svg" alt="">
+			</li>
+			<li>
+				<img src="./img/ig.svg" alt="">
+			</li>
+			<li>
+				<img src="./img/line.svg" alt="">
+			</li>
+		</ul>
 		<div class="logout show-for-large">
 			<a href="javascript:;">
 				<div class="title">登出</div>
@@ -110,7 +123,7 @@
 			<a href="collection.php">
 				<div class="setting">
 					<div class="title-area">
-						<img class="show-for-large" src="./img/add.svg">
+						<img class="show-for-large" src="./img/heart-pc.svg">
 						<img class="hide-for-large" src="./img/heart.svg">
 						<div class="title">我的珍藏</div>
 					</div>
@@ -136,7 +149,7 @@
 		</li> -->
 
 	</ul>
-	<ul class="social-area">
+	<ul class="social-area hide-for-large">
 		<li>
 			<img src="./img/fb.svg" alt="">
 		</li>
@@ -237,8 +250,7 @@
 		</li>
 	</ul>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
-
+<?php include 'script.php'; ?>
 <script>
 	$(".list-area .class").click(function() {
 		$(".class-list").toggleClass("is-show");

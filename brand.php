@@ -29,42 +29,42 @@
             <ul class="brand">
                 <li>
                     <a href="./species.php">
-                        <img src="./img/bag.png" alt="">
+                        <img src="./img/bag.jpg" alt="">
                         <div class="cover"></div>
                         <div class="text">SPEEDY</div>
                     </a>
                 </li>
                 <li>
                     <a href="./species.php">
-                        <img src="./img/shoes.png" alt="">
+                        <img src="./img/shoes.jpg" alt="">
                         <div class="cover"></div>
                         <div class="text">老花</div>
                     </a>
                 </li>
                 <li>
                     <a href="./species.php">
-                        <img src="./img/accessories.png" alt="">
+                        <img src="./img/accessories.jpg" alt="">
                         <div class="cover"></div>
                         <div class="text">MONOGRAM</div>
                     </a>
                 </li>
                 <li>
                     <a href="./species.php">
-                        <img src="./img/makeup.png" alt="">
+                        <img src="./img/makeup.jpg" alt="">
                         <div class="cover"></div>
                         <div class="text">ARCHLIGHT</div>
                     </a>
                 </li>
                 <li>
                     <a href="./species.php">
-                        <img src="./img/perfume.png" alt="">
+                        <img src="./img/perfume.jpg" alt="">
                         <div class="cover"></div>
                         <div class="text">草間彌生</div>
                     </a>
                 </li>
                 <li>
                     <a href="./species.php">
-                        <img src="./img/perfume.png" alt="">
+                        <img src="./img/perfume.jpg" alt="">
                         <div class="cover"></div>
                         <div class="text">NAUTICAL</div>
                     </a>
@@ -131,7 +131,7 @@
     $(window).on("scroll", function() {
         var _scrollTop = $(this).scrollTop();
 
-        if (_scrollTop >= 100) {
+        if (_scrollTop >= 90) {
             $(".topmenu").addClass("is-show")
         } else {
             $(".topmenu").removeClass("is-show")

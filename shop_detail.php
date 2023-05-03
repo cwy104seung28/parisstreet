@@ -31,18 +31,28 @@
             <div class="area-1">
                 <div class="pic-area">
                     <ul class="shop-carousel">
-                        <li><img src="./img/shop.jpg"></li>
-                        <li><img src="./img/shop.jpg"></li>
-                        <li><img src="./img/shop.jpg"></li>
-
+                        <li>
+                            <div class="discount show-for-large">85 折</div>
+                            <img src="./img/shop.jpg">
+                        </li>
+                        <li>
+                            <div class="discount show-for-large">85 折</div>
+                            <img src="./img/shop.jpg">
+                        </li>
+                        <li>
+                            <div class="discount show-for-large">85 折</div>
+                            <img src="./img/shop.jpg">
+                        </li>
                     </ul>
                     <div class="view"><img src="./img/view.svg">:12356</div>
                 </div>
 
 
                 <div class="info">
-                    <!-- <div class="title en">BOULOGNE</div> -->
-                    <div class="content">這款百搭多變的Boulogne包款以經典Monogram帆布製作，配備可拆式肩帶，可作斜背、長肩背或短肩背攜帶，拆下後肩帶更可變成小型鏈帶包款或手提包，適合用於較正式的場合。</div>
+                    <div class="article-area">
+                        <div class="title en show-for=large">BOULOGNE</div>
+                        <div class="content">這款百搭多變的Boulogne包款以經典Monogram帆布製作，配備可拆式肩帶，可作斜背、長肩背或短肩背攜帶，拆下後肩帶更可變成小型鏈帶包款或手提包，適合用於較正式的場合。</div>
+                    </div>
                     <div class="other">
                         <div class="time">
                             團購人數：23 人<br>
@@ -140,7 +150,7 @@
             </div>
         </div>
     </div>
-    <div class="discount">85 折</div>
+    <div class="discount hide-for-large">85 折</div>
 
     <?php include 'fix_mobile.php'; ?>
 </body>

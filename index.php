@@ -18,23 +18,43 @@ $now = 'home';
 				</a>
 			</div>
 			<div class="close">
-				<img src="./img/ads-close.svg" alt="">
+				<img class="show-for-large" src="./img/ads-close.svg" alt="">
+				<img class="hide-for-large" src="./img/ads-close-mobile.svg" alt="">
 			</div>
 		</div>
 	</div>
 	<div class="banner-area">
-		<ul class="banner-carousel">
+		<!-- <ul class="banner-carousel">
 			<li class="carousel-cell">
 				<a href="./banner_detail.php">
-					<img src="./img/banner-mobile.png" alt="">
+					<img src="./img/banner.png" class="show-for-large">
+					<img src="./img/banner-mobile.png" class="hide-for-large">
 				</a>
 			</li>
 			<li class="carousel-cell">
 				<a href="./banner_detail.php">
-					<img src="./img/banner-2-mobile.png" alt="">
+					<img src="./img/banner-2.jpg" class="show-for-large">
+					<img src="./img/banner-2-mobile.png" class="hide-for-large">
 				</a>
 			</li>
-		</ul>
+		</ul> -->
+		<div class="swiper mySwiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<a href="./banner_detail.php">
+						<img src="./img/banner.png" class="show-for-large">
+						<img src="./img/banner-mobile.png" class="hide-for-large">
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="./banner_detail.php">
+						<img src="./img/banner-2.png" class="show-for-large">
+						<img src="./img/banner-2-mobile.png" class="hide-for-large">
+					</a>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
 		<div class="listWrap">
 			<div class="banner-text flex-container align-center">
 				<span class="en">LOUIS VUITTON&emsp;X</span>&emsp;草間彌生
@@ -119,7 +139,7 @@ $now = 'home';
 					<a href="./brand.php">
 						<img src="./img/brand-new-1.jpg">
 						<div class="text-area">
-							<div class="en small">LOUIS VUITTON</div>
+							<div class="en small">LOUIS<br>VUITTON</div>
 						</div>
 						<!-- <img src="./img/brand5.png"> -->
 					</a>
@@ -462,17 +482,17 @@ $now = 'home';
 		"arrowShape": "",
 		// "watchCSS": true,
 	})
-	var $bannerCarousel = $('.banner-carousel').flickity({
-		"prevNextButtons": false,
-		"pageDots": true,
-		"wrapAround": true,
-		"autoPlay": false,
-		"cellAlign": "center",
-		"imagesLoaded": true,
-		// "adaptiveHeight": true,
-		"arrowShape": "",
-		// "watchCSS": true,
-	})
+	// var $bannerCarousel = $('.banner-carousel').flickity({
+	// 	"prevNextButtons": false,
+	// 	"pageDots": true,
+	// 	"wrapAround": true,
+	// 	"autoPlay": false,
+	// 	"cellAlign": "center",
+	// 	"imagesLoaded": true,
+	// 	// "adaptiveHeight": true,
+	// 	"arrowShape": "",
+	// 	// "watchCSS": true,
+	// })
 	$(window).on("scroll", function() {
 		var _scrollTop = $(this).scrollTop();
 
@@ -482,9 +502,16 @@ $now = 'home';
 			$(".topmenu").removeClass("is-show")
 		}
 	}).trigger("scroll");
+	
 	$(".ads-container").fadeIn(300);
 	$(".ads-container .close").on("click", function() {
 		$(".ads-container").fadeOut(300);
 		$(".ads-container").removeClass("is-show");
 	});
+
+	var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
 </script>

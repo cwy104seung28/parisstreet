@@ -11,7 +11,8 @@
 <body>
     <?php include 'topmenu.php'; ?>
     <div class="bannerWrap">
-        <img src="./img/banner-2-mobile.png" alt="">
+        <img src="./img/banner-2.png" class="show-for-large">
+        <img src="./img/banner-2-mobile.png" class="hide-for-large">
     </div>
     <div class="banner-content">
         <div class="title-area">
@@ -26,63 +27,63 @@
             <li>
                 <img src="./img/bannerList-1.png" alt="">
                 <div class="text-area">
-                    <div class="ch"><span class="en">LV  X  </span>草間彌生</div>
+                    <div class="ch"><span class="en">LV X </span>草間彌生</div>
                     <div class="ch">手提斜背兩用包</div>
                 </div>
             </li>
             <li>
                 <img src="./img/bannerList-2.png" alt="">
                 <div class="text-area">
-                    <div class="ch"><span class="en">LV  X  </span>草間彌生</div>
+                    <div class="ch"><span class="en">LV X </span>草間彌生</div>
                     <div class="ch">手提/斜背包</div>
                 </div>
             </li>
             <li>
                 <img src="./img/bannerList-3.png" alt="">
                 <div class="text-area">
-                    <div class="ch"><span class="en">LV  X  </span>草間彌生</div>
+                    <div class="ch"><span class="en">LV X </span>草間彌生</div>
                     <div class="ch">信封釦式長夾</div>
                 </div>
             </li>
             <li>
                 <img src="./img/bannerList-1.png" alt="">
                 <div class="text-area">
-                    <div class="ch"><span class="en">LV  X  </span>草間彌生</div>
+                    <div class="ch"><span class="en">LV X </span>草間彌生</div>
                     <div class="ch">手提斜背兩用包</div>
                 </div>
             </li>
             <li>
                 <img src="./img/bannerList-2.png" alt="">
                 <div class="text-area">
-                    <div class="ch"><span class="en">LV  X  </span>草間彌生</div>
+                    <div class="ch"><span class="en">LV X </span>草間彌生</div>
                     <div class="ch">手提/斜背包</div>
                 </div>
             </li>
             <li>
                 <img src="./img/bannerList-3.png" alt="">
                 <div class="text-area">
-                    <div class="ch"><span class="en">LV  X  </span>草間彌生</div>
+                    <div class="ch"><span class="en">LV X </span>草間彌生</div>
                     <div class="ch">信封釦式長夾</div>
                 </div>
             </li>
             <li>
                 <img src="./img/bannerList-1.png" alt="">
                 <div class="text-area">
-                    <div class="ch"><span class="en">LV  X  </span>草間彌生</div>
+                    <div class="ch"><span class="en">LV X </span>草間彌生</div>
                     <div class="ch">手提斜背兩用包</div>
                 </div>
             </li>
             <li>
                 <img src="./img/bannerList-2.png" alt="">
                 <div class="text-area">
-                    <div class="ch"><span class="en">LV  X  </span>草間彌生</div>
+                    <div class="ch"><span class="en">LV X </span>草間彌生</div>
                     <div class="ch">手提/斜背包</div>
                 </div>
             </li>
             <li>
                 <img src="./img/bannerList-3.png" alt="">
                 <div class="text-area">
-                    <div class="ch"><span class="en">LV  X  </span>草間彌生</div>
+                    <div class="ch"><span class="en">LV X </span>草間彌生</div>
                     <div class="ch">信封釦式長夾</div>
                 </div>
             </li>
