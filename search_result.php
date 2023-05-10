@@ -49,7 +49,7 @@
             <ul class="result result-1 show" data-page="1">
                 <li>
                     <a href="./shop_detail.php">
-                        <img src="./img/bag-1.png" alt="">
+                        <img src="./img/bag-1.jpg" alt="">
                         <div class="text-area">
                             <div class="en">CHANEL</div>
                             <div class="ch">小型後背包</div>
@@ -58,7 +58,7 @@
                 </li>
                 <li>
                     <a href="./shop_detail.php">
-                        <img src="./img/bag-2.png" alt="">
+                        <img src="./img/bag-2.jpg" alt="">
                         <div class="text-area">
                             <div class="en">CHANEL</div>
                             <div class="ch">迷你相機包</div>
@@ -67,7 +67,7 @@
                 </li>
                 <li>
                     <a href="./shop_detail.php">
-                        <img src="./img/bag-3.png" alt="">
+                        <img src="./img/bag-3.jpg" alt="">
                         <div class="text-area">
                             <div class="en">CHANEL</div>
                             <div class="ch">22包</div>
@@ -76,7 +76,7 @@
                 </li>
                 <li>
                     <a href="./shop_detail.php">
-                        <img src="./img/bag-4.png" alt="">
+                        <img src="./img/bag-4.jpg" alt="">
                         <div class="text-area">
                             <div class="en">CHANEL</div>
                             <div class="ch">小型後背包</div>
@@ -85,7 +85,7 @@
                 </li>
                 <li>
                     <a href="./shop_detail.php">
-                        <img src="./img/bag-2.png" alt="">
+                        <img src="./img/bag-2.jpg" alt="">
                         <div class="text-area">
                             <div class="en">CHANEL</div>
                             <div class="ch">迷你相機包</div>
@@ -94,7 +94,7 @@
                 </li>
                 <li>
                     <a href="./shop_detail.php">
-                        <img src="./img/bag-3.png" alt="">
+                        <img src="./img/bag-3.jpg" alt="">
                         <div class="text-area">
                             <div class="en">CHANEL</div>
                             <div class="ch">22包</div>
@@ -103,7 +103,7 @@
                 </li>
                 <li>
                     <a href="./shop_detail.php">
-                        <img src="./img/bag-1.png" alt="">
+                        <img src="./img/bag-1.jpg" alt="">
                         <div class="text-area">
                             <div class="en">CHANEL</div>
                             <div class="ch">小型後背包</div>
@@ -112,7 +112,7 @@
                 </li>
                 <li>
                     <a href="./shop_detail.php">
-                        <img src="./img/bag-2.png" alt="">
+                        <img src="./img/bag-2.jpg" alt="">
                         <div class="text-area">
                             <div class="en">CHANEL</div>
                             <div class="ch">迷你相機包</div>
@@ -121,7 +121,7 @@
                 </li>
                 <li>
                     <a href="./shop_detail.php">
-                        <img src="./img/bag-3.png" alt="">
+                        <img src="./img/bag-3.jpg" alt="">
                         <div class="text-area">
                             <div class="en">CHANEL</div>
                             <div class="ch">22包</div>

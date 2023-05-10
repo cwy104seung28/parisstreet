@@ -14,8 +14,8 @@
 			<li><a href="./index.php">首頁</a></li>
 			<!-- <li><a href="javascript:;">女士</a></li>
 			<li><a href="javascript:;">男士</a> </li> -->
-			<li><a href="javascript:;">珍藏</a></li>
-			<li class="class">類別<img src="./img/arrow.svg">
+			<li><a href="./collection.php">珍藏</a></li>
+			<!-- <li class="class">類別<img src="./img/arrow.svg">
 				<ul class="class-list">
 					<li>皮包</li>
 					<li>鞋款</li>
@@ -24,14 +24,18 @@
 					<li>香水</li>
 					<li>其他</li>
 				</ul>
-			</li>
+			</li> -->
 			<!-- <li class="profile"><img src="./img/member.svg"></li> -->
 		</ul>
 	</div>
 	<div class="right-area">
 		<ul class="other-area show-for-large">
-			<li><img src="./img/search.svg"></li>
-			<li><img src="./img/cart.svg"></li>
+			<li>
+				<a href="./search.php"><img src="./img/search.svg"></a>
+			</li>
+			<li>
+				<a href="./inquiry.php"><img src="./img/cart.svg"></a>
+			</li>
 			<li class="profile"><img src="./img/member.svg"></li>
 		</ul>
 		<ul class="list-area hide-for-large">
@@ -62,13 +66,16 @@
 	</div>
 	<ul class="social-area">
 		<li>
-			<img src="./img/fb.svg" alt="">
+			<img class="show-for-large" src="./img/fb-pc.svg">
+			<img class="hide-for-large" src="./img/fb.svg">
 		</li>
 		<li>
-			<img src="./img/ig.svg" alt="">
+			<img class="show-for-large" src="./img/ig-pc.svg">
+			<img class="hide-for-large" src="./img/ig.svg">
 		</li>
 		<li>
-			<img src="./img/line.svg" alt="">
+			<img class="show-for-large" src="./img/line-pc.svg">
+			<img class="hide-for-large" src="./img/line.svg">
 		</li>
 	</ul>
 </div>
@@ -78,26 +85,29 @@
 			<img class="show-for-large" src="./img/close.svg">
 			<img class="hide-for-large" src="./img/close-mobile.svg">
 		</div>
-		<div class="flex-container">
+		<div class="flex-container profile">
 			<div class="photo"><img src="./img/photo.png"></div>
 			<div class="info-area">
 				<div class="name">gooddesign6656</div>
-				<div class="edit">
+				<!-- <div class="edit">
 					<img class="show-for-large" src="./img/edit.svg">
 					<img class="hide-for-large" src="./img/edit-mobile.svg">
 					<span>編輯帳戶資訊</span>
-				</div>
+				</div> -->
 			</div>
 		</div>
 		<ul class="social-area show-for-large">
 			<li>
-				<img src="./img/fb.svg" alt="">
+				<img class="show-for-large" src="./img/fb-pc.svg">
+				<img class="hide-for-large" src="./img/fb.svg">
 			</li>
 			<li>
-				<img src="./img/ig.svg" alt="">
+				<img class="show-for-large" src="./img/ig-pc.svg">
+				<img class="hide-for-large" src="./img/ig.svg">
 			</li>
 			<li>
-				<img src="./img/line.svg" alt="">
+				<img class="show-for-large" src="./img/line-pc.svg">
+				<img class="hide-for-large" src="./img/line.svg">
 			</li>
 		</ul>
 		<div class="logout show-for-large">

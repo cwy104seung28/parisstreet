@@ -16,31 +16,43 @@
         <div class="collection-area">
             <ul class="collection-list">
                 <li>
-                    <div class="pic-area"><img src="./img/bag-1.png"></div>
+                    <div class="pic-area"><img src="./img/bag-1.jpg"></div>
                     <div class="article-area">
                         <div class="title">CHANEL</div>
                         <div class="content">小型後背包</div>
                     </div>
                     <div class="close"><img src="./img/no-bg-close.svg"></div>
-                    <div class="add"><img src="./img/cart-mobile.svg">加入詢價車</div>
+                    <div class="add">
+                        <img class="show-for-large" src="./img/cart.svg">
+                        <img class="hide-for-large" src="./img/cart-mobile.svg">
+                        加入詢價車
+                    </div>
                 </li>
                 <li>
-                    <div class="pic-area"><img src="./img/bag-3.png"></div>
+                    <div class="pic-area"><img src="./img/bag-3.jpg"></div>
                     <div class="article-area">
                         <div class="title">CHANEL</div>
                         <div class="content">22包</div>
                     </div>
                     <div class="close"><img src="./img/no-bg-close.svg"></div>
-                    <div class="add"><img src="./img/cart-mobile.svg">加入詢價車</div>
+                    <div class="add">
+                        <img class="show-for-large" src="./img/cart.svg">
+                        <img class="hide-for-large" src="./img/cart-mobile.svg">
+                        加入詢價車
+                    </div>
                 </li>
                 <li>
-                    <div class="pic-area"><img src="./img/bag-2.png"></div>
+                    <div class="pic-area"><img src="./img/bag-2.jpg"></div>
                     <div class="article-area">
                         <div class="title">CHANEL</div>
                         <div class="content">迷你相機包</div>
                     </div>
                     <div class="close"><img src="./img/no-bg-close.svg"></div>
-                    <div class="add"><img src="./img/cart-mobile.svg">加入詢價車</div>
+                    <div class="add">
+                        <img class="show-for-large" src="./img/cart.svg">
+                        <img class="hide-for-large" src="./img/cart-mobile.svg">
+                        加入詢價車
+                    </div>
                 </li>
             </ul>
         </div>

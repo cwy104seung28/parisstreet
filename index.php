@@ -64,7 +64,7 @@ $now = 'home';
 				男士系列...
 			</div>
 			<ul class="other-list show-for-large">
-				<li>
+				<li style="opacity: 0; pointer-events: none;">
 					<img src="./img/add.svg" alt="">
 					<div class="text">加入珍藏</div>
 				</li>

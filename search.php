@@ -25,28 +25,28 @@
             </ul>
             <ul class="search-list">
                 <li>
-                    <div class="pic-area"><img src="./img/new1.png"></div>
+                    <div class="pic-area"><img src="./img/new1.jpg"></div>
                     <div class="article-area">
                         <div class="title">LV BOULOGNE</div>
                     </div>
                     <div class="add"><img src="./img/heart.svg">加入珍藏</div>
                 </li>
                 <li>
-                    <div class="pic-area"><img src="./img/new2.png"></div>
+                    <div class="pic-area"><img src="./img/new2.jpg"></div>
                     <div class="article-area">
                         <div class="title">CHANEL 迷你相機包</div>
                     </div>
                     <div class="add"><img src="./img/heart.svg">加入珍藏</div>
                 </li>
                 <li>
-                    <div class="pic-area"><img src="./img/new2.png"></div>
+                    <div class="pic-area"><img src="./img/new2.jpg"></div>
                     <div class="article-area">
                         <div class="title">CHANEL 迷你相機包</div>
                     </div>
                     <div class="add"><img src="./img/heart.svg">加入珍藏</div>
                 </li>
                 <li>
-                    <div class="pic-area"><img src="./img/new2.png"></div>
+                    <div class="pic-area"><img src="./img/new2.jpg"></div>
                     <div class="article-area">
                         <div class="title">CHANEL 迷你相機包</div>
                     </div>
