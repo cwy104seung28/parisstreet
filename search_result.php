@@ -14,7 +14,7 @@
                 <div class="ch result-text"><span class="en">LV</span></div>
                 <div class="ch">搜尋結果</div>
             </div>
-            <div class="select-area flex-container align-middle">
+            <!-- <div class="select-area flex-container align-middle">
                 <img src="./img/select.svg">
                 <select name="" id="" class="cart-select">
                     <option value="">系列</option>
@@ -43,6 +43,279 @@
                     <option value="">卡其色</option>
                     <option value="">黑色</option>
                 </select>
+            </div> -->
+            <div class="select-area flex-container">
+                <img src="./img/select.svg">
+                <div class="filter-area">
+                    <div class="flex-container align-middle filterOutWrap">
+                        <div class="ch title">品牌</div>
+                        <ul class="filterWrap flex-container align-middle">
+                            <li>
+                                <a class="ch flex-container aligm-middle">
+                                    <svg class="svg-inline--fa fa-circle" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path>
+                                    </svg>
+                                    Chanel(12)
+                                </a>
+                            </li>
+                            <li>
+                                <a class="ch flex-container aligm-middle">
+                                    <svg class="svg-inline--fa fa-circle" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path>
+                                    </svg>
+                                    Burberry(2)
+                                </a>
+                            </li>
+                            <li>
+                                <a class="ch flex-container aligm-middle">
+                                    <svg class="svg-inline--fa fa-circle" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path>
+                                    </svg>
+                                    Gucci(4)
+                                </a>
+                            </li>
+                            <li>
+                                <a class="ch flex-container aligm-middle">
+                                    <svg class="svg-inline--fa fa-circle" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path>
+                                    </svg>
+                                    Louis Vuitton(12)
+                                </a>
+                            </li>
+                            <li>
+                                <a class="ch flex-container aligm-middle">
+                                    <svg class="svg-inline--fa fa-circle" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path>
+                                    </svg>
+                                    Hermes(1)
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="delete">
+                            <a class="ch flex-container aligm-middle">
+                                <svg class="svg-inline--fa fa-trash" focusable="false" data-prefix="fas" data-icon="trash" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                    <path fill="currentColor" d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"></path>
+                                </svg><!-- <i class="fa-solid fa-trash"></i> Font Awesome fontawesome.com -->
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex-container align-middle filterOutWrap">
+                        <div class="ch title">顏色</div>
+                        <ul class="filterWrap flex-container align-middle">
+                            <li>
+                                <a class="ch flex-container aligm-middle">
+                                    <svg class="svg-inline--fa fa-circle" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path>
+                                    </svg>
+                                    黃(5)
+                                </a>
+                            </li>
+                            <li>
+                                <a class="ch flex-container aligm-middle">
+                                    <svg class="svg-inline--fa fa-circle" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path>
+                                    </svg>
+                                    綠(2)
+                                </a>
+                            </li>
+                            <li>
+                                <a class="ch flex-container aligm-middle">
+                                    <svg class="svg-inline--fa fa-circle" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path>
+                                    </svg>
+                                    藍(4)
+                                </a>
+                            </li>
+                            <li>
+                                <a class="ch flex-container aligm-middle">
+                                    <svg class="svg-inline--fa fa-circle" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path>
+                                    </svg>
+                                    黑(3)
+                                </a>
+                            </li>
+                            <li>
+                                <a class="ch flex-container aligm-middle">
+                                    <svg class="svg-inline--fa fa-circle" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path>
+                                    </svg>
+                                    紅(5)
+                                </a>
+                            </li>
+                            <li>
+                                <a class="ch flex-container aligm-middle">
+                                    <svg class="svg-inline--fa fa-circle" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path>
+                                    </svg>
+                                    棕(5)
+                                </a>
+                            </li>
+                            <li>
+                                <a class="ch flex-container aligm-middle">
+                                    <svg class="svg-inline--fa fa-circle" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path>
+                                    </svg>
+                                    橙(4)
+                                </a>
+                            </li>
+                            <li>
+                                <a class="ch flex-container aligm-middle">
+                                    <svg class="svg-inline--fa fa-circle" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path>
+                                    </svg>
+                                    粉紅(2)
+                                </a>
+                            </li>
+                            <li>
+                                <a class="ch flex-container aligm-middle">
+                                    <svg class="svg-inline--fa fa-circle" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path>
+                                    </svg>
+                                    灰(1)
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="delete">
+                            <a class="ch flex-container aligm-middle">
+                                <svg class="svg-inline--fa fa-trash" focusable="false" data-prefix="fas" data-icon="trash" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                    <path fill="currentColor" d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"></path>
+                                </svg><!-- <i class="fa-solid fa-trash"></i> Font Awesome fontawesome.com -->
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex-container align-middle filterOutWrap">
+                        <div class="ch title">材質</div>
+                        <ul class="filterWrap flex-container align-middle">
+                            <li>
+                                <a class="ch flex-container aligm-middle">
+                                    <svg class="svg-inline--fa fa-circle" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path>
+                                    </svg>
+                                    牛皮(9)
+                                </a>
+                            </li>
+                            <li>
+                                <a class="ch flex-container aligm-middle">
+                                    <svg class="svg-inline--fa fa-circle" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path>
+                                    </svg>
+                                    帆布(5)
+                                </a>
+                            </li>
+                            <li>
+                                <a class="ch flex-container aligm-middle">
+                                    <svg class="svg-inline--fa fa-circle" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path>
+                                    </svg>
+                                    麂皮(4)
+                                </a>
+                            </li>
+                            <li>
+                                <a class="ch flex-container aligm-middle">
+                                    <svg class="svg-inline--fa fa-circle" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path>
+                                    </svg>
+                                    小羊皮(4)
+                                </a>
+                            </li>
+                            <li>
+                                <a class="ch flex-container aligm-middle">
+                                    <svg class="svg-inline--fa fa-circle" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path>
+                                    </svg>
+                                    羊皮(4)
+                                </a>
+                            </li>
+                            <li>
+                                <a class="ch flex-container aligm-middle">
+                                    <svg class="svg-inline--fa fa-circle" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path>
+                                    </svg>
+                                    亞麻(4)
+                                </a>
+                            </li>
+                            <li>
+                                <a class="ch flex-container aligm-middle">
+                                    <svg class="svg-inline--fa fa-circle" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path>
+                                    </svg>
+                                    鱷魚皮(1)
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="delete">
+                            <a class="ch flex-container aligm-middle">
+                                <svg class="svg-inline--fa fa-trash" focusable="false" data-prefix="fas" data-icon="trash" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                    <path fill="currentColor" d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"></path>
+                                </svg><!-- <i class="fa-solid fa-trash"></i> Font Awesome fontawesome.com -->
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex-container align-middle filterOutWrap">
+                        <div class="ch title">使用性別</div>
+                        <ul class="filterWrap flex-container align-middle">
+                            <li>
+                                <a class="ch flex-container aligm-middle">
+                                    <svg class="svg-inline--fa fa-circle" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path>
+                                    </svg>
+                                    中性(28)
+                                </a>
+                            </li>
+                            <li>
+                                <a class="ch flex-container aligm-middle">
+                                    <svg class="svg-inline--fa fa-circle" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path>
+                                    </svg>
+                                    男性(1)
+                                </a>
+                            </li>
+                            <li>
+                                <a class="ch flex-container aligm-middle">
+                                    <svg class="svg-inline--fa fa-circle" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path>
+                                    </svg>
+                                    女性(2)
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="delete">
+                            <a class="ch flex-container aligm-middle">
+                                <svg class="svg-inline--fa fa-trash" focusable="false" data-prefix="fas" data-icon="trash" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                    <path fill="currentColor" d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"></path>
+                                </svg><!-- <i class="fa-solid fa-trash"></i> Font Awesome fontawesome.com -->
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex-container align-middle filterOutWrap">
+                        <div class="ch title">有無現貨</div>
+                        <ul class="filterWrap flex-container align-middle">
+                            <li>
+                                <a class="ch flex-container aligm-middle">
+                                    <svg class="svg-inline--fa fa-circle" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path>
+                                    </svg>
+                                    有現貨(13)
+                                </a>
+                            </li>
+                            <li>
+                                <a class="ch flex-container aligm-middle">
+                                    <svg class="svg-inline--fa fa-circle" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path>
+                                    </svg>
+                                    無現貨(18)
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="delete">
+                            <a class="ch flex-container aligm-middle">
+                                <svg class="svg-inline--fa fa-trash" focusable="false" data-prefix="fas" data-icon="trash" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                    <path fill="currentColor" d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"></path>
+                                </svg><!-- <i class="fa-solid fa-trash"></i> Font Awesome fontawesome.com -->
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="result-area">

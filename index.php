@@ -232,7 +232,7 @@ $now = 'home';
 						<img src="./img/new2.png">
 						<div class="text-area">
 							<div class="en">CHANEL</div>
-							<div class="ch">迷你相機包</div>
+							<div class="ch">迷你相機包迷你相機包迷你相機包迷你相機包迷你相機包迷你相機包</div>
 						</div>
 						<div class="new">新品上架</div>
 					</a>

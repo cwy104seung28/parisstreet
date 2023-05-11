@@ -35,25 +35,25 @@ $('img.lazyload').on('load', function() {
 
 
 
-$("a").not("[href='javascript:;']").not("[href^='tel:']").not("[target='_blank']").not("[data-fancybox]").not("[data-share]").not("[onclick^='window.open']").on("click", function(e) {
-	e.preventDefault()
+// $("a").not("[href='javascript:;']").not("[href^='tel:']").not("[target='_blank']").not("[data-fancybox]").not("[data-share]").not("[onclick^='window.open']").on("click", function(e) {
+// 	e.preventDefault()
 
-	$("#preload").fadeIn(500, () => {
-		location.href = $(this).attr('href')
+// 	$("#preload").fadeIn(500, () => {
+// 		location.href = $(this).attr('href')
 
-		var _goto = $(this).attr('href').split("#");
-		var _gotoName = _goto[0].split("/").pop();
+// 		var _goto = $(this).attr('href').split("#");
+// 		var _gotoName = _goto[0].split("/").pop();
 
-		var _now = location.href.split("#");
-		var _nowName = _now[0].split("/").pop();
+// 		var _now = location.href.split("#");
+// 		var _nowName = _now[0].split("/").pop();
 
-		if (_gotoName == _nowName) {
-			gsap.delayedCall(0.1, function() {
-				location.reload()
-			});
-		}
-	})
-})
+// 		if (_gotoName == _nowName) {
+// 			gsap.delayedCall(0.1, function() {
+// 				location.reload()
+// 			});
+// 		}
+// 	})
+// })
 
 
 
@@ -72,17 +72,11 @@ $("#preload").delay(500).fadeOut(500)
 
 
 
-
-
-
 if (navigator.appVersion.indexOf("Mac") != -1) {
 	$("body").get(0).style.setProperty('--lock', "15px");
 } else {
 	$("body").get(0).style.setProperty('--lock', "17px");
 }
-
-
-
 
 
 
@@ -114,19 +108,43 @@ $(".marquee").each(function(i, el) {
 
 
 
-$(".hamburger-area").on("click", function() {
-	$(".topmenu-preload").addClass("is-show")
-	$(".topmenuWrap").addClass("is-show")
+// $(".hamburger-area").on("click", function() {
+// 	$(".topmenu-preload").addClass("is-show")
+// 	$(".topmenuWrap").addClass("is-show")
 
-	$(".amazeWrap .marquee").addClass("is-show")
-})
+// 	$(".amazeWrap .marquee").addClass("is-show")
+// })
 
 $(".topmenuWrap .close").on("click", function() {
 	$(".topmenu-preload").removeClass("is-show")
 	$(".topmenuWrap").removeClass("is-show")
 })
 
+$(".list-area .class").click(function() {
+	$(".class-list").toggleClass("is-show");
+});
+$(".profile").click(function() {
+	// $(".member-area").addClass("is-show");
+	$(".login-area").addClass("is-show");
+	$("html").addClass("is-locked");
+});
+$(".member-area .close").click(function() {
+	$(".member-area").removeClass("is-show");
+	$("html").removeClass("is-locked");
+});
 
+
+$(".step-1 li").click(function() {
+	$(".step-2").addClass("is-show");
+});
+$(".step-2 li").click(function() {
+	$(".step-3").addClass("is-show");
+});
+
+$(".loginWrap .login").on("click", function() {
+	$(".login-area").removeClass("is-show")
+	$(".member-area").addClass("is-show");
+})
 
 
 
