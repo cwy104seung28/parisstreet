@@ -114,12 +114,12 @@
 	<div class="setting-area flex-container">
 		<ul class="settingWrap">
 			<li>
-				<a href="javascript:;">
+				<a href="./question.php">
 					<div class="setting">
 						<div class="title-area">
-							<img class="show-for-large" src="./img/notice.svg">
-							<img class="hide-for-large" src="./img/notice-mobile.svg">
-							<div class="title">通知</div>
+							<img class="show-for-large" src="./img/question-pc.svg">
+							<img class="hide-for-large" src="./img/question.svg">
+							<div class="title">常見問題</div>
 						</div>
 						<div><img src="./img/go.svg"></div>
 					</div>

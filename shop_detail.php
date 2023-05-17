@@ -98,7 +98,12 @@
                         <br>
                         此產品於法國、西班牙、義大利或美國製造
                     </div>
-                    <div class="other">退換貨須知 ・ 常見問題 ・ 聯絡我們</div>
+                    <div class="other">
+                        <a href="./policy.php">退換貨須知</a>
+                         ・  
+                        <a href="./question.php">常見問題</a>
+                         ・ 聯絡我們
+                    </div>
                 </div>
             </div>
             <div class="other-product">

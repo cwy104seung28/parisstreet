@@ -2354,6 +2354,95 @@ body {
 
     }
 
+    .question-container {
+        position: relative;
+        padding: 150px 0px;
+        // max-width: 85%;
+        margin: 0 85px;
+
+        @include breakpoint(medium down) {
+            padding: 100px 0 90px;
+            margin: 0 20px;
+        }
+
+        .qaWrap {
+            .qaList {
+                li {
+                    .question {
+                        background-color: #141514;
+                        justify-content: space-between;
+                        padding: 12px 10px;
+                    }
+
+                    .answer {
+                        background-color: #9D9D9E;
+                        padding: 12px 10px;
+                        color: #000;
+                        letter-spacing: 1px;
+                        line-height: 1.6;
+                        font-size: 12px;
+                    }
+
+                    .title {
+                        font-size: 12px;
+                        letter-spacing: 1px;
+                        color: #FFF;
+                    }
+
+                    .add {
+                        position: relative;
+                        width: 15px;
+                        height: 15px;
+
+                        // img{
+                        //     position: absolute;
+                        //     top: 0;
+                        //     left: 0;
+                        // }
+                        .opened {
+                            opacity: 0;
+                            pointer-events: none;
+                            transition: 0.3s all;
+                            position: absolute;
+                            top: 50%;
+                            left: 0;
+                        }
+
+                        .not-opened {
+                            transition: 0.3s all;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+                    }
+
+                    .answer {
+                        display: none;
+                    }
+
+                    &.is-open {
+                        .opened {
+                            opacity: 1;
+                            pointer-events: all;
+                        }
+
+                        .not-opened {
+                            opacity: 0;
+                            pointer-events: none;
+                        }
+                    }
+                }
+            }
+        }
+        .content{
+            font-size: 12px;
+            color: #FFF;
+            letter-spacing: 1px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+    }
+
     .cart-select {
         border-radius: 0;
         border: 1px solid #000;
@@ -2602,6 +2691,8 @@ body {
         }
     }
 
+
+
     &.is-white {
         .ch {
 
@@ -2629,6 +2720,14 @@ body {
             }
         }
     }
+}
+
+.top-title-area {
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    font-size: 600;
 }
 
 .discount {
