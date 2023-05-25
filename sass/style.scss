@@ -2371,34 +2371,48 @@ body {
                     .question {
                         background-color: #141514;
                         justify-content: space-between;
-                        padding: 12px 10px;
+                        padding: 20px 14px;
+                        @include breakpoint(medium down) {
+                            padding: 12px 10px;
+                        }
                     }
 
                     .answer {
                         background-color: #9D9D9E;
-                        padding: 12px 10px;
+                        padding: 20px 14px;
                         color: #000;
                         letter-spacing: 1px;
                         line-height: 1.6;
-                        font-size: 12px;
+                        font-size: 18px;
+                        @include breakpoint(medium down) {
+                            font-size: 12px;
+                            padding: 12px 10px;
+                        }
                     }
 
                     .title {
-                        font-size: 12px;
                         letter-spacing: 1px;
                         color: #FFF;
+                        font-size: 20px;
+                        @include breakpoint(medium down) {
+                            font-size: 12px;
+                        }
                     }
 
                     .add {
                         position: relative;
-                        width: 15px;
-                        height: 15px;
+                        width: 30px;
+                        height: 30px;
 
                         // img{
                         //     position: absolute;
                         //     top: 0;
                         //     left: 0;
                         // }
+                        @include breakpoint(medium down) {
+                            width: 15px;
+                            height: 15px;
+                        }
                         .opened {
                             opacity: 0;
                             pointer-events: none;
@@ -2435,11 +2449,14 @@ body {
             }
         }
         .content{
-            font-size: 12px;
+            font-size: 16px;
             color: #FFF;
             letter-spacing: 1px;
             line-height: 1.8;
             text-align: justify;
+            @include breakpoint(medium down) {
+                font-size: 12px;
+            }
         }
     }
 
@@ -2723,11 +2740,15 @@ body {
 }
 
 .top-title-area {
-    font-size: 16px;
+    font-size: 28px;
     color: #fff;
     letter-spacing: 2px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     font-size: 600;
+    @include breakpoint(medium down) {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
 }
 
 .discount {
