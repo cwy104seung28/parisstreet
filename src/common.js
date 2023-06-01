@@ -1,4 +1,4 @@
-$(window).on("resize", function() {
+$(window).on("resize", function () {
 	if ($(this).width() > 1025) {
 		if (window.device == 'mobile') {
 			location.reload()
@@ -22,7 +22,7 @@ lazySizesConfig.preloadAfterLoad = true;
 
 
 // after all load callback
-$('img.lazyload').on('load', function() {
+$('img.lazyload').on('load', function () {
 	var _p = document.querySelectorAll('img.lazyload').length
 	if (_p % 5 == 0) {
 		ScrollTrigger.refresh();
@@ -58,7 +58,7 @@ $('img.lazyload').on('load', function() {
 
 
 // 解決 safari hitory.back() reload 問題
-$(window).on("pageshow", function(event) {
+$(window).on("pageshow", function (event) {
 	if (event.originalEvent.persisted) {
 		window.location.reload()
 	}
@@ -80,11 +80,11 @@ if (navigator.appVersion.indexOf("Mac") != -1) {
 
 
 
-var videoLoad = (function() {
+var videoLoad = (function () {
 	var vids = document.getElementsByTagName("video");
 
 	for (let el of vids) {
-		el.addEventListener("canplaythrough", function() {
+		el.addEventListener("canplaythrough", function () {
 			this.classList.add("is-show")
 			this.play()
 		})
@@ -99,7 +99,7 @@ var videoLoad = (function() {
 
 
 // 1個變好多個
-$(".marquee").each(function(i, el) {
+$(".marquee").each(function (i, el) {
 	$(el).append($(el).contents().clone())
 	$(el).append($(el).contents().clone())
 	$(el).append($(el).contents().clone())
@@ -115,54 +115,67 @@ $(".marquee").each(function(i, el) {
 // 	$(".amazeWrap .marquee").addClass("is-show")
 // })
 
-$(".topmenuWrap .close").on("click", function() {
+$(".topmenuWrap .close").on("click", function () {
 	$(".topmenu-preload").removeClass("is-show")
 	$(".topmenuWrap").removeClass("is-show")
 })
 
-$(".list-area .class").click(function() {
+$(".list-area .class").click(function () {
 	$(".class-list").toggleClass("is-show");
 });
-$(".profile").click(function() {
+$(".profile").click(function () {
 	// $(".member-area").addClass("is-show");
 	$(".login-area").addClass("is-show");
 	$("html").addClass("is-locked");
 });
-$(".member-area .close").click(function() {
+$(".member-area .close").click(function () {
 	$(".member-area").removeClass("is-show");
 	$("html").removeClass("is-locked");
 });
 
 
-$(".step-1 li").click(function() {
+$(".step-1 li").click(function () {
 	$(".step-2").addClass("is-show");
 });
-$(".step-2 li").click(function() {
+$(".step-2 li").click(function () {
 	$(".step-3").addClass("is-show");
 });
 
-$(".loginWrap .login").on("click", function() {
+$(".loginWrap .login").on("click", function () {
 	$(".login-area").removeClass("is-show")
 	$(".member-area").addClass("is-show");
 })
 
 
-
-$(".scroll").on("click", function() {
-	gsap.to(window, {
-		duration: 1.2,
-		scrollTo: $(window).height(),
-		ease: 'power2.inOut',
+if (window.device == "mobile") {
+	var ts;
+	$(document).bind('touchstart', function (e) {
+		ts = e.originalEvent.touches[0].clientY;
 	});
-})
+
+	$(document).bind('touchmove', function (e) {
+		var te = e.originalEvent.changedTouches[0].clientY;
+		// var a = $(".login-area").hasClass("is-show");
+		// var b = $(".member-area").hasClass("is-show");
+		// console.log(a);
+		// console.log(b);
+		if (ts > te) {
+			$(".topmenu").addClass("is-up")
+			$(".fix-mobile").addClass("is-down")
+		} else {
+			$(".topmenu").removeClass("is-up")
+			$(".fix-mobile").removeClass("is-down")
+		}
+		if ($(".login-area").hasClass("is-show") == true || $(".member-area").hasClass("is-show") == true) {
+			$(".topmenu").removeClass("is-up")
+		}
+	});
+}
 
 
 
-
-
-
-$.fn.BtnHover = function() {
-	return this.each(function() {
+$.fn.BtnHover = function () {
+	return this.each(function () {
 		var $this = $(this)
 		var _w = $this.width()
 		var _h = $this.height()
@@ -226,7 +239,7 @@ $("[data-friction]").BtnHover()
 
 
 
-$(".ryder-split").each(function(i, el) {
+$(".ryder-split").each(function (i, el) {
 	gsap.from(el, {
 		scrollTrigger: {
 			trigger: el,
@@ -238,7 +251,7 @@ $(".ryder-split").each(function(i, el) {
 		opacity: 0,
 		y: 30,
 		ease: "power1.out",
-		onComplete: function() {
+		onComplete: function () {
 			gsap.from(el, {
 				duration: .1,
 				opacity: 0,
@@ -252,7 +265,7 @@ $(".ryder-split").each(function(i, el) {
 
 
 
-$("[data-r]").each(function(i, el) {
+$("[data-r]").each(function (i, el) {
 
 	if (device == 'mobile' && $(el).data("mobile-r") != undefined) {
 		var _p = $(el).data("mobile-r")

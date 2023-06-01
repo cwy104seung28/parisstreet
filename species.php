@@ -23,7 +23,7 @@
                         </g>
                     </svg>
                 </div>
-                <a class="en" href="./brand.php">CHANEL</a>
+                <a class="en" href="./brand.php">LV</a>
                 <div class="next">
                     <svg class="show-for-large" id="b" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" width="7.38" height="9.18" viewBox="0 0 7.38 9.18">
                         <g id="c" data-name="文字">
@@ -36,14 +36,14 @@
                         </g>
                     </svg>
                 </div>
-                <a class="now" href="./species.php">皮包</a>
+                <a class="en now" href="./species.php">MONOGRAM</a>
             </div>
         </div>
         <div class="species-area">
             <ul class="pageWrap">
-                <li class="current">全部</li>
+                <li>全部</li>
                 <li>後背包</li>
-                <li>手提包</li>
+                <li class="current">手提包</li>
                 <li>皮夾</li>
             </ul>
             <ul class="species species-1 show" data-page="1">

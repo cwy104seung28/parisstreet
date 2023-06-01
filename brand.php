@@ -30,42 +30,36 @@
                 <li>
                     <a href="./species.php">
                         <img src="./img/bag.jpg" alt="">
-                        <div class="cover"></div>
                         <div class="text">SPEEDY</div>
                     </a>
                 </li>
                 <li>
                     <a href="./species.php">
                         <img src="./img/shoes.jpg" alt="">
-                        <div class="cover"></div>
                         <div class="text">老花</div>
                     </a>
                 </li>
                 <li>
                     <a href="./species.php">
                         <img src="./img/accessories.jpg" alt="">
-                        <div class="cover"></div>
                         <div class="text">MONOGRAM</div>
                     </a>
                 </li>
                 <li>
                     <a href="./species.php">
                         <img src="./img/makeup.jpg" alt="">
-                        <div class="cover"></div>
                         <div class="text">ARCHLIGHT</div>
                     </a>
                 </li>
                 <li>
                     <a href="./species.php">
                         <img src="./img/perfume.jpg" alt="">
-                        <div class="cover"></div>
                         <div class="text">草間彌生</div>
                     </a>
                 </li>
                 <li>
                     <a href="./species.php">
                         <img src="./img/perfume.jpg" alt="">
-                        <div class="cover"></div>
                         <div class="text">NAUTICAL</div>
                     </a>
                 </li>
@@ -137,4 +131,5 @@
             $(".topmenu").removeClass("is-show")
         }
     }).trigger("scroll");
+
 </script>

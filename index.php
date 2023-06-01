@@ -502,7 +502,7 @@ $now = 'home';
 			$(".topmenu").removeClass("is-show")
 		}
 	}).trigger("scroll");
-	
+
 	$(".ads-container").fadeIn(300);
 	$(".ads-container .close").on("click", function() {
 		$(".ads-container").fadeOut(300);
@@ -510,8 +510,8 @@ $now = 'home';
 	});
 
 	var swiper = new Swiper(".mySwiper", {
-      pagination: {
-        el: ".swiper-pagination",
-      },
-    });
+		pagination: {
+			el: ".swiper-pagination",
+		},
+	});
 </script>

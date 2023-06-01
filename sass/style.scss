@@ -70,6 +70,9 @@ body {
             //     pointer-events: all;
             // }
         }
+        &.is-up{
+            transform: translateY(-100%);
+        }
 
         .left-area {
             display: flex;
@@ -985,6 +988,11 @@ body {
         bottom: 0;
         width: 100%;
         background-color: #000;
+        z-index: 1;
+        transition: 0.5s all;
+        &.is-down{
+            transform: translateY(100%);
+        }
 
         .list-area {
             max-width: 77%;
@@ -1184,8 +1192,8 @@ body {
             .category {
 
                 @include breakpoint(medium down) {
-                    margin-bottom: 40px;
-                    transform: scale(0.8);
+                    margin-bottom: 20px;
+                    transform: scale(0.9);
                     transform-origin: left;
                     font-weight: 600;
                 }
@@ -1224,7 +1232,7 @@ body {
                     position: relative;
 
                     @include breakpoint(medium down) {
-                        padding: 0 13px;
+                        // padding: 0 13px;
                         margin-bottom: 14px;
                     }
 
@@ -1286,7 +1294,7 @@ body {
                         transform: scale(0.8);
                         transform-origin: right;
                         right: 15px;
-                        bottom: -2px;
+                        bottom: -20px;
                     }
                 }
 
@@ -1461,6 +1469,8 @@ body {
                             // zoom: 0.9;
                             @include breakpoint(medium down) {
                                 font-size: 13px;
+                                transform: scale(0.8);
+                                transform-origin: left;
                             }
 
                             img {
@@ -1506,11 +1516,11 @@ body {
             padding: 100px 0 90px;
             margin: 0 20px;
         }
-
-        // padding: 25px 20px;
         .brand-area {
-            // padding-bottom: 25px;
+            padding-bottom: 30px;
             margin-bottom: 35px;
+
+            border-bottom: 1px solid #141514;
 
             @include breakpoint(medium down) {
                 padding-bottom: 25px;
@@ -1524,7 +1534,7 @@ body {
 
                 @include breakpoint(medium down) {
                     grid-template-columns: repeat(3, 1fr);
-                    grid-gap: 7px;
+                    grid-gap: 10px 7px;
                 }
 
                 li {
@@ -1532,23 +1542,12 @@ body {
 
                     img {
                         border-radius: 15px;
+                        margin-bottom: 20px;
 
                         @include breakpoint(medium down) {
                             border-radius: 2px;
+                            margin-bottom: 10px;
                         }
-                    }
-
-                    .cover {
-                        width: 100%;
-                        height: 100%;
-                        background-color: #040000be;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        // border-radius: 20px;
-                        // @include breakpoint(medium down) {
-                        //     border-radius: 2px;
-                        // }
                     }
 
                     .text {
@@ -1558,12 +1557,7 @@ body {
                         font-weight: 600;
                         text-align: center;
 
-                        position: absolute;
-                        z-index: 1;
-                        top: 0;
-
-                        width: 100%;
-                        height: 100%;
+                        // position: absolute;
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -1625,6 +1619,7 @@ body {
 
         .top-area {
             margin-bottom: 20px;
+            justify-content: right;
             // display: block;
 
             .result-area {
@@ -1646,7 +1641,7 @@ body {
             .select-area {
                 img {
                     transform: scale(1.2);
-                    transform-origin: left;
+                    transform-origin: right;
                     margin-right: 30px;
                 }
             }
@@ -2632,7 +2627,7 @@ body {
         @include breakpoint(medium down) {
             font-size: 12px;
             transform: scale(0.8);
-            transform-origin: left;
+            transform-origin: right;
             font-weight: 600;
         }
 
@@ -2765,7 +2760,7 @@ body {
         font-size: 12px;
         transform: scale(0.9);
         left: -3px;
-        top: 340px;
+        top: 345px;
     }
 }
 
