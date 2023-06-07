@@ -70,7 +70,8 @@ body {
             //     pointer-events: all;
             // }
         }
-        &.is-up{
+
+        &.is-up {
             transform: translateY(-100%);
         }
 
@@ -805,6 +806,10 @@ body {
             .photo {
                 margin-right: 25px;
                 width: 17vw;
+
+                img {
+                    border-radius: 50%;
+                }
             }
 
             .info-area {
@@ -990,7 +995,8 @@ body {
         background-color: #000;
         z-index: 1;
         transition: 0.5s all;
-        &.is-down{
+
+        &.is-down {
             transform: translateY(100%);
         }
 
@@ -1516,6 +1522,7 @@ body {
             padding: 100px 0 90px;
             margin: 0 20px;
         }
+
         .brand-area {
             padding-bottom: 30px;
             margin-bottom: 35px;
@@ -2367,6 +2374,7 @@ body {
                         background-color: #141514;
                         justify-content: space-between;
                         padding: 20px 14px;
+
                         @include breakpoint(medium down) {
                             padding: 12px 10px;
                         }
@@ -2379,6 +2387,7 @@ body {
                         letter-spacing: 1px;
                         line-height: 1.6;
                         font-size: 18px;
+
                         @include breakpoint(medium down) {
                             font-size: 12px;
                             padding: 12px 10px;
@@ -2389,6 +2398,7 @@ body {
                         letter-spacing: 1px;
                         color: #FFF;
                         font-size: 20px;
+
                         @include breakpoint(medium down) {
                             font-size: 12px;
                         }
@@ -2408,6 +2418,7 @@ body {
                             width: 15px;
                             height: 15px;
                         }
+
                         .opened {
                             opacity: 0;
                             pointer-events: none;
@@ -2443,12 +2454,14 @@ body {
                 }
             }
         }
-        .content{
+
+        .content {
             font-size: 16px;
             color: #FFF;
             letter-spacing: 1px;
             line-height: 1.8;
             text-align: justify;
+
             @include breakpoint(medium down) {
                 font-size: 12px;
             }
@@ -2740,6 +2753,7 @@ body {
     letter-spacing: 2px;
     margin-bottom: 30px;
     font-size: 600;
+
     @include breakpoint(medium down) {
         font-size: 16px;
         margin-bottom: 15px;
