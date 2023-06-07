@@ -654,7 +654,9 @@ body {
                 .carousel {
                     li {
                         margin-right: 50px;
-
+                        @include breakpoint(medium down) {
+                            margin-right: 20px;
+                        }
                         .text-area {
                             transform-origin: center !important;
                             transform: scale(0.8);

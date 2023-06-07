@@ -251,4 +251,9 @@
 		$(".step-1").toggleClass("is-show");
 		$("html").toggleClass("is-locked");
 	});
+	$(".profile").click(function () {
+
+	$(".login-area").toggleClass("is-show")
+	$("html").addClass("is-locked");
+});
 </script>

@@ -123,11 +123,18 @@ $(".topmenuWrap .close").on("click", function () {
 $(".list-area .class").click(function () {
 	$(".class-list").toggleClass("is-show");
 });
-$(".profile").click(function () {
-	// $(".member-area").addClass("is-show");
-	$(".login-area").addClass("is-show");
-	$("html").addClass("is-locked");
-});
+// $(".profile").click(function () {
+// 	// $(".member-area").addClass("is-show");
+// 	// if ($(".login-area").hasClass("is-show") == true) {
+// 	// 	$(".login-area").removeClass("is-show");
+// 	// }
+// 	// else {
+// 	// 	$(".login-area").addClass("is-show");
+// 	// }
+// 	// console.log($(".login-area").hasClass("is-show"));
+// 	$(".login-area").toggleClass("is-show")
+// 	$("html").addClass("is-locked");
+// });
 $(".member-area .close").click(function () {
 	$(".member-area").removeClass("is-show");
 	$("html").removeClass("is-locked");
