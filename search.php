@@ -4,6 +4,7 @@
 <head>
     <?php include 'html_head.php'; ?>
 </head>
+<?php $now = ''; ?>
 
 <body>
     <?php include 'topmenu.php'; ?>
@@ -16,7 +17,7 @@
         <div class="search-area">
             <div class="search">
                 <input type="text">
-                <a href="search_result.php"><img src="./img/search-mobile.svg"></a>
+                <a href="search_result.php"><img src="./img/search-icon.svg"></a>
             </div>
             <ul class="changeWrap">
                 <li class="current">熱門搜尋</li>
@@ -28,33 +29,85 @@
                     <div class="pic-area"><img src="./img/new1.jpg"></div>
                     <div class="article-area">
                         <div class="title">LV BOULOGNE</div>
+                        <div class="add"><img src="./img/search-heart-pc.svg">加入珍藏</div>
                     </div>
-                    <div class="add"><img src="./img/heart.svg">加入珍藏</div>
                 </li>
                 <li>
                     <div class="pic-area"><img src="./img/new2.jpg"></div>
                     <div class="article-area">
                         <div class="title">CHANEL 迷你相機包</div>
+                        <div class="add"><img src="./img/search-heart-pc.svg">加入珍藏</div>
                     </div>
-                    <div class="add"><img src="./img/heart.svg">加入珍藏</div>
                 </li>
                 <li>
                     <div class="pic-area"><img src="./img/new2.jpg"></div>
                     <div class="article-area">
                         <div class="title">CHANEL 迷你相機包</div>
+                        <div class="add"><img src="./img/search-heart-pc.svg">加入珍藏</div>
                     </div>
-                    <div class="add"><img src="./img/heart.svg">加入珍藏</div>
                 </li>
                 <li>
                     <div class="pic-area"><img src="./img/new2.jpg"></div>
                     <div class="article-area">
                         <div class="title">CHANEL 迷你相機包</div>
+                        <div class="add"><img src="./img/search-heart-pc.svg">加入珍藏</div>
                     </div>
-                    <div class="add"><img src="./img/heart.svg">加入珍藏</div>
+                </li>
+                <li>
+                    <div class="pic-area"><img src="./img/new2.jpg"></div>
+                    <div class="article-area">
+                        <div class="title">CHANEL 迷你相機包</div>
+                        <div class="add"><img src="./img/search-heart-pc.svg">加入珍藏</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic-area"><img src="./img/new2.jpg"></div>
+                    <div class="article-area">
+                        <div class="title">CHANEL 迷你相機包</div>
+                        <div class="add"><img src="./img/search-heart-pc.svg">加入珍藏</div>
+                    </div>
                 </li>
             </ul>
+            <div class="page-area">
+                <div class="prev-arrow arrow not-show">
+                    <svg id="b" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" width="7.84" height="9.75" viewBox="0 0 7.84 9.75">
+                        <g id="c" data-name="圖層 2">
+                            <polygon class="d" points="7.84 0 0 4.87 7.84 9.75 7.84 0" />
+                        </g>
+                    </svg>
+                </div>
+                <ul class="page">
+                    <li class="li-1 current" data-num="1">
+                        <span class="num">1</span>
+                        <span class="dot">.</span>
+                    </li>
+                    <li class="li-2" data-num="2">
+                        <span class="num">2</span>
+                        <span class="dot">.</span>
+                    </li>
+                    <li class="li-3" data-num="3">
+                        <span class="num">3</span>
+                        <span class="dot">.</span>
+                    </li>
+                    <li class="li-4" data-num="4">
+                        <span class="num">4</span>
+                        <span class="dot">.</span>
+                    </li>
+                    <li class="li-5" data-num="5">
+                        <span class="num">5</span>
+                        <span class="dot">.</span>
+                    </li>
+                </ul>
+                <div class="next-arrow arrow">
+                    <svg id="b" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" width="7.84" height="9.75" viewBox="0 0 7.84 9.75">
+                        <g id="c" data-name="圖層 2">
+                            <polygon class="d" points="0 0 7.84 4.88 0 9.75 0 0" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
         </div>
-        <div class="ask-area">
+        <!-- <div class="ask-area">
             <svg id="b" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" width="72.46" height="33.6" viewBox="0 0 72.46 33.6">
                 <g id="c" data-name="圖層 2">
                     <polygon class="d" points="58.7 0 0 0 0 33.6 58.7 33.6 72.46 16.8 58.7 0" />
@@ -65,7 +118,7 @@
                     </g>
                 </g>
             </svg>
-        </div>
+        </div> -->
     </div>
 
     <?php include 'fix_mobile.php'; ?>

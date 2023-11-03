@@ -4,6 +4,7 @@
 <head>
     <?php include 'html_head.php'; ?>
 </head>
+<?php $now = ''; ?>
 
 <body>
     <?php include 'topmenu.php'; ?>
@@ -11,7 +12,7 @@
         <div class="top-area is-white">
             <div class="result-area flex-container align-middle">
                 <img src="./img/search-mobile.svg">
-                <div class="ch result-text"><span class="en">LV</span></div>
+                <div class="ch result-text"><span class="en">"LV"</span></div>
                 <div class="ch">搜尋結果</div>
             </div>
             <!-- <div class="select-area flex-container align-middle">
@@ -45,11 +46,10 @@
                 </select>
             </div> -->
             <div class="select-area flex-container">
-                <img src="./img/select.svg">
                 <div class="filter-area">
                     <div class="flex-container align-middle filterOutWrap">
                         <div class="ch title">品牌</div>
-                        <ul class="filterWrap flex-container align-middle">
+                        <ul class="filterWrap flex-container">
                             <li>
                                 <a class="ch flex-container aligm-middle">
                                     <svg class="svg-inline--fa fa-circle" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
@@ -91,17 +91,17 @@
                                 </a>
                             </li>
                         </ul>
-                        <div class="delete">
+                        <!-- <div class="delete">
                             <a class="ch flex-container aligm-middle">
                                 <svg class="svg-inline--fa fa-trash" focusable="false" data-prefix="fas" data-icon="trash" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
                                     <path fill="currentColor" d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"></path>
-                                </svg><!-- <i class="fa-solid fa-trash"></i> Font Awesome fontawesome.com -->
+                                </svg>
                             </a>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="flex-container align-middle filterOutWrap">
                         <div class="ch title">顏色</div>
-                        <ul class="filterWrap flex-container align-middle">
+                        <ul class="filterWrap flex-container">
                             <li>
                                 <a class="ch flex-container aligm-middle">
                                     <svg class="svg-inline--fa fa-circle" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
@@ -175,17 +175,45 @@
                                 </a>
                             </li>
                         </ul>
-                        <div class="delete">
+                        <!-- <div class="delete">
                             <a class="ch flex-container aligm-middle">
                                 <svg class="svg-inline--fa fa-trash" focusable="false" data-prefix="fas" data-icon="trash" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
                                     <path fill="currentColor" d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"></path>
-                                </svg><!-- <i class="fa-solid fa-trash"></i> Font Awesome fontawesome.com -->
+                                </svg>
                             </a>
-                        </div>
+                        </div> -->
+                    </div>
+                    <div class="flex-container align-middle filterOutWrap">
+                        <div class="ch title">有無現貨</div>
+                        <ul class="filterWrap flex-container">
+                            <li>
+                                <a class="ch flex-container aligm-middle">
+                                    <svg class="svg-inline--fa fa-circle" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path>
+                                    </svg>
+                                    有現貨(13)
+                                </a>
+                            </li>
+                            <li>
+                                <a class="ch flex-container aligm-middle">
+                                    <svg class="svg-inline--fa fa-circle" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path>
+                                    </svg>
+                                    無現貨(18)
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- <div class="delete">
+                            <a class="ch flex-container aligm-middle">
+                                <svg class="svg-inline--fa fa-trash" focusable="false" data-prefix="fas" data-icon="trash" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                    <path fill="currentColor" d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"></path>
+                                </svg>
+                            </a>
+                        </div> -->
                     </div>
                     <div class="flex-container align-middle filterOutWrap">
                         <div class="ch title">材質</div>
-                        <ul class="filterWrap flex-container align-middle">
+                        <ul class="filterWrap flex-container">
                             <li>
                                 <a class="ch flex-container aligm-middle">
                                     <svg class="svg-inline--fa fa-circle" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
@@ -243,17 +271,17 @@
                                 </a>
                             </li>
                         </ul>
-                        <div class="delete">
+                        <!-- <div class="delete">
                             <a class="ch flex-container aligm-middle">
                                 <svg class="svg-inline--fa fa-trash" focusable="false" data-prefix="fas" data-icon="trash" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
                                     <path fill="currentColor" d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"></path>
-                                </svg><!-- <i class="fa-solid fa-trash"></i> Font Awesome fontawesome.com -->
+                                </svg>
                             </a>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="flex-container align-middle filterOutWrap">
                         <div class="ch title">使用性別</div>
-                        <ul class="filterWrap flex-container align-middle">
+                        <ul class="filterWrap flex-container">
                             <li>
                                 <a class="ch flex-container aligm-middle">
                                     <svg class="svg-inline--fa fa-circle" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
@@ -279,463 +307,61 @@
                                 </a>
                             </li>
                         </ul>
-                        <div class="delete">
+                        <!-- <div class="delete">
                             <a class="ch flex-container aligm-middle">
                                 <svg class="svg-inline--fa fa-trash" focusable="false" data-prefix="fas" data-icon="trash" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
                                     <path fill="currentColor" d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"></path>
-                                </svg><!-- <i class="fa-solid fa-trash"></i> Font Awesome fontawesome.com -->
+                                </svg>
                             </a>
-                        </div>
-                    </div>
-                    <div class="flex-container align-middle filterOutWrap">
-                        <div class="ch title">有無現貨</div>
-                        <ul class="filterWrap flex-container align-middle">
-                            <li>
-                                <a class="ch flex-container aligm-middle">
-                                    <svg class="svg-inline--fa fa-circle" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
-                                        <path fill="currentColor" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path>
-                                    </svg>
-                                    有現貨(13)
-                                </a>
-                            </li>
-                            <li>
-                                <a class="ch flex-container aligm-middle">
-                                    <svg class="svg-inline--fa fa-circle" focusable="false" data-prefix="far" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
-                                        <path fill="currentColor" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path>
-                                    </svg>
-                                    無現貨(18)
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="delete">
-                            <a class="ch flex-container aligm-middle">
-                                <svg class="svg-inline--fa fa-trash" focusable="false" data-prefix="fas" data-icon="trash" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
-                                    <path fill="currentColor" d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"></path>
-                                </svg><!-- <i class="fa-solid fa-trash"></i> Font Awesome fontawesome.com -->
-                            </a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
         </div>
-        <div class="result-area">
-            <ul class="result result-1 show" data-page="1">
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-1.jpg" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">小型後背包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-2.jpg" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">迷你相機包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-3.jpg" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">22包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-4.jpg" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">小型後背包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-2.jpg" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">迷你相機包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-3.jpg" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">22包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-1.jpg" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">小型後背包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-2.jpg" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">迷你相機包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-3.jpg" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">22包</div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-            <!-- <ul class="result result-2" data-page="2">
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-2.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">小型後背包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-1.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">迷你相機包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-2.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">22包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-3.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">小型後背包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-2.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">迷你相機包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-4.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">22包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-1.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">小型後背包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-2.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">迷你相機包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-4.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">22包</div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-            <ul class="result result-3" data-page="3">
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-1.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">小型後背包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-2.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">迷你相機包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-3.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">22包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-4.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">小型後背包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-2.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">迷你相機包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-3.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">22包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-1.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">小型後背包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-2.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">迷你相機包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-3.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">22包</div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-            <ul class="result result-4" data-page="4">
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-2.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">小型後背包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-1.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">迷你相機包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-2.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">22包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-3.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">小型後背包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-2.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">迷你相機包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-4.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">22包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-1.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">小型後背包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-2.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">迷你相機包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-4.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">22包</div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-            <ul class="result result-5" data-page="5">
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-1.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">小型後背包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-2.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">迷你相機包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-3.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">22包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-4.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">小型後背包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-2.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">迷你相機包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-3.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">22包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-1.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">小型後背包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-2.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">迷你相機包</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./shop_detail.php">
-                        <img src="./img/bag-3.png" alt="">
-                        <div class="text-area">
-                            <div class="en">CHANEL</div>
-                            <div class="ch">22包</div>
-                        </div>
-                    </a>
-                </li>
-            </ul> -->
-
-        </div>
+        <ul class="search-list">
+            <li>
+                <div class="pic-area"><img src="./img/new1.jpg"></div>
+                <div class="article-area">
+                    <div class="title">LV BOULOGNE</div>
+                    <div class="add"><img src="./img/search-heart-pc.svg">加入珍藏</div>
+                </div>
+            </li>
+            <li>
+                <div class="pic-area"><img src="./img/new2.jpg"></div>
+                <div class="article-area">
+                    <div class="title">CHANEL 迷你相機包</div>
+                    <div class="add"><img src="./img/search-heart-pc.svg">加入珍藏</div>
+                </div>
+            </li>
+            <li>
+                <div class="pic-area"><img src="./img/new2.jpg"></div>
+                <div class="article-area">
+                    <div class="title">CHANEL 迷你相機包</div>
+                    <div class="add"><img src="./img/search-heart-pc.svg">加入珍藏</div>
+                </div>
+            </li>
+            <li>
+                <div class="pic-area"><img src="./img/new2.jpg"></div>
+                <div class="article-area">
+                    <div class="title">CHANEL 迷你相機包</div>
+                    <div class="add"><img src="./img/search-heart-pc.svg">加入珍藏</div>
+                </div>
+            </li>
+            <li>
+                <div class="pic-area"><img src="./img/new2.jpg"></div>
+                <div class="article-area">
+                    <div class="title">CHANEL 迷你相機包</div>
+                    <div class="add"><img src="./img/search-heart-pc.svg">加入珍藏</div>
+                </div>
+            </li>
+            <li>
+                <div class="pic-area"><img src="./img/new2.jpg"></div>
+                <div class="article-area">
+                    <div class="title">CHANEL 迷你相機包</div>
+                    <div class="add"><img src="./img/search-heart-pc.svg">加入珍藏</div>
+                </div>
+            </li>
+        </ul>
         <div class="page-area">
             <div class="prev-arrow arrow not-show">
                 <svg id="b" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" width="7.84" height="9.75" viewBox="0 0 7.84 9.75">
@@ -793,5 +419,5 @@
         }
     }).trigger("scroll");
 
-    $('.cart-select').niceSelect();
+    // $('.cart-select').niceSelect();
 </script>

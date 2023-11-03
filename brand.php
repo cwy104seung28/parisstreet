@@ -4,6 +4,7 @@
 <head>
     <?php include 'html_head.php'; ?>
 </head>
+<?php $now = ''; ?>
 
 <body>
     <?php include 'topmenu.php'; ?>
@@ -59,7 +60,7 @@
                 </li>
                 <li>
                     <a href="./species.php">
-                        <img src="./img/perfume.jpg" alt="">
+                        <img src="./img/bag.jpg" alt="">
                         <div class="text">NAUTICAL</div>
                     </a>
                 </li>
@@ -131,5 +132,24 @@
             $(".topmenu").removeClass("is-show")
         }
     }).trigger("scroll");
-
+    if (window.device == 'desktop') {
+        var $carousel = $('.brand').flickity({
+            "prevNextButtons": true,
+            "pageDots": false,
+            "autoPlay": false,
+            "cellAlign": "left",
+            "imagesLoaded": true,
+            "arrowShape": "",
+        })
+        $('.flickity-button.flickity-prev-next-button.next').html(`<svg id="b" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" width="21.71" height="57.85" viewBox="0 0 21.71 57.85">
+  <g id="c" data-name="文字">
+    <polyline points="1.7 1.06 19.35 29.38 2.26 56.79" style="fill: none; stroke: #e95529; stroke-miterlimit: 10; stroke-width: 4px;"/>
+  </g>
+</svg>`);
+        $('.flickity-button.flickity-prev-next-button.previous').html(`<svg id="b" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" width="21.71" height="57.85" viewBox="0 0 21.71 57.85">
+  <g id="c" data-name="文字">
+    <polyline points="20.01 1.06 2.36 29.38 19.45 56.79" style="fill: none; stroke: #e95529; stroke-miterlimit: 10; stroke-width: 4px;"/>
+  </g>
+</svg>`);
+    }
 </script>

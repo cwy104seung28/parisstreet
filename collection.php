@@ -4,6 +4,7 @@
 <head>
     <?php include 'html_head.php'; ?>
 </head>
+<?php $now = ''; ?>
 
 <body>
     <?php include 'topmenu.php'; ?>
@@ -56,7 +57,7 @@
                 </li>
             </ul>
         </div>
-        <div class="ask-area">
+        <!-- <div class="ask-area">
             <svg id="b" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" width="72.46" height="33.6" viewBox="0 0 72.46 33.6">
                 <g id="c" data-name="圖層 2">
                     <polygon class="d" points="58.7 0 0 0 0 33.6 58.7 33.6 72.46 16.8 58.7 0" />
@@ -67,7 +68,7 @@
                     </g>
                 </g>
             </svg>
-        </div>
+        </div> -->
         <!-- <div class="brand-area">
             <ul class="brand">
                 <li>

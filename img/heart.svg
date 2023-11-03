@@ -4,7 +4,7 @@
     <style>
       .e {
         fill: none;
-        stroke: #fff;
+        stroke: #E95529;
         stroke-miterlimit: 10;
         stroke-width: 1.1px;
       }

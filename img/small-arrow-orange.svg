@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="b" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" width="5.94" height="14.73" viewBox="0 0 5.94 14.73">
+  <defs>
+    <style>
+      .d {
+        fill: none;
+        stroke: #E95529;
+        stroke-miterlimit: 10;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <g id="c" data-name="bar">
+    <polyline class="d" points=".64 .4 5.05 7.48 .78 14.33"/>
+  </g>
+</svg>

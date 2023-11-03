@@ -7,6 +7,7 @@
 <head>
     <?php include 'html_head.php'; ?>
 </head>
+<?php $now = ''; ?>
 
 <body>
     <?php include 'topmenu.php'; ?>

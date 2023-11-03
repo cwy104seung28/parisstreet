@@ -4,6 +4,7 @@
 <head>
     <?php include 'html_head.php'; ?>
 </head>
+<?php $now = ''; ?>
 
 <body>
     <label>喜歡的顏色:</label>

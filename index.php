@@ -1,6 +1,4 @@
-<?php
-$now = 'home';
-?>
+<?php $now = 'home'; ?>
 <!DOCTYPE html>
 <html>
 
@@ -8,7 +6,7 @@ $now = 'home';
 	<?php include 'html_head.php'; ?>
 </head>
 
-<body>
+<body class="home">
 	<?php include 'topmenu.php'; ?>
 	<div class="ads-container is-show">
 		<div class="ads-area">
@@ -105,7 +103,11 @@ $now = 'home';
 							<div class="en small">LOUIS<br>VUITTON</div>
 						</div>
 						<!-- <img src="./img/brand1.png"> -->
-						<!-- <div class="new">新品上架</div> -->
+						<!-- <div class="new">
+						<div class="text">
+													新品
+						</div>	
+						</div> -->
 					</a>
 				</li>
 				<li class="carousel-cell">
@@ -137,18 +139,18 @@ $now = 'home';
 				</li>
 				<li class="carousel-cell">
 					<a href="./brand.php">
-						<img src="./img/brand-new-1.jpg">
+						<img src="./img/brand-new-5.jpg">
 						<div class="text-area">
-							<div class="en small">LOUIS<br>VUITTON</div>
+							<div class="en small">YSL</div>
 						</div>
 						<!-- <img src="./img/brand5.png"> -->
 					</a>
 				</li>
 				<li class="carousel-cell">
 					<a href="./brand.php">
-						<img src="./img/brand-new-2.jpg">
+						<img src="./img/brand-new-6.jpg">
 						<div class="text-area">
-							<div class="en">CHANEL</div>
+							<div class="en">HERMERS</div>
 						</div>
 						<!-- <img src="./img/brand6.png"> -->
 					</a>
@@ -224,7 +226,11 @@ $now = 'home';
 							<div class="en">LV</div>
 							<div class="en small">BOULOGNE</div>
 						</div>
-						<div class="new">新品上架</div>
+						<div class="new">
+							<div class="text">
+								新品
+							</div>
+						</div>
 					</a>
 				</li>
 				<li class="carousel-cell">
@@ -234,7 +240,16 @@ $now = 'home';
 							<div class="en">CHANEL</div>
 							<div class="ch">迷你相機包迷你相機包迷你相機包迷你相機包迷你相機包迷你相機包</div>
 						</div>
-						<div class="new">新品上架</div>
+						<div class="new">
+							<div class="text">
+								新品
+							</div>
+						</div>
+						<div class="discount">
+							<div class="text">
+								85折
+							</div>
+						</div>
 					</a>
 				</li>
 				<li class="carousel-cell">
@@ -285,7 +300,16 @@ $now = 'home';
 							<div class="en">LV</div>
 							<div class="en small">BOULOGNE</div>
 						</div>
-						<div class="new">新品上架</div>
+						<div class="new">
+							<div class="text">
+								新品
+							</div>
+						</div>
+						<div class="discount">
+							<div class="text">
+								85折
+							</div>
+						</div>
 					</a>
 				</li>
 				<li class="carousel-cell">
@@ -294,6 +318,16 @@ $now = 'home';
 						<div class="text-area">
 							<div class="en">CHANEL</div>
 							<div class="ch">迷你相機包</div>
+						</div>
+						<div class="new">
+							<div class="text">
+								新品
+							</div>
+						</div>
+						<div class="discount">
+							<div class="text">
+								85折
+							</div>
 						</div>
 					</a>
 				</li>
@@ -342,7 +376,11 @@ $now = 'home';
 					<a href="./shop_detail.php">
 						<div class="rank">1</div>
 						<img src="./img/top1.png">
-						<div class="new">新品上架</div>
+						<div class="new">
+							<div class="text">
+								新品
+							</div>
+						</div>
 					</a>
 				</li>
 				<li class="carousel-cell">
@@ -471,17 +509,35 @@ $now = 'home';
 
 </html>
 <script>
-	var $carousel = $('.carousel').flickity({
-		"prevNextButtons": false,
-		"pageDots": false,
-		// "wrapAround": true,
-		"autoPlay": false,
-		"cellAlign": "left",
-		"imagesLoaded": true,
-		// "adaptiveHeight": true,
-		"arrowShape": "",
-		// "watchCSS": true,
-	})
+	if (window.device == 'desktop') {
+		var $carousel = $('.carousel').flickity({
+			"prevNextButtons": true,
+			"pageDots": false,
+			"autoPlay": false,
+			"cellAlign": "left",
+			"imagesLoaded": true,
+			"arrowShape": "",
+		})
+		$('.flickity-button.flickity-prev-next-button.next').html(`<svg id="b" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" width="21.71" height="57.85" viewBox="0 0 21.71 57.85">
+  <g id="c" data-name="文字">
+    <polyline points="1.7 1.06 19.35 29.38 2.26 56.79" style="fill: none; stroke: #e95529; stroke-miterlimit: 10; stroke-width: 4px;"/>
+  </g>
+</svg>`);
+$('.flickity-button.flickity-prev-next-button.previous').html(`<svg id="b" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" width="21.71" height="57.85" viewBox="0 0 21.71 57.85">
+  <g id="c" data-name="文字">
+    <polyline points="20.01 1.06 2.36 29.38 19.45 56.79" style="fill: none; stroke: #e95529; stroke-miterlimit: 10; stroke-width: 4px;"/>
+  </g>
+</svg>`);
+	} else {
+		var $carousel = $('.carousel').flickity({
+			"prevNextButtons": false,
+			"pageDots": false,
+			"autoPlay": false,
+			"cellAlign": "left",
+			"imagesLoaded": true,
+			"arrowShape": "",
+		})
+	}
 	// var $bannerCarousel = $('.banner-carousel').flickity({
 	// 	"prevNextButtons": false,
 	// 	"pageDots": true,
@@ -493,15 +549,16 @@ $now = 'home';
 	// 	"arrowShape": "",
 	// 	// "watchCSS": true,
 	// })
-	$(window).on("scroll", function() {
-		var _scrollTop = $(this).scrollTop();
+	// $(window).on("scroll", function() {
+	// 	var _scrollTop = $(this).scrollTop();
 
-		if (_scrollTop >= 100) {
-			$(".topmenu").addClass("is-show")
-		} else {
-			$(".topmenu").removeClass("is-show")
-		}
-	}).trigger("scroll");
+	// 	if (_scrollTop >= 100) {
+	// 		$(".topmenu").addClass("is-show")
+	// 	} else {
+	// 		$(".topmenu").removeClass("is-show")
+	// 	}
+	// }).trigger("scroll");
+	$(".topmenu").addClass("is-show");
 
 	$(".ads-container").fadeIn(300);
 	$(".ads-container .close").on("click", function() {

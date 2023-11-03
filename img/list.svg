@@ -3,15 +3,18 @@
   <defs>
     <style>
       .d {
-        fill: #fff;
+        fill: #E95529;
       }
 
       .e {
         fill: none;
-        stroke: #231815;
+        stroke: #FFFFFF;
         stroke-linecap: round;
         stroke-miterlimit: 10;
         stroke-width: 1.45px;
+      }
+      circle{
+        fill: #FFFFFF;
       }
     </style>
   </defs>

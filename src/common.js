@@ -13,7 +13,7 @@ $(window).on("resize", function () {
 }).trigger("resize")
 
 
-
+$('.cart-select').niceSelect();
 
 
 
@@ -63,12 +63,6 @@ $(window).on("pageshow", function (event) {
 		window.location.reload()
 	}
 });
-
-
-
-$("#preload").delay(500).fadeOut(500)
-
-
 
 
 
