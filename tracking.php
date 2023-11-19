@@ -22,6 +22,26 @@
                 </div>
                 <div class="tracking-detail">
                     <div class="detailWrap flex-container">
+                        <!-- <div class="stepWrap show-for-large">
+                            <ul class="stepList flex-container align-middle">
+                                <li class="current flex-container align-middle">
+                                    <div class="number">1</div>
+                                    <div class="title">倉庫揀貨</div>
+                                </li>
+                                <li>
+                                    <div class="number">2</div>
+                                    <div class="title">出貨</div>
+                                </li>
+                                <li>
+                                    <div class="number">3</div>
+                                    <div class="title">物流運送中</div>
+                                </li>
+                                <li>
+                                    <div class="number">4</div>
+                                    <div class="title">已送達</div>
+                                </li>
+                            </ul>
+                        </div> -->
                         <div class="stepWrap">
                             <ul class="stepList">
                                 <li class="flex-container align-middle current">

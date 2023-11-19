@@ -5,9 +5,9 @@ $(window).on("resize", function () {
 		}
 		window.device = 'desktop';
 	} else {
-		// if (window.device == 'desktop') {
-		// 	location.reload()
-		// }
+		if (window.device == 'desktop') {
+			location.reload()
+		}
 		window.device = 'mobile';
 	}
 }).trigger("resize")
@@ -132,14 +132,6 @@ $(".list-area .class").click(function () {
 $(".member-area .close").click(function () {
 	$(".member-area").removeClass("is-show");
 	$("html").removeClass("is-locked");
-});
-
-
-$(".step-1 li").click(function () {
-	$(".step-2").addClass("is-show");
-});
-$(".step-2 li").click(function () {
-	$(".step-3").addClass("is-show");
 });
 
 $(".loginWrap .login").on("click", function () {

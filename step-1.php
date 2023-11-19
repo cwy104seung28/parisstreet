@@ -11,15 +11,50 @@
     <div class="cart-step" id="cart">
         <div class="cart-information flex-container">
             <div class="title">訂單資訊</div>
-            <div class="total-price">
+            <div class="total-price hide-for-large">
                 總共 NT$ <span class="total">17,343</span><span class="note">(內含營業稅）</span>
             </div>
             <div class="open">
+                <div class="total-price show-for-large">
+                    總共 NT$ <span class="total">17,343</span><span class="note">(內含營業稅）</span>
+                </div>
                 <div class="plus">+</div>
                 <div class="minus">-</div>
             </div>
         </div>
-        <div class="cart-detail">
+        <div class="cart-detail show-for-large">
+            <div class="cart-list">
+                <div class="cart">
+                    <div class="pic-area"><img src="./img/bag-1.jpg"></div>
+                    <div class="article-area">
+                        <div class="title">CHANEL</div>
+                        <div class="content">小型後背包</div>
+                    </div>
+                    <div class="price">NT$ 15,725</div>
+                    <div class="other-area">
+                        <div class="del"><img src="./img/cart-close.svg"></div>
+                        <div class="size">ONE SIZE / 1</div>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div class="pic-area"><img src="./img/bag-3.jpg"></div>
+                    <div class="article-area">
+                        <div class="title">CHANEL</div>
+                        <div class="content">22包</div>
+                    </div>
+                    <div class="price">NT$ 21,355</div>
+                    <div class="other-area">
+                        <div class="del"><img src="./img/cart-close.svg"></div>
+                        <div class="size">ONE SIZE / 1</div>
+                    </div>
+                </div>
+                <div class="total-price">
+                    總共 NT$ <span class="total">17,343</span>
+                    <div class="note">(內含營業稅）</div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-detail hide-for-large">
             <div class="cart-list">
                 <div class="cart">
                     <div class="pic-area"><img src="./img/bag-1.jpg"></div>
@@ -57,14 +92,17 @@
                 <div class="note">*為必填</div>
             </div>
             <div class="form">
-                <div class="item flex-container align-middle">
-                    <div class="title">*購買人姓名</div>
-                    <div><input type="text" name="" id="" placeholder=""></div>
+                <div class="flex-container-for-large">
+                    <div class="item flex-container align-middle left">
+                        <div class="title">*購買人姓名</div>
+                        <div><input type="text" name="" id="" placeholder=""></div>
+                    </div>
+                    <div class="item flex-container align-middle">
+                        <div class="title">*購買人電話</div>
+                        <div><input type="text" name="" id="" placeholder=""></div>
+                    </div>
                 </div>
-                <div class="item flex-container align-middle">
-                    <div class="title">*購買人電話</div>
-                    <div><input type="text" name="" id="" placeholder=""></div>
-                </div>
+
                 <div class="item flex-container align-middle">
                     <div class="title">*E-Mail</div>
                     <div><input type="text" name="" id="" placeholder=""></div>
@@ -76,19 +114,22 @@
                     </div>
                     同購買人
                 </label>
-                <div class="item flex-container align-middle">
-                    <div class="title">*收件人姓名</div>
-                    <div><input type="text" name="" id="" placeholder=""></div>
+                <div class="flex-container-for-large">
+                    <div class="item flex-container align-middle left">
+                        <div class="title">*收件人姓名</div>
+                        <div><input type="text" name="" id="" placeholder=""></div>
+                    </div>
+                    <div class="item flex-container align-middle">
+                        <div class="title">*收件人電話</div>
+                        <div><input type="text" name="" id="" placeholder=""></div>
+                    </div>
                 </div>
-                <div class="item flex-container align-middle">
-                    <div class="title">*收件人電話</div>
-                    <div><input type="text" name="" id="" placeholder=""></div>
-                </div>
+
                 <div class="item flex-container align-middle">
                     <div class="title">*收件人地址</div>
                     <div><input type="text" name="" id="" placeholder=""></div>
                 </div>
-                <div class="item no-border">
+                <div class="item no-border two-row">
                     <div class="title">指定配送時間</div>
                     <div class="flex-container">
                         <div class="item flex-container align-middle no-border">
@@ -102,74 +143,87 @@
                         </div>
                     </div>
                 </div>
-                <div class="title-area">
-                    <div class="title">付款方式</div>
-                </div>
+            </div>
+            <div class="title-area">
+                <div class="title">付款方式</div>
+                <div class="note">*為必填</div>
+            </div>
+            <div class="form">
                 <div class="item pay no-border">
                     <div class="flex-container">
-                        <div class="item flex-container align-middle no-border">
-                            <!-- <input type="radio" id="visa" name="pay" value="visa" /> -->
-                            <label><img src="./img/visa.svg"></label>
+                        <div class="item no-border circle">
+                            <label class="flex-container align-center-middle" for="card">
+                                <div class="check-area">
+                                    <input type="checkbox" name="card" id="card">
+                                    <span class="checkmark"></span>
+                                </div>
+                                <div class="title">信用卡</div>
+                            </label>
                         </div>
-                        <div class="item flex-container align-middle no-border">
-                            <!-- <input type="radio" id="mastercard" name="pay" value="mastercard" /> -->
-                            <label><img src="./img/mastercard.svg"></label>
+                        <div class="item flex-container align-middle no-border card">
+                            <img src="./img/visa.svg">
                         </div>
-                        <div class="item flex-container align-middle no-border">
-                            <!-- <input type="radio" id="paypal" name="pay" value="paypal" /> -->
-                            <label><img src="./img/paypal.svg"></label>
+                        <div class="item flex-container align-middle no-border card">
+                            <img src="./img/mastercard.svg">
                         </div>
-                    </div>
-                </div>
-                <div class="item no-border">
-                    <div class="title">*信用卡卡號</div>
-                    <div class="flex-container align-middle">
-                        <input type="text" name="" id="" placeholder="" class="all-border no-margin">
-                        <div class="line"></div>
-                        <input type="text" name="" id="" placeholder="" class="all-border no-margin">
-                        <div class="line"></div>
-                        <input type="text" name="" id="" placeholder="" class="all-border no-margin">
-                        <div class="line"></div>
-                        <input type="text" name="" id="" placeholder="" class="all-border no-margin">
-                    </div>
-                </div>
-                <div class="item no-border">
-                    <div class="title">*到期日</div>
-                    <div class="flex-container">
-                        <div class="month flex-container">
-                            <select name="" id="" class="cart-select">
-                                <option value=""></option>
-                                <option value="">1</option>
-                                <option value="">2</option>
-                                <option value="">3</option>
-                                <option value="">4</option>
-                                <option value="">5</option>
-                                <option value="">6</option>
-                                <option value="">7</option>
-                                <option value="">8</option>
-                                <option value="">9</option>
-                                <option value="">10</option>
-                                <option value="">11</option>
-                                <option value="">12</option>
-                            </select>
-                            月
-                        </div>
-                        <div class="day flex-container">
-                            <select name="" id="" class="cart-select">
-                                <option value=""></option>
-                                <option value="">2029</option>
-                                <option value="">2030</option>
-                                <option value="">2031</option>
-                            </select>
-                            年
+                        <div class="item flex-container align-middle no-border card">
+                            <img src="./img/paypal.svg">
                         </div>
                     </div>
                 </div>
+                <div class="flex-container-for-large">
+                    <div class="item no-border two-row left">
+                        <div class="title">*信用卡卡號</div>
+                        <div class="flex-container align-middle">
+                            <input type="text" name="" id="" placeholder="" class="all-border no-margin">
+                            <div class="line"></div>
+                            <input type="text" name="" id="" placeholder="" class="all-border no-margin">
+                            <div class="line"></div>
+                            <input type="text" name="" id="" placeholder="" class="all-border no-margin">
+                            <div class="line"></div>
+                            <input type="text" name="" id="" placeholder="" class="all-border no-margin">
+                        </div>
+                    </div>
+                    <div class="item no-border two-row">
+                        <div class="title">*到期日</div>
+                        <div class="flex-container">
+                            <div class="month flex-container">
+                                <select name="" id="" class="cart-select">
+                                    <option value=""></option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>
+                                    <option value="">8</option>
+                                    <option value="">9</option>
+                                    <option value="">10</option>
+                                    <option value="">11</option>
+                                    <option value="">12</option>
+                                </select>
+                                <span>月</span>
+                            </div>
+                            <div class="day flex-container">
+                                <select name="" id="" class="cart-select">
+                                    <option value=""></option>
+                                    <option value="">2029</option>
+                                    <option value="">2030</option>
+                                    <option value="">2031</option>
+                                </select>
+                                <span>年</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="item short flex-container align-middle">
                     <div class="title">*安全碼</div>
                     <div><input type="text" name="" id="" placeholder=""></div>
                 </div>
-                <div class="item no-border atm">
+                <div class="item no-border circle">
                     <label class="flex-container align-center-middle" for="atm">
                         <div class="check-area">
                             <input type="checkbox" name="atm" id="atm">
@@ -191,31 +245,33 @@
                     <div class="title">*匯款帳戶</div>
                     <div><input type="text" name="" id="" placeholder=""></div>
                 </div>
-                <div class="item policy">
-                    <label class="flex-container align-center-middle" @click="policyHandler(1)" for="policy">
-                        <div class="check-area">
-                            <input type="checkbox" name="policy" id="policy">
-                            <span class="checkmark"></span>
+                <div class="flex-container-for-large">
+                    <div class="item policy">
+                        <label class="flex-container align-center-middle" @click="policyHandler(1)" for="policy">
+                            <div class="check-area">
+                                <input type="checkbox" name="policy" id="policy">
+                                <span class="checkmark"></span>
+                            </div>
+                            <div class="title">此購買訂單同意本網站退換貨須知</div>
+                        </label>
+                    </div>
+                    <div class="final-item">
+                        <div class="final-price">
+                            訂單金額&emsp;NT$<span class="price">17,343</span><br>
+                            運費&emsp;+<span class="freight">0</span>
                         </div>
-                        <div class="title">此購買訂單同意本網站退換貨須知</div>
-                    </label>
-                </div>
-                <div class="final-item">
-                    <div class="final-price">
-                        訂單金額&emsp;NT$<span class="price">17,343</span><br>
-                        運費&emsp;+<span class="freight">0</span>
-                    </div>
-                    <div class="final-total">
-                        總共&ensp;NT$&ensp;<span class="total">17,343</span>
-                        <div class="note">(內含營業稅）</div>
+                        <div class="final-total">
+                            總共&ensp;NT$&ensp;<span class="total">17,343</span>
+                            <div class="note">(內含營業稅）</div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-
-            <div class="submit">
-                <a href="./step-2.php"> 確認送出</a>
-            </div>
+            <a href="./step-2.php">
+                <div class="submit">
+                    確認送出
+                </div>
+            </a>
         </form>
         <transition name="fade" mode="out-in">
             <div class="policy-windowWrap" v-if="open == 1">

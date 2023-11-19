@@ -472,6 +472,7 @@
 			</li>
 		</ul>
 		<div class="deco"><img src="./img/menu-bg.svg"></div>
+		<div class="back hide-for-large" data-back="1"><img src="./img/back.svg"></div>
 	</div>
 	<div class="class-container step-2">
 		<ul class="class">
@@ -488,7 +489,8 @@
 				</a>
 			</li>
 		</ul>
-		<div class="deco"><img src="./img/menu-bg.svg"></div>
+		<div class="deco hide-for-large"><img src="./img/menu-bg.svg"></div>
+		<div class="back hide-for-large" data-back="2"><img src="./img/back.svg"></div>
 	</div>
 	<div class="class-container step-3">
 		<ul class="class">
@@ -517,7 +519,8 @@
 				</a>
 			</li>
 		</ul>
-		<div class="deco"><img src="./img/menu-bg.svg"></div>
+		<div class="deco hide-for-large"><img src="./img/menu-bg.svg"></div>
+		<div class="back hide-for-large" data-back="3"><img src="./img/back.svg"></div>
 	</div>
 </div>
 
@@ -539,6 +542,18 @@
 	});
 
 
+	$(".step-1 li").click(function() {
+		$(".step-2").addClass("is-show");
+	});
+	$(".step-2 li").click(function() {
+		$(".step-3").addClass("is-show");
+	});
+	$('.class-container .back').each(function(i, el) {
+		$(el).on("click", function() {
+			var _back = $(this).data('back');
+			$(`.step-${_back}`).removeClass('is-show')
+		})
+	})
 	// new Vue({
 	// 	el: '#app',
 	// 	data: {
@@ -549,7 +564,7 @@
 	// 	},
 	// 	methods: {
 	// 		catClick(i) {
-	// 			open = i;
+	// 			this.open = i;
 	// 			console.log(open);
 	// 		}
 	// 	},
