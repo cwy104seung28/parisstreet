@@ -544,6 +544,7 @@
 
 	$(".step-1 li").click(function() {
 		$(".step-2").addClass("is-show");
+		$(".step-3").removeClass("is-show");
 	});
 	$(".step-2 li").click(function() {
 		$(".step-3").addClass("is-show");
