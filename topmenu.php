@@ -1,9 +1,6 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
 <?php if ($now != 'cart' && $now != 'home') : ?>
 	<div id="preload" style="z-index: 101; position: fixed; top: 0; right: 0; bottom: 0; left: 0; background-color: #F6F1EC;"></div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
 	<script>
 		$("#preload").delay(500).fadeOut(500);
 	</script>
@@ -20,6 +17,7 @@
 		<div class="inner-logo show-for-large"><img src="./img/inner-logo-pc.svg"></div>
 		<div class="inner-logo hide-for-large"><img src="./img/inner-logo.svg"></div>
 	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
 	<script>
 		$("#index-preload .logoWrap").delay(1000).addClass('is-show')
 
@@ -65,7 +63,7 @@
 		$("#index-preload .bg").delay(1500).fadeOut(500)
 	</script>
 <?php endif ?>
-<div id="app">
+<div id="topmenu">
 	<div class="topmenu">
 		<div class="left-area">
 			<div class="hamburger-area">
@@ -183,6 +181,253 @@
 			</ul>
 		</div>
 	</div>
+	<!-- <transition name="fade" mode="out-in">
+		<div class="outterWrap" v-if="open == 1" key="outter">
+			<div :class="['login-area', 'flex-container', {'is-show': login == 0}]" key="login">
+				<div class="loginWrap">
+					<div class="title">登入會員</div>
+					<div class="login flex-container align-middle" @click="loginHandler(1)">
+						<img src="./img/line.svg">
+						連結至LINE登入會員
+						<img src="./img/small-arrow-white.svg">
+					</div>
+				</div>
+				<ul class="social-area flex-container align-center-middle">
+					<li>
+						<img class="show-for-large" src="./img/fb-pc.svg">
+						<img class="hide-for-large" src="./img/fb.svg">
+					</li>
+					<li>
+						<img class="show-for-large" src="./img/ig-pc.svg">
+						<img class="hide-for-large" src="./img/ig.svg">
+					</li>
+					<li>
+						<img class="show-for-large" src="./img/line-pc.svg">
+						<img class="hide-for-large" src="./img/line.svg">
+					</li>
+				</ul>
+			</div>
+			<div :class="['member-area', {'is-show': login == 1 && edit == 0}]" key="member">
+				<div class="profile-area">
+					<div class="flex-container profile">
+						<div class="photo"><img src="./img/photo.png"></div>
+						<div class="info-area flex-container align-middle">
+							<div class="name">gooddesign6656</div>
+							<div class="pen show-for-large" @click="editHandler(1)"><img src="./img/pen-pc.svg"></div>
+						</div>
+					</div>
+					<div class="logout show-for-large">
+						<a href="javascript:;">
+							<div class="title">登出</div>
+						</a>
+					</div>
+				</div>
+				<div class="setting-area flex-container">
+					<ul class="settingWrap">
+						<li>
+							<a href="./question.php">
+								<div class="setting">
+									<div class="title-area">
+										<img class="show-for-large" src="./img/question-pc.svg">
+										<img class="hide-for-large" src="./img/question-black.svg">
+										<div class="title">常見問題</div>
+									</div>
+									<div class="show-for-large"><img src="./img/go-pc.svg"></div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="collection.php">
+								<div class="setting">
+									<div class="title-area">
+										<img class="show-for-large" src="./img/heart-pc.svg">
+										<img class="hide-for-large" src="./img/heart-black.svg">
+										<div class="title">我的珍藏</div>
+									</div>
+									<div class="show-for-large"><img src="./img/go-pc.svg"></div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="./tracking.php">
+								<div class="setting">
+									<div class="title-area">
+										<img class="show-for-large" src="./img/tracking-pc.svg">
+										<img class="hide-for-large" src="./img/tracking.svg">
+										<div class="title">訂單查詢</div>
+									</div>
+									<div class="show-for-large"><img src="./img/go-pc.svg"></div>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<ul class="social-area show-for-large">
+						<li>
+							<img src="./img/fb-pc.svg">
+						</li>
+						<li>
+							<img src="./img/ig-pc.svg">
+						</li>
+						<li>
+							<img src="./img/line-pc.svg">
+						</li>
+					</ul>
+
+				</div>
+				<ul class="social-area hide-for-large">
+					<li>
+						<img src="./img/fb-grey.svg">
+					</li>
+					<li>
+						<img src="./img/ig-grey.svg">
+					</li>
+					<li>
+						<img src="./img/line-grey.svg">
+					</li>
+				</ul>
+				<div class="logout hide-for-large">
+					<a href="javascript:;">
+						<div class="title">登出</div>
+					</a>
+				</div>
+			</div>
+			<div :class="['member-profile-area', {'is-show': edit == 1}]" key="profile">
+				<form action="">
+					<div class="item photo flex-container align-middle">
+						<div class="photo">
+							<img src="./img/photo.png">
+							<div class="camera show-for-large"><img src="./img/camera-pc.svg"></div>
+						</div>
+
+						<div class="camera hide-for-large"><img src="./img/camera.svg"></div>
+						<div class="submit show-for-large">
+							<a href="./step-2.php"> 確認送出</a>
+						</div>
+					</div>
+					<div class="formWrap">
+						<div class="title-area">
+							<div class="title">會員資料</div>
+							<div class="note">*為必填</div>
+						</div>
+						<div class="flexWrap">
+							<div class="area-1">
+								<div class="item flex-container align-middle">
+									<div class="title">*姓名</div>
+									<div><input type="text" name="" id="" placeholder=""></div>
+								</div>
+								<div class="item no-border">
+									<div class="title">*性別</div>
+									<div class="flex-container">
+										<div class="item flex-container align-middle no-border no-margin">
+											<input type="radio" id="male" name="gender" value="male" />
+											<label for="male">男</label>
+										</div>
+										<div class="item flex-container align-middle no-border no-margin">
+											<input type="radio" id="female" name="gender" value="female" />
+											<label for="female">女</label>
+										</div>
+									</div>
+								</div>
+								<div class="item no-border">
+									<div class="title">生日</div>
+									<div class="flex-container">
+										<div class="year flex-container">
+											<select name="" id="" class="cart-select">
+												<option value=""></option>
+												<option value="">1998</option>
+												<option value="">1999</option>
+												<option value="">2000</option>
+											</select>
+											年
+										</div>
+										<div class="month flex-container">
+											<select name="" id="" class="cart-select">
+												<option value=""></option>
+												<option value="">1</option>
+												<option value="">2</option>
+												<option value="">3</option>
+												<option value="">4</option>
+												<option value="">5</option>
+												<option value="">6</option>
+												<option value="">7</option>
+												<option value="">8</option>
+												<option value="">9</option>
+												<option value="">10</option>
+												<option value="">11</option>
+												<option value="">12</option>
+											</select>
+											月
+										</div>
+										<div class="day flex-container">
+											<select name="" id="" class="cart-select">
+												<option value=""></option>
+												<option value="">1</option>
+												<option value="">2</option>
+												<option value="">3</option>
+												<option value="">4</option>
+												<option value="">5</option>
+												<option value="">6</option>
+												<option value="">7</option>
+												<option value="">8</option>
+												<option value="">9</option>
+												<option value="">10</option>
+												<option value="">11</option>
+												<option value="">12</option>
+												<option value="">13</option>
+												<option value="">14</option>
+												<option value="">15</option>
+												<option value="">16</option>
+												<option value="">17</option>
+												<option value="">18</option>
+												<option value="">19</option>
+												<option value="">20</option>
+												<option value="">21</option>
+												<option value="">22</option>
+												<option value="">23</option>
+												<option value="">24</option>
+												<option value="">25</option>
+												<option value="">26</option>
+												<option value="">27</option>
+												<option value="">28</option>
+												<option value="">29</option>
+												<option value="">30</option>
+												<option value="">31</option>
+											</select>
+											日
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="area-2">
+								<div class="item flex-container align-middle">
+									<div class="title">*電話</div>
+									<div><input type="text" name="" id="" placeholder=""></div>
+								</div>
+								<div class="item flex-container align-middle pc-margin">
+									<div class="title">*地址</div>
+									<div><input type="text" name="" id="" placeholder=""></div>
+								</div>
+								<div class="item flex-container align-middle">
+									<div class="title">*E-Mail</div>
+									<div><input type="text" name="" id="" placeholder=""></div>
+								</div>
+							</div>
+						</div>
+						<label class="flex-container new-information" for="check-customer">
+							<div class="check-area">
+								<input type="checkbox" id="check-customer">
+								<span class="checkmark"></span>
+							</div>
+							願意收到電子報及最新優惠資訊
+						</label>
+						<div class="submit hide-for-large">
+							<a href="./step-2.php"> 確認送出</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</transition> -->
 	<div class="login-area flex-container">
 		<div class="loginWrap">
 			<div class="title">登入會員</div>
@@ -206,20 +451,15 @@
 				<img class="hide-for-large" src="./img/line.svg">
 			</li>
 		</ul>
+		<div class="close"><img src="./img/menu-close.svg" alt=""></div>
 	</div>
 	<div class="member-area">
 		<div class="profile-area">
-
 			<div class="flex-container profile">
 				<div class="photo"><img src="./img/photo.png"></div>
 				<div class="info-area flex-container align-middle">
 					<div class="name">gooddesign6656</div>
 					<div class="pen show-for-large"><img src="./img/pen-pc.svg"></div>
-					<!-- <div class="edit">
-					<img class="show-for-large" src="./img/edit.svg">
-					<img class="hide-for-large" src="./img/edit-mobile.svg">
-					<span>編輯帳戶資訊</span>
-				</div> -->
 				</div>
 			</div>
 			<div class="logout show-for-large">
@@ -296,6 +536,7 @@
 				<div class="title">登出</div>
 			</a>
 		</div>
+		<div class="close"><img src="./img/menu-close.svg" alt=""></div>
 	</div>
 	<div class="member-profile-area">
 		<form action="">
@@ -431,6 +672,7 @@
 				</div>
 			</div>
 		</form>
+		<div class="close"><img src="./img/menu-close.svg" alt=""></div>
 	</div>
 	<div class="class-container step-1">
 		<ul class="class">
@@ -524,55 +766,71 @@
 	</div>
 </div>
 
-<!-- <?php include 'script.php'; ?> -->
-<script>
-	// $('.cart-select').niceSelect();
+<!-- <script>
 
-	$(".hamburger-area").click(function() {
-		$(".step-1").toggleClass("is-show");
-		$("html").toggleClass("is-locked");
-	});
-	$(".profile").click(function() {
-		$(".login-area").toggleClass("is-show")
-		$("html").addClass("is-locked");
-	});
-	$(".profile-area .profile").click(function() {
-		$("html").addClass("is-locked");
-		$(".member-profile-area").toggleClass("is-show")
-	});
-
-
-	$(".step-1 li").click(function() {
-		$(".step-2").addClass("is-show");
-		$(".step-3").removeClass("is-show");
-	});
-	$(".step-2 li").click(function() {
-		$(".step-3").addClass("is-show");
-	});
-	$('.class-container .back').each(function(i, el) {
-		$(el).on("click", function() {
-			var _back = $(this).data('back');
-			$(`.step-${_back}`).removeClass('is-show')
-		})
-	})
 	// new Vue({
-	// 	el: '#app',
+	// 	el: '#topmenu',
 	// 	data: {
 	// 		open: 0,
+	// 		login: 0,
+	// 		edit: 0,
 	// 	},
-	// 	computed: {
-
-	// 	},
+	// 	computed: {},
 	// 	methods: {
-	// 		catClick(i) {
+	// 		loginHandler(i) {
+	// 			this.login = i;
+	// 		},
+	// 		editHandler(i) {
+	// 			this.edit = i;
+	// 		},
+	// 		// topmenuHandler() {
+	// 		// 	if(this.open == 0){
+	// 		// 		this.open = 1;
+	// 		// 	}
+	// 		// 	else{
+	// 		// 		this.open = 0;
+	// 		// 	}
+
+	// 		// }
+	// 		topmenuHandler(i) {
 	// 			this.open = i;
-	// 			console.log(open);
 	// 		}
+	// 		// catClick(i) {
+	// 		// 	this.open = i;
+	// 		// 	console.log(open);
+	// 		// }
 	// 	},
 	// 	filters: {},
 	// 	mounted() {
+	// 		$(".hamburger-area").click(function() {
+	// 			// $(".step-1").toggleClass("is-show");
+	// 			$("html").toggleClass("is-locked");
+	// 		});
+	// 		$(".profile").click(function() {
+	// 			// $(".login-area").toggleClass("is-show")
+	// 			$("html").addClass("is-locked");
+	// 		});
+	// 		$(".profile-area .profile").click(function() {
+	// 			$("html").addClass("is-locked");
+	// 			// $(".member-profile-area").toggleClass("is-show")
+	// 		});
 
+
+	// 		$(".step-1 li").click(function() {
+	// 			$(".step-2").addClass("is-show");
+	// 			$(".step-3").removeClass("is-show");
+	// 		});
+	// 		$(".step-2 li").click(function() {
+	// 			$(".step-3").addClass("is-show");
+	// 		});
+	// 		$('.class-container .back').each(function(i, el) {
+	// 			$(el).on("click", function() {
+	// 				var _back = $(this).data('back');
+	// 				$(`.step-${_back}`).removeClass('is-show')
+	// 			})
+	// 		})
+	// 		$('.cart-select').niceSelect();
 	// 	},
 	// 	updated() {},
 	// })
-</script>
+</script> -->

@@ -12,8 +12,52 @@ $(window).on("resize", function () {
 	}
 }).trigger("resize")
 
-
 $('.cart-select').niceSelect();
+
+$(".hamburger-area").click(function() {
+	// $(".step-1").toggleClass("is-show");
+	$("html").toggleClass("is-locked");
+});
+
+$(".right-area .profile").click(function() {
+	$(".login-area").addClass("is-show")
+	// $("html").addClass("is-locked");
+});
+
+$(".login-area .close").click(function() {
+	$(".login-area").removeClass("is-show")
+	// $("html").removeClass("is-locked");
+});
+
+$(".member-area .close").click(function() {
+	// $("html").addClass("is-locked");
+	$(".member-area").removeClass("is-show")
+});
+
+$(".member-area .profile-area .profile").click(function() {
+	// $("html").addClass("is-locked");
+	$(".member-profile-area").addClass("is-show")
+});
+$(".member-profile-area .close").click(function() {
+	// $("html").addClass("is-locked");
+	$(".member-profile-area").removeClass("is-show")
+});
+
+
+$(".step-1 li").click(function() {
+	$(".step-2").addClass("is-show");
+	$(".step-3").removeClass("is-show");
+});
+$(".step-2 li").click(function() {
+	$(".step-3").addClass("is-show");
+});
+$('.class-container .back').each(function(i, el) {
+	$(el).on("click", function() {
+		var _back = $(this).data('back');
+		$(`.step-${_back}`).removeClass('is-show')
+	})
+})
+
 
 
 
