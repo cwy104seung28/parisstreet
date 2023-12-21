@@ -3386,7 +3386,10 @@ body {
 
             .search {
                 margin-bottom: 43px;
-
+                @include breakpoint(medium down) {
+                   display: flex;
+                   margin-bottom: 20px;
+                }
                 input {
                     width: 45%;
                     height: 44px;
@@ -3398,7 +3401,13 @@ body {
                         width: 92%;
                         height: 21px;
                         font-size: 14px;
+                        margin-right: 20px;
                     }
+                }
+                a{
+                    @include breakpoint(medium down) {
+                       zoom: 0.8;
+                     }
                 }
             }
 
@@ -3406,7 +3415,9 @@ body {
                 display: flex;
                 flex-wrap: wrap;
                 margin-bottom: 80px;
-
+                @include breakpoint(medium down) {
+                    margin-bottom: 30px;
+                }
                 // padding: 0 4px;
                 li {
                     // background-color: #141514;
@@ -3435,13 +3446,19 @@ body {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 grid-gap: 80px 35px;
-
+                @include breakpoint(medium down) {
+                    grid-template-columns: repeat(1, 1fr);
+                    grid-gap: 25px 35px;
+                }
                 li {
                     display: flex;
                     // padding: 25px 0;
                     // border-bottom: 2px solid #141514;
                     position: relative;
                     align-items: center;
+                    // @include breakpoint(medium down) {
+                    //     flex-direction: column;
+                    // }
 
 
                     .pic-area {
@@ -3453,6 +3470,7 @@ body {
                         @include breakpoint(medium down) {
                             // flex: 2 1 0;
                             margin-right: 22px;
+                            flex: 1 1 0;
                         }
 
                         img {
@@ -3475,7 +3493,9 @@ body {
                         flex-direction: column;
                         justify-content: space-between;
                         padding-top: 55px;
-
+                        // @include breakpoint(medium down) {
+                        //     padding-top: 0px;
+                        // }
                         .title {
                             font-family: $en-family;
                             font-size: 16px;
@@ -3566,6 +3586,7 @@ body {
 
                 @include breakpoint(medium down) {
                     font-size: 14px;
+                    margin-bottom: 20px;
                 }
 
                 img {
@@ -3599,11 +3620,16 @@ body {
                     display: grid;
                     grid-template-columns: repeat(3, 1fr);
                     grid-gap: 20px 35px;
-
+                    @include breakpoint(medium down) {
+                        grid-template-columns: repeat(1, 1fr);
+                        grid-gap: 10px 35px;
+                    }
                     .filterOutWrap {
                         align-items: baseline;
                         margin-bottom: 20px;
-
+                        @include breakpoint(medium down) {
+                            margin-bottom: 0;
+                        }
                     }
 
                     .title {
@@ -3621,7 +3647,9 @@ body {
                         // flex-wrap: wrap;
                         max-width: 420px;
                         flex-wrap: wrap;
-
+                        @include breakpoint(medium down) {
+                            flex: 4 1 0;
+                        }
                         .filterOutWrap {
                             max-width: 100%;
                         }
@@ -3722,7 +3750,10 @@ body {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 80px 35px;
-
+            @include breakpoint(medium down) {
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 25px 35px;
+            }
             li {
                 display: flex;
                 // padding: 25px 0;
