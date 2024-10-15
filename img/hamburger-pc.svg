@@ -2,9 +2,9 @@
 <svg id="b" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" width="42.21" height="34.8" viewBox="0 0 42.21 34.8">
   <g id="c" data-name="bar">
     <g>
-      <line y1="1.85" x2="42.21" y2="1.85" style="fill: none; stroke: #e95529; stroke-miterlimit: 10; stroke-width: 3.69px;"/>
-      <line y1="17.4" x2="42.21" y2="17.4" style="fill: none; stroke: #e95529; stroke-miterlimit: 10; stroke-width: 3.69px;"/>
-      <line y1="32.95" x2="42.21" y2="32.95" style="fill: none; stroke: #e95529; stroke-miterlimit: 10; stroke-width: 3.69px;"/>
+      <line y1="1.85" x2="42.21" y2="1.85" style="fill: none; stroke: #fbe4e7; stroke-miterlimit: 10; stroke-width: 3.69px;"/>
+      <line y1="17.4" x2="42.21" y2="17.4" style="fill: none; stroke: #fbe4e7; stroke-miterlimit: 10; stroke-width: 3.69px;"/>
+      <line y1="32.95" x2="42.21" y2="32.95" style="fill: none; stroke: #fbe4e7; stroke-miterlimit: 10; stroke-width: 3.69px;"/>
     </g>
   </g>
 </svg>

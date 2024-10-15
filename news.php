@@ -126,12 +126,12 @@
         })
         $('.flickity-button.flickity-prev-next-button.next').html(`<svg id="b" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" width="21.71" height="57.85" viewBox="0 0 21.71 57.85">
             <g id="c" data-name="文字">
-                <polyline points="1.7 1.06 19.35 29.38 2.26 56.79" style="fill: none; stroke: #e95529; stroke-miterlimit: 10; stroke-width: 4px;"/>
+                <polyline points="1.7 1.06 19.35 29.38 2.26 56.79" style="fill: none; stroke: #9e3147; stroke-miterlimit: 10; stroke-width: 4px;"/>
             </g>
         </svg>`);
         $('.flickity-button.flickity-prev-next-button.previous').html(`<svg id="b" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" width="21.71" height="57.85" viewBox="0 0 21.71 57.85">
             <g id="c" data-name="文字">
-                <polyline points="20.01 1.06 2.36 29.38 19.45 56.79" style="fill: none; stroke: #e95529; stroke-miterlimit: 10; stroke-width: 4px;"/>
+                <polyline points="20.01 1.06 2.36 29.38 19.45 56.79" style="fill: none; stroke: #9e3147; stroke-miterlimit: 10; stroke-width: 4px;"/>
             </g>
         </svg>`);
     } else {

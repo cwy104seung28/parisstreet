@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="b" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" width="5.94" height="14.73" viewBox="0 0 5.94 14.73">
+<svg id="b" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" width="6.88" height="17.06" viewBox="0 0 6.88 17.06">
   <defs>
     <style>
       .d {
         fill: none;
         stroke: #9e3147;
         stroke-miterlimit: 10;
-        stroke-width: 1.5px;
+        stroke-width: 1.75px;
       }
     </style>
   </defs>
   <g id="c" data-name="bar">
-    <polyline class="d" points=".64 .4 5.05 7.48 .78 14.33"/>
+    <polyline class="d" points=".74 .46 5.85 8.66 .91 16.6"/>
   </g>
 </svg>

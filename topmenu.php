@@ -1,62 +1,90 @@
 <?php if ($now != 'cart' && $now != 'home') : ?>
-	<div id="preload" style="z-index: 101; position: fixed; top: 0; right: 0; bottom: 0; left: 0; background-color: #F6F1EC;"></div>
+	<div id="preload" style="z-index: 101; position: fixed; top: 0; right: 0; bottom: 0; left: 0; background-color: #fff;"></div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
 	<script>
 		$("#preload").delay(500).fadeOut(500);
 	</script>
 <?php elseif ($now == 'home') : ?>
-	<div id="index-preload" style="z-index: 101; position: fixed; top: 0; right: 0; bottom: 0; left: 0; background-color: #F6F1EC;">
-		<div class="logoWrap show-for-large">
+	<div id="index-preload" style="z-index: 101; position: fixed; top: 0; right: 0; bottom: 0; left: 0; background-color: #fbe4e7;">
+		<!-- <div class="logoWrap show-for-large">
 			<div class="logo up"><img src="./img/logo-up-pc.svg"></div>
-			<div class="logo down"><img src="./img/logo-down-pc.svg"></div>
-		</div>
-		<div class="logoWrap hide-for-large">
+			<div class="logo down"><img src="./img/logo-down-pc.svg"></div> 
+		</div>-->
+		<!-- <div class="logoWrap hide-for-large">
 			<div class="logo up"><img src="./img/logo-up.svg"></div>
 			<div class="logo down"><img src="./img/logo-down.svg"></div>
+		</div> -->
+		<!-- <div class="inner-logo show-for-large"><img src="./img/inner-logo-pc.svg"></div>
+		<div class="inner-logo hide-for-large"><img src="./img/inner-logo.svg"></div> -->
+		<div class="logoWrap">
+			<svg id="b" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" width="476.11" height="363.37" viewBox="0 0 476.11 363.37">
+				<g id="c" data-name="bar">
+					<g class="text">
+						<path class="e" d="M163.61,209.91h-38.3v93.37h11.99v-40.15h26.45c17.23,0,30.22-11.44,30.22-26.61s-12.49-26.61-30.36-26.61Zm18.37,26.61c0,12.93-10.8,23.44-24.08,23.44h-20.6v-46.89h20.6c13.28,0,24.08,10.52,24.08,23.44Z" />
+						<rect class="e" x="376.39" y="209.91" width="11.99" height="93.37" />
+						<path class="e" d="M462.64,257.54l-33.61-17.93c-4.74-2.25-9.59-5.4-9.59-11.76,0-7.22,7.78-15.04,19.35-15.17,13.01,0,19.55,4.81,25.9,12.56l1.05,1.28,5.93-8.28-1.18-.68c-9.05-5.26-19.86-8.04-31.27-8.04-3.2,0-6.58,.31-10.67,.97-13.41,2.43-19.7,11.89-19.97,20.21,0,8.05,3.71,13.74,11.66,17.91l31.89,17.09c7.08,3.78,11.31,9.45,11.31,15.18,0,12.3-12.32,19.65-24.22,19.65s-21.28-10.58-23.5-15.41l-.82-1.77-6.83,7.83,.92,.81c5.11,4.53,17.84,11.71,30.23,11.71,14.4,0,23.1-4.65,27.87-8.54,5.66-4.62,9.04-10.92,9.04-16.85,0-8.95-4.66-16.13-13.47-20.76Z" />
+						<path class="e" d="M260.45,277.18l-23.38-66.43-.3-.84h-9.58l-32.92,93.37h4.35l7.4-21.13c3-4.39,6.99-7.97,11.88-10.64,7.49-4.09,16.47-5.32,26.72-3.64l3,8.51h-.04l9.41,26.9h12.69l-8.97-25.6-.26-.51Zm-18.26-16.17c-9.86,.79-18.97,3.61-27.09,8.4-2.23,1.32-4.29,2.72-6.13,4.2l18.83-53.38,14.39,40.78Z" />
+						<path class="e" d="M327.13,263.06c16.07-.97,27.93-12.05,27.93-26.53,0-15.67-12.49-26.61-30.36-26.61h-38.3v93.37h11.99v-40.15s7.81,.09,13.59,.15c6.4,.07,12.29,3.66,15.13,9.39,6.47,13.05,9.7,31.3,26.28,31.3,2.6,0,3.06-.52,6.31-1.43-14.78,1.75-13.61-29.45-32.56-39.49Zm-28.75-49.98h20.6c13.28,0,24.08,10.52,24.08,23.44s-10.8,23.44-24.08,23.44h-20.6v-46.89Z" />
+						<path class="e" d="M0,302.82c10.63-2.08,22.56-3.24,35.17-3.24,13.5,0,26.22,1.34,37.4,3.7l.1-10.41c-13.79-.73-36.08-.83-54.05,2.23l53.57-82.62,.2-.31v-2.29H.12v3.17H57.69L0,302.82Z" />
+						<path class="e" d="M103.08,303.28h-9.75v-10.5h6.13c2.41,0,3.62,1.3,3.62,3.99v6.5Z" />
+						<g>
+							<path class="e" d="M140.91,339.87h4.03v19.47h12.16v3.67h-16.2v-23.14Z" />
+							<path class="e" d="M191.72,352.99c0,1.72-.24,3.23-.71,4.53s-1.14,2.39-2,3.26-1.9,1.52-3.12,1.95c-1.22,.43-2.59,.64-4.12,.64s-2.85-.21-4.07-.64-2.25-1.08-3.11-1.93-1.52-1.92-1.98-3.19-.69-2.74-.69-4.41v-13.32h4.03v13.16c0,2.16,.52,3.8,1.56,4.93s2.48,1.69,4.32,1.69,3.25-.54,4.29-1.62,1.56-2.69,1.56-4.83v-13.32h4.03v13.12Z" />
+							<path class="e" d="M223.65,363.01l-6.08-8.76-6.11,8.76h-4.66l8.43-11.77-8.1-11.37h4.79l5.75,8.3,5.78-8.3h4.66l-8.07,11.31,8.4,11.83h-4.79Z" />
+							<path class="e" d="M263.32,352.99c0,1.72-.24,3.23-.71,4.53s-1.14,2.39-2,3.26-1.9,1.52-3.12,1.95c-1.22,.43-2.59,.64-4.12,.64s-2.85-.21-4.07-.64-2.25-1.08-3.11-1.93-1.52-1.92-1.98-3.19-.69-2.74-.69-4.41v-13.32h4.03v13.16c0,2.16,.52,3.8,1.56,4.93,1.04,1.12,2.48,1.69,4.32,1.69s3.25-.54,4.29-1.62,1.56-2.69,1.56-4.83v-13.32h4.03v13.12Z" />
+							<path class="e" d="M295.32,363.01l-5.7-8.07h-5.11v8.07h-4.03v-23.14h10.31c1.32,0,2.52,.17,3.59,.51,1.07,.34,1.97,.83,2.71,1.45,.74,.63,1.31,1.4,1.7,2.31s.6,1.93,.6,3.06c0,.97-.14,1.83-.41,2.59-.28,.76-.66,1.43-1.14,2.02-.49,.58-1.06,1.08-1.74,1.49-.67,.41-1.42,.72-2.23,.94l6.25,8.76h-4.79Zm-1.33-18.49c-.84-.65-2.02-.98-3.55-.98h-5.94v7.8h5.97c1.46,0,2.62-.35,3.48-1.06,.86-.71,1.29-1.66,1.29-2.86,0-1.28-.42-2.25-1.26-2.91Z" />
+							<path class="e" d="M326.03,363.01h-4.1v-9.12l-9.19-14.02h4.79l6.48,10.25,6.54-10.25h4.66l-9.19,13.92v9.22Z" />
+						</g>
+					</g>
+					<g>
+						<path class="e fill" d="M207.38,.5h25.9c18.64,0,33.8,14.85,33.8,33.09v.26c-.09,11.11-7.31,21.06-18.41,25.33-4.87,1.87-28.49,11.58-41.29,27.87V.5Z" />
+						<path class="e fill" d="M240.42,149.55c-8.83,0-17.13-3.44-23.37-9.68-6.24-6.24-9.67-14.55-9.67-23.38,0-6.91,2.33-13.81,6.71-19.96,11.83-16.59,38.87-27.58,51.71-30.86v64.2c0,6.68,.98,13.29,2.92,19.68h-28.31Z" />
+						<path class="d line" d="M207.38,.5h25.9c18.64,0,33.8,14.85,33.8,33.09v.26c-.09,11.11-7.31,21.06-18.41,25.33-4.87,1.87-28.49,11.58-41.29,27.87V.5Z" />
+						<path class="d line" d="M240.42,149.55c-8.83,0-17.13-3.44-23.37-9.68-6.24-6.24-9.67-14.55-9.67-23.38,0-6.91,2.33-13.81,6.71-19.96,11.83-16.59,38.87-27.58,51.71-30.86v64.2c0,6.68,.98,13.29,2.92,19.68h-28.31Z" />
+					</g>
+				</g>
+			</svg>
 		</div>
-		<div class="inner-logo show-for-large"><img src="./img/inner-logo-pc.svg"></div>
-		<div class="inner-logo hide-for-large"><img src="./img/inner-logo.svg"></div>
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
 	<script>
-		$("#index-preload .logoWrap").delay(1000).addClass('is-show')
+		//setTimeout(function() {
+		// var _tl = gsap.timeline();
+		// if (window.device == 'desktop') {
+		// 	_tl.add('animation').to('#index-preload .logoWrap .up', {
+		// 		duration: 0.3,
+		// 		x: -170,
+		// 		y: -180,
+		// 		ease: Back.easeInOut.config(2),
+		// 	}, 'animation').to('#index-preload .logoWrap .down', {
+		// 		duration: 0.3,
+		// 		x: 160,
+		// 		y: 165,
+		// 		ease: Back.easeInOut.config(2),
+		// 	}, 'animation').to('#index-preload .inner-logo', {
+		// 		duration: 0.75,
+		// 		opacity: 1,
+		// 		ease: 'power2.out',
+		// 	}, '<1.75')
+		// } else {
+		// 	_tl.add('animation').to('#index-preload .logoWrap .up', {
+		// 		duration: 0.3,
+		// 		x: -70,
+		// 		y: -80,
+		// 		ease: Back.easeInOut.config(2),
+		// 	}, 'animation').to('#index-preload .logoWrap .down', {
+		// 		duration: 0.3,
+		// 		x: 60,
+		// 		y: 65,
+		// 		ease: Back.easeInOut.config(2),
+		// 	}, 'animation').to('#index-preload .inner-logo', {
+		// 		duration: 0.75,
+		// 		opacity: 1,
+		// 		ease: 'power2.out',
+		// 	}, '<1.75')
+		// }
 
-		setTimeout(function() {
-			var _tl = gsap.timeline();
-			if (window.device == 'desktop') {
-				_tl.add('animation').to('#index-preload .logoWrap .up', {
-					duration: 0.3,
-					x: -170,
-					y: -180,
-					ease: Back.easeInOut.config(2),
-				}, 'animation').to('#index-preload .logoWrap .down', {
-					duration: 0.3,
-					x: 160,
-					y: 165,
-					ease: Back.easeInOut.config(2),
-				}, 'animation').to('#index-preload .inner-logo', {
-					duration: 0.75,
-					opacity: 1,
-					ease: 'power2.out',
-				}, '<1.75')
-			} else {
-				_tl.add('animation').to('#index-preload .logoWrap .up', {
-					duration: 0.3,
-					x: -70,
-					y: -80,
-					ease: Back.easeInOut.config(2),
-				}, 'animation').to('#index-preload .logoWrap .down', {
-					duration: 0.3,
-					x: 60,
-					y: 65,
-					ease: Back.easeInOut.config(2),
-				}, 'animation').to('#index-preload .inner-logo', {
-					duration: 0.75,
-					opacity: 1,
-					ease: 'power2.out',
-				}, '<1.75')
-			}
-		}, 1200);
+		//}, 1200);
 
 		$("#index-preload").delay(5000).fadeOut(500)
 
@@ -148,18 +176,18 @@
 							<svg id="b" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" width="32.94" height="28.56" viewBox="0 0 32.94 28.56">
 								<g id="c" data-name="bar">
 									<g>
-										<path d="M0,3.17H4.93c.33,0,.61,.22,.69,.53l5.02,19.03h13.75" style="fill: none; stroke: #e95529; stroke-miterlimit: 10; stroke-width: 2.01px;" />
-										<circle cx="11.04" cy="25.14" r="2.41" style="fill: none; stroke: #e95529; stroke-miterlimit: 10; stroke-width: 2.01px;" />
-										<circle cx="24.39" cy="25.14" r="2.41" style="fill: none; stroke: #e95529; stroke-miterlimit: 10; stroke-width: 2.01px;" />
-										<polygon points="6.61 7.43 28.64 7.43 25.86 18.9 9.63 18.9 6.61 7.43" style="fill: none; stroke: #e95529; stroke-miterlimit: 10; stroke-width: 2.01px;" />
-										<line x1="14.1" y1="7.43" x2="15.14" y2="18.9" style="fill: none; stroke: #e95529; stroke-miterlimit: 10; stroke-width: 2.01px;" />
+										<path d="M0,3.17H4.93c.33,0,.61,.22,.69,.53l5.02,19.03h13.75" style="fill: none; stroke: #e0c3c4; stroke-miterlimit: 10; stroke-width: 2.01px;" />
+										<circle cx="11.04" cy="25.14" r="2.41" style="fill: none; stroke: #e0c3c4; stroke-miterlimit: 10; stroke-width: 2.01px;" />
+										<circle cx="24.39" cy="25.14" r="2.41" style="fill: none; stroke: #e0c3c4; stroke-miterlimit: 10; stroke-width: 2.01px;" />
+										<polygon points="6.61 7.43 28.64 7.43 25.86 18.9 9.63 18.9 6.61 7.43" style="fill: none; stroke: #e0c3c4; stroke-miterlimit: 10; stroke-width: 2.01px;" />
+										<line x1="14.1" y1="7.43" x2="15.14" y2="18.9" style="fill: none; stroke: #e0c3c4; stroke-miterlimit: 10; stroke-width: 2.01px;" />
 										<g>
-											<line x1="13.98" y1="7.43" x2="15.03" y2="18.9" style="fill: none; stroke: #e95529; stroke-miterlimit: 10; stroke-width: 2.01px;" />
-											<line x1="21.27" y1="7.43" x2="20.22" y2="18.9" style="fill: none; stroke: #e95529; stroke-miterlimit: 10; stroke-width: 2.01px;" />
+											<line x1="13.98" y1="7.43" x2="15.03" y2="18.9" style="fill: none; stroke: #e0c3c4; stroke-miterlimit: 10; stroke-width: 2.01px;" />
+											<line x1="21.27" y1="7.43" x2="20.22" y2="18.9" style="fill: none; stroke: #e0c3c4; stroke-miterlimit: 10; stroke-width: 2.01px;" />
 										</g>
-										<line x1="8.12" y1="13.16" x2="27.25" y2="13.16" style="fill: none; stroke: #e95529; stroke-miterlimit: 10; stroke-width: 2.01px;" />
+										<line x1="8.12" y1="13.16" x2="27.25" y2="13.16" style="fill: none; stroke: #e0c3c4; stroke-miterlimit: 10; stroke-width: 2.01px;" />
 									</g>
-									<circle cx="25.99" cy="6.95" r="6.41" style="fill: #e95529; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1.08px;" />
+									<circle cx="25.99" cy="6.95" r="6.41" style="fill: #9e3147; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1.08px;" />
 									<path d="M27.46,5.24c-.4-.36-.74-.54-1.19-.54-.51,0-.78,.18-.78,.67,0,.98,2.9,.93,2.9,3,0,1.06-.57,1.89-1.72,2.14v1.15h-1.13v-1.09c-.65-.08-1.43-.37-1.96-.85l.75-1.16c.57,.44,1.05,.64,1.55,.64,.6,0,.86-.23,.86-.71,0-1.05-2.89-1.08-2.89-3.05,0-1.1,.63-1.86,1.68-2.08v-1.14h1.13v1.12c.71,.11,1.22,.45,1.64,.91l-.85,.99Z" style="fill: #fff;" />
 								</g>
 							</svg>
@@ -169,7 +197,7 @@
 					<div class="arrow">
 						<svg id="b" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" width="6.97" height="3.32" viewBox="0 0 6.97 3.32">
 							<g id="c" data-name="圖層 1">
-								<polygon points="6.97 0 3.48 3.32 0 0 6.97 0" style="fill: #e95529;" />
+								<polygon points="6.97 0 3.48 3.32 0 0 6.97 0" style="fill: #e0c3c4;" />
 							</g>
 						</svg>
 					</div>
@@ -432,37 +460,37 @@
 			<li>
 				<a href="javascript:;">
 					皮包
-					<img src="./img/small-arrow-orange.svg">
+					<img src="./img/small-arrow-pink.svg">
 				</a>
 			</li>
 			<li>
 				<a href="javascript:;">
 					鞋款
-					<img src="./img/small-arrow-orange.svg">
+					<img src="./img/small-arrow-pink.svg">
 				</a>
 			</li>
 			<li>
 				<a href="javascript:;">
 					香水
-					<img src="./img/small-arrow-orange.svg">
+					<img src="./img/small-arrow-pink.svg">
 				</a>
 			</li>
 			<li>
 				<a href="javascript:;">
 					飾品配件
-					<img src="./img/small-arrow-orange.svg">
+					<img src="./img/small-arrow-pink.svg">
 				</a>
 			</li>
 			<li>
 				<a href="javascript:;">
 					彩妝
-					<img src="./img/small-arrow-orange.svg">
+					<img src="./img/small-arrow-pink.svg">
 				</a>
 			</li>
 			<li>
 				<a href="javascript:;">
 					其他
-					<img src="./img/small-arrow-orange.svg">
+					<img src="./img/small-arrow-pink.svg">
 				</a>
 			</li>
 		</ul>
@@ -474,13 +502,13 @@
 			<li>
 				<a href="javascript:;">
 					女士
-					<img src="./img/small-arrow-orange.svg">
+					<img src="./img/small-arrow-pink.svg">
 				</a>
 			</li>
 			<li>
 				<a href="javascript:;">
 					男士
-					<img src="./img/small-arrow-orange.svg">
+					<img src="./img/small-arrow-pink.svg">
 				</a>
 			</li>
 		</ul>
@@ -492,25 +520,25 @@
 			<li>
 				<a href="species.php">
 					手提包
-					<img src="./img/small-arrow-orange.svg">
+					<img src="./img/small-arrow-pink.svg">
 				</a>
 			</li>
 			<li>
 				<a href="species.php">
 					後揹包
-					<img src="./img/small-arrow-orange.svg">
+					<img src="./img/small-arrow-pink.svg">
 				</a>
 			</li>
 			<li>
 				<a href="species.php">
 					皮夾
-					<img src="./img/small-arrow-orange.svg">
+					<img src="./img/small-arrow-pink.svg">
 				</a>
 			</li>
 			<li>
 				<a href="species.php">
 					旅行袋
-					<img src="./img/small-arrow-orange.svg">
+					<img src="./img/small-arrow-pink.svg">
 				</a>
 			</li>
 		</ul>

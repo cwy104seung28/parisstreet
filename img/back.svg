@@ -4,13 +4,13 @@
     <style>
       .d {
         fill: none;
-        stroke: #e95529;
+        stroke: #9e3147;
         stroke-miterlimit: 10;
         stroke-width: 1.5px;
       }
 
       .e {
-        fill: #e95529;
+        fill: #9e3147;
       }
     </style>
   </defs>

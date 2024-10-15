@@ -87,18 +87,18 @@
                         <g id="c" data-name="圖層 1">
                             <g>
                                 <g>
-                                    <path d="M0,2.21H3.43c.23,0,.42,.15,.48,.37l3.49,13.25h9.57" style="fill: none; stroke: #e95529; stroke-miterlimit: 10; stroke-width: 1.4px;" />
-                                    <circle cx="7.68" cy="17.51" r="1.68" style="fill: none; stroke: #e95529; stroke-miterlimit: 10; stroke-width: 1.4px;" />
-                                    <circle cx="16.98" cy="17.51" r="1.68" style="fill: none; stroke: #e95529; stroke-miterlimit: 10; stroke-width: 1.4px;" />
-                                    <polygon points="4.6 5.17 19.94 5.17 18.01 13.16 6.71 13.16 4.6 5.17" style="fill: none; stroke: #e95529; stroke-miterlimit: 10; stroke-width: 1.4px;" />
-                                    <line x1="9.82" y1="5.17" x2="10.54" y2="13.16" style="fill: none; stroke: #e95529; stroke-miterlimit: 10; stroke-width: 1.4px;" />
+                                    <path d="M0,2.21H3.43c.23,0,.42,.15,.48,.37l3.49,13.25h9.57" style="fill: none; stroke: #9e3147; stroke-miterlimit: 10; stroke-width: 1.4px;" />
+                                    <circle cx="7.68" cy="17.51" r="1.68" style="fill: none; stroke: #9e3147; stroke-miterlimit: 10; stroke-width: 1.4px;" />
+                                    <circle cx="16.98" cy="17.51" r="1.68" style="fill: none; stroke: #9e3147; stroke-miterlimit: 10; stroke-width: 1.4px;" />
+                                    <polygon points="4.6 5.17 19.94 5.17 18.01 13.16 6.71 13.16 4.6 5.17" style="fill: none; stroke: #9e3147; stroke-miterlimit: 10; stroke-width: 1.4px;" />
+                                    <line x1="9.82" y1="5.17" x2="10.54" y2="13.16" style="fill: none; stroke: #9e3147; stroke-miterlimit: 10; stroke-width: 1.4px;" />
                                     <g>
-                                        <line x1="9.74" y1="5.17" x2="10.46" y2="13.16" style="fill: none; stroke: #e95529; stroke-miterlimit: 10; stroke-width: 1.4px;" />
-                                        <line x1="14.81" y1="5.17" x2="14.08" y2="13.16" style="fill: none; stroke: #e95529; stroke-miterlimit: 10; stroke-width: 1.4px;" />
+                                        <line x1="9.74" y1="5.17" x2="10.46" y2="13.16" style="fill: none; stroke: #9e3147; stroke-miterlimit: 10; stroke-width: 1.4px;" />
+                                        <line x1="14.81" y1="5.17" x2="14.08" y2="13.16" style="fill: none; stroke: #9e3147; stroke-miterlimit: 10; stroke-width: 1.4px;" />
                                     </g>
-                                    <line x1="5.65" y1="9.17" x2="18.98" y2="9.17" style="fill: none; stroke: #e95529; stroke-miterlimit: 10; stroke-width: 1.4px;" />
+                                    <line x1="5.65" y1="9.17" x2="18.98" y2="9.17" style="fill: none; stroke: #9e3147; stroke-miterlimit: 10; stroke-width: 1.4px;" />
                                 </g>
-                                <circle cx="18.09" cy="4.84" r="4.46" style="fill: #e95529; stroke: #fff; stroke-miterlimit: 10; stroke-width: .75px;" />
+                                <circle cx="18.09" cy="4.84" r="4.46" style="fill: #9e3147; stroke: #fff; stroke-miterlimit: 10; stroke-width: .75px;" />
                                 <path d="M19.12,3.65c-.28-.25-.52-.38-.83-.38-.36,0-.54,.13-.54,.46,0,.68,2.02,.65,2.02,2.09,0,.74-.4,1.32-1.2,1.49v.8h-.79v-.76c-.45-.05-1-.26-1.37-.59l.53-.81c.4,.3,.73,.44,1.08,.44,.42,0,.6-.16,.6-.49,0-.73-2.01-.75-2.01-2.13,0-.77,.44-1.3,1.17-1.45v-.79h.79v.78c.49,.07,.85,.32,1.14,.63l-.59,.69Z" style="fill: #fff;" />
                             </g>
                         </g>
@@ -109,7 +109,7 @@
             <div class="arrow">
                 <svg id="b" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" width="6.97" height="3.32" viewBox="0 0 6.97 3.32">
                     <g id="c" data-name="圖層 1">
-                        <polygon points="6.97 0 3.48 3.32 0 0 6.97 0" style="fill: #e95529;" />
+                        <polygon points="6.97 0 3.48 3.32 0 0 6.97 0" style="fill: #9e3147;" />
                     </g>
                 </svg>
             </div>
