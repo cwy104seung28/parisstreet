@@ -381,11 +381,11 @@ var $tl = gsap
   },"<0.1")
   .to(".logoWrap .text",
     {
-      duration: 0.7,
+      duration: 0.8,
       opacity: 1,
       ease: "power2.out",
     },
-    "<1.25"
+    "<1.15"
   );
 
 gsap.delayedCall(0.5, function() {

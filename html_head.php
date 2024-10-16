@@ -10,7 +10,6 @@
 <link rel="apple-touch-icon" sizes="152x152" href="./img/fav.png">
 
 <meta property="og:title" content="PARIS  STREET" />
-<meta property="og:image" content="./images/ogimg.jpg">
 <meta property="og:description" content="LOUIS VUITTON  X  草間彌生" />
 
 
@@ -18,7 +17,7 @@
 
 <meta name="description" content="LOUIS VUITTON  X  草間彌生">
 
-<meta property="og:image" content="img/html_share.jpg"></meta>
+<meta property="og:image" content="<?= (isset($_SERVER['HTTPS']) ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] ?>/img/html_share.jpg?t=03136"></meta>
 
 
 <link rel="stylesheet" href="./stylesheets/style.css?t=23132">
